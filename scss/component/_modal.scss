@@ -25,7 +25,7 @@
         .filter-content {
             height: 80vh;
             overflow: auto;
-            border: 1px solid $white;
+            // border: 1px solid $white;
         }
     }
 
@@ -68,7 +68,7 @@
     }
     .pwa-content {
         padding: 30px 0px;
-        background: $white;
+        // background: $white;
         pointer-events: auto;
         .top {
             display: flex;
@@ -83,7 +83,7 @@
             font-size: 14px;
             font-style: normal;
             font-weight: 400;
-            color: $text-black;
+            // color: $text-black;
             padding: 0px 12px;
         }
         .group-btn {
@@ -95,16 +95,16 @@
                 padding: 10px 12px;
                 border-radius: 6px;
                 font-weight: 500;
-                background-color: $primary;
+                // background-color: $primary;
                 line-height: 1;
                 font-size: 12px;
                 width: unset;
                 display: inline-flex;
-                color: $white;
+                // color: $white;
             }
             .btn-dismiss {
                 background: #e6ecec;
-                color: $primary;
+                // color: $primary;
             }
         }
     }
@@ -122,7 +122,7 @@
             font-weight: 500;
             font-style: normal;
             line-height: normal;
-            color: $primary;
+            // color: $primary;
         }
     }
 }

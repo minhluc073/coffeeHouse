@@ -1,3 +1,539 @@
-.hhh {
-    color: red;
+html {
+    // scrollbar-width: none;
+    // overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+caption,
+canvas,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+form,
+footer,
+header,
+hgroup,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+tt,
+table,
+tbody,
+textarea,
+tfoot,
+thead,
+time,
+tr,
+th,
+td,
+u,
+ul,
+var,
+video {
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    quotes: none;
+}
+
+figure {
+    margin: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
+}
+
+legend {
+    white-space: normal;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    margin: 0;
+    max-width: 100%;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    line-height: 1;
+    cursor: pointer;
+    /* Improves usability and consistency of cursor style between image-type 'input' and others */
+    -webkit-appearance: button;
+    /* Corrects inability to style clickable 'input' types in iOS */
+    border: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    padding: 0;
+    /* Addresses excess padding in IE8/9 */
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    /* Addresses appearance set to searchfield in S5, Chrome */
+}
+
+input[type="search"]::-webkit-search-decoration {
+    /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+    border: 0;
+    padding: 0;
+}
+label {
+    // margin-bottom: 5px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Repeatable Patterns
+  -------------------------------------------------------------- */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main-family;
+    font-size: $font-main-size;
+    line-height: $font-main-line;
+    font-weight: 300;
+    // background-color: $white;
+    color: $secondary;
+    min-height: 100vh;
+    width: 100%;
+    // margin: 0 auto;
+    // overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    // color: $text-black;
+    cursor: pointer;
+    @include transition3;
+    &:hover,
+    &:focus,
+    &.active {
+        text-decoration: none;
+        outline: none;
+        // color: $primary;
+    }
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+b,
+strong {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: $h1-fs;
+    line-height: $h1-lh;
+}
+
+h2 {
+    font-size: $h2-fs;
+    line-height: $h2-lh;
+}
+
+h3 {
+    font-size: $h3-fs;
+    line-height: $h3-lh;
+}
+h4 {
+    font-size: $h4-fs;
+    line-height: $h4-lh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-main-family;
+    color: $onSurface;
+    font-weight: 500;
+    a {
+        // color: $primary;
+        &:hover {
+            // color: $primary;
+        }
+    }
+}
+
+button {
+    border: none;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    width: 100%;
+    padding: 12px 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    background-color: $primary;
+    border: 1px solid $primary;
+    color: $white;
+    text-transform: capitalize;
+    border-radius: 100px;
+    @include flex(center, center);
+    @include transition3;
+
+    &:hover {
+        color: $primary;
+        background-color: $white;
+    }
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    font-family: $font-main-family;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid transparent;
+    background-color: $surface;
+    color: $onSurface;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    padding: 13px 16px;
+    border-radius: 8px;
+}
+input[type="password"] {
+    // font-size: 18px;
+    // -webkit-text-security: square;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: $primary;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: $secondary;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+}
+
+textarea,
+input[type="text"],
+input[type="submit"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    -webkit-appearance: none;
+    text-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+textarea {
+    height: 106px;
+}
+label {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    color: $secondary;
+}
+
+.tf-container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.text-large {
+    font-size: 17px;
+    line-height: 24px;
+}
+.text-medium {
+    font-size: 16px;
+    line-height: 22px;
+}
+.text-small {
+    font-size: 14px;
+    line-height: 18px;
+}
+// spacing
+//  margin
+.mb-8 {
+    margin-bottom: 8px;
+}
+.mt-4 {
+    margin-top: 4px !important;
+}
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-12 {
+    margin-top: 12px;
+}
+.mt-16 {
+    margin-top: 16px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-24 {
+    margin-top: 24px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mb-14 {
+    margin-bottom: 14px;
+}
+.mb-18 {
+    margin-bottom: 18px;
+}
+
+// padding
+.pt-16 {
+    padding-top: 16px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pt-40 {
+    padding-top: 40px;
+}
+
+// color text
+.text-primary {
+    color: $primary !important;
+}
+
+.tf-checkbox {
+    position: relative;
+    border: 1px solid $secondary;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    outline: 0;
+    width: 16px;
+    height: 16px;
+    -webkit-appearance: none;
+    @include flex(center, center);
+    &::before {
+        content: "\e923";
+        position: absolute;
+        font-family: $fontIcon;
+        font-size: 8px;
+        margin-top: -1px;
+        color: $white;
+    }
+    &:checked {
+        border-color: $primary;
+        &::before {
+            color: $primary;
+        }
+    }
+}
+.hh {
+    align-items: center;
 }

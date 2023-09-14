@@ -6,19 +6,19 @@
     border: 0;
 }
 .noUi-connects {
-    background: $line-2;
+    background: red;
 }
 .noUi-connect {
-    background-color: $primary;
+    background-color: red;
 }
 .noUi-horizontal .noUi-handle,
 .noUi-vertical .noUi-handle {
     height: 20px;
     width: 20px;
     border-radius: 50px;
-    box-shadow: $shadow-range;
-    border: 2px solid $white;
-    background-color: $primary;
+    box-shadow: red;
+    border: 2px solid red;
+    background-color: red;
     font-style: normal;
     top: -9px;
 }
@@ -33,7 +33,7 @@
         font-size: 14px;
         left: 0px;
         top: 1px;
-        color: $white;
+        color: red;
     }
 }
 .noUi-handle-lower {
@@ -53,7 +53,7 @@
         font-size: 12px;
         font-weight: 700;
         line-height: normal;
-        color: $primary;
+        color: red;
         border: 0;
         &:before {
             font-family: "SF Pro Display", sans-serif;
