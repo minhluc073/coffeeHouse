@@ -1,0 +1,16 @@
+.box-img-profile {
+    width: 96px;
+    height: 96px;
+    position: relative;
+    .icon-camera {
+        position: absolute;
+        top: 66px;
+        right: 3px;
+        width: 23px;
+        height: 23px;
+        background-color: $primary;
+        font-size: 10px;
+        border-radius: 100px;
+        @include flex(center, center);
+    }
+}

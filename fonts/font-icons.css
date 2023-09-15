@@ -74,7 +74,7 @@
   content: "\e90d";
 }
 
-.icon-star--2:before {
+.icon-star-2:before {
   content: "\e90e";
 }
 
@@ -96,6 +96,7 @@
 
 .icon-setting:before {
   content: "\e913";
+  color: #131317;
 }
 
 .icon-more:before {
@@ -211,7 +212,7 @@
   content: "\e92a";
 }
 
-.icon-Camera:before {
+.icon-camera:before {
   content: "\e92b";
   color: #fff;
 }

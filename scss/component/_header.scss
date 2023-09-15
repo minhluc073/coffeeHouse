@@ -1,6 +1,5 @@
 .header {
-    display: flex;
-    align-items: center;
+    @include flex(center, space-between);
     gap: 16px;
     padding: 8px 20px;
     .icon {
@@ -9,6 +8,12 @@
         font-size: 20px;
         display: flex;
         align-items: center;
+    }
+    .right {
+        height: 28px;
+        width: 30px;
+        font-size: 20px;
+        @include flex(center, flex-end);
     }
 }
 .fixed-top {

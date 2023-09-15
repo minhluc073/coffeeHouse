@@ -234,7 +234,6 @@ body {
   font-size: 12px;
   line-height: 16px;
   font-weight: 300;
-  background-color: #fff;
   color: #6c6c78;
   min-height: 100vh;
   width: 100%;
@@ -243,6 +242,7 @@ body {
 a {
   text-decoration: none;
   outline: none;
+  color: #131317;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -253,6 +253,7 @@ a {
 a:hover, a:focus, a.active {
   text-decoration: none;
   outline: none;
+  color: #131317;
 }
 
 ul,
@@ -290,6 +291,11 @@ h4 {
   line-height: 25px;
 }
 
+h5 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
 h1,
 h2,
 h3,
@@ -300,6 +306,10 @@ h6 {
   color: #131317;
   font-weight: 500;
 }
+h5 {
+  font-weight: 600;
+}
+
 button {
   border: none;
 }
@@ -451,6 +461,10 @@ label {
   line-height: 18px;
 }
 
+.fw-4 {
+  font-weight: 400;
+}
+
 .mb-8 {
   margin-bottom: 8px;
 }
@@ -491,6 +505,10 @@ label {
   margin-top: 40px;
 }
 
+.mt-60 {
+  margin-top: 60px;
+}
+
 .mb-12 {
   margin-bottom: 12px;
 }
@@ -515,6 +533,10 @@ label {
   padding-top: 16px;
 }
 
+.pb-16 {
+  padding-bottom: 16px;
+}
+
 .pt-30 {
   padding-top: 30px;
 }
@@ -537,10 +559,6 @@ label {
 
 .text-onSurface {
   color: #131317;
-}
-
-.fw-4 {
-  font-weight: 400;
 }
 
 .tf-checkbox {
@@ -583,6 +601,7 @@ label {
 .header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 16px;
   padding: 8px 20px;
 }
@@ -592,6 +611,14 @@ label {
   font-size: 20px;
   display: flex;
   align-items: center;
+}
+.header .right {
+  height: 28px;
+  width: 30px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .fixed-top {
@@ -878,6 +905,19 @@ label {
   line-height: normal;
 }
 
+.listview-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.listview-item .left {
+  font-size: 20px;
+  color: #131317;
+}
+
 .signin-area .box-image {
   max-width: 307px;
   height: 319px;
@@ -961,6 +1001,25 @@ label {
 }
 .otp-area .box-image img {
   max-width: 244px;
+}
+
+.box-img-profile {
+  width: 96px;
+  height: 96px;
+  position: relative;
+}
+.box-img-profile .icon-camera {
+  position: absolute;
+  top: 66px;
+  right: 3px;
+  width: 23px;
+  height: 23px;
+  background-color: #2dc28d;
+  font-size: 10px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

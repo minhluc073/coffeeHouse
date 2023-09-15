@@ -1,0 +1,12 @@
+.listview-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .left {
+        font-size: 20px;
+        color: $onSurface;
+    }
+}
