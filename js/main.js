@@ -68,6 +68,7 @@
         .each(function () {
           $(this).attr("maxlength", 1);
           $(this).on("keyup", function (e) {
+            var valNum = $(this).val();
             var parent = $($(this).parent());
 
             if (e.keyCode === 8 || e.keyCode === 37) {
@@ -83,6 +84,10 @@
               e.keyCode === 39
             ) {
               var next = parent.find("input#" + $(this).data("next"));
+              if (!$.isNumeric(valNum)) {
+                $(this).val("");
+                return false;
+              }
 
               if (next.length) {
                 $(next).select();

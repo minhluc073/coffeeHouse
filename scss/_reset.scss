@@ -238,7 +238,7 @@ body {
     font-size: $font-main-size;
     line-height: $font-main-line;
     font-weight: 300;
-    // background-color: $white;
+    background-color: $white;
     color: $secondary;
     min-height: 100vh;
     width: 100%;
@@ -485,11 +485,20 @@ label {
 .mt-40 {
     margin-top: 40px;
 }
+.mb-12 {
+    margin-bottom: 12px;
+}
 .mb-14 {
     margin-bottom: 14px;
 }
+.mb-16 {
+    margin-bottom: 16px;
+}
 .mb-18 {
     margin-bottom: 18px;
+}
+.mb--50 {
+    margin-bottom: -50px;
 }
 
 // padding
@@ -502,12 +511,23 @@ label {
 .pt-40 {
     padding-top: 40px;
 }
+.pt-45 {
+    padding-top: 44px;
+}
+.bg-white {
+    background-color: $white !important;
+}
 
 // color text
 .text-primary {
     color: $primary !important;
 }
-
+.text-onSurface {
+    color: $onSurface;
+}
+.fw-4 {
+    font-weight: 400;
+}
 .tf-checkbox {
     position: relative;
     border: 1px solid $secondary;
@@ -533,6 +553,9 @@ label {
             color: $primary;
         }
     }
+}
+.line-bt {
+    border-bottom: 1px solid $line;
 }
 .hh {
     align-items: center;
