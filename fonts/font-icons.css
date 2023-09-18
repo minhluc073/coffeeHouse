@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/icomoon.eot?q4j5lw');
-  src: url('../fonts/icomoon.eot?q4j5lw#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?q4j5lw') format('truetype'),
-    url('../fonts/icomoon.woff?q4j5lw') format('woff'),
-    url('../fonts/icomoon.svg?q4j5lw#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?oxn7i3');
+  src: url('../fonts/icomoon.eot?oxn7i3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?oxn7i3') format('truetype'),
+    url('../fonts/icomoon.woff?oxn7i3') format('woff'),
+    url('../fonts/icomoon.svg?oxn7i3#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,10 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\e900";
 }
 
 .icon-close .path1:before {
@@ -53,6 +57,8 @@
 
 .icon-category:before {
   content: "\e909";
+  font-size: 16px;
+  color: #000000;
 }
 
 .icon-check-circle .path1:before {
@@ -97,11 +103,13 @@
 .icon-setting:before {
   content: "\e913";
   color: #131317;
+
 }
 
 .icon-more:before {
   content: "\e914";
   color: #6c6c78;
+  font-size: 20px;
 }
 
 .icon-down:before {
@@ -127,6 +135,10 @@
 .icon-way:before {
   content: "\e903";
   color: #fff;
+}
+
+.icon-selected-no:before {
+  content: "\e919";
 }
 
 .icon-target:before {
@@ -164,7 +176,7 @@
 }
 
 .icon-home:before {
-  content: "\e900";
+  content: "\e901";
   color: #6c6c78;
 }
 
@@ -173,10 +185,11 @@
   color: #6c6c78;
 }
 
-.icon-eye-hide:before {
+.icon-hide-eye:before {
   content: "\e922";
   color: #6c6c78;
   font-size: 16px;
+
 }
 
 .icon-check:before {
@@ -188,9 +201,9 @@
   content: "\e924";
 }
 
-.icon-search:before {
+/* .icon-search:before {
   content: "\e925";
-}
+} */
 
 .icon-qrcode:before {
   content: "\e926";
@@ -238,14 +251,14 @@
   content: "\e930";
 }
 
-.icon-clock:before {
-  content: "\e931";
-}
-
 .icon-map-pin:before {
   content: "\e932";
 }
 
-.icon-angle-right:before {
-  content: "\e901";
+.icon-right:before {
+  content: "\e902";
 }
+
+/* .icon-heart-o:before {
+  content: "\e931";
+} */

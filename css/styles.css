@@ -461,8 +461,20 @@ label {
   line-height: 18px;
 }
 
+.fw-3 {
+  font-weight: 300;
+}
+
 .fw-4 {
   font-weight: 400;
+}
+
+.fw-5 {
+  font-weight: 500;
+}
+
+.fw-7 {
+  font-weight: 700;
 }
 
 .mb-8 {
@@ -487,6 +499,10 @@ label {
 
 .mt-16 {
   margin-top: 16px;
+}
+
+.mt-18 {
+  margin-top: 18px;
 }
 
 .mt-20 {
@@ -529,6 +545,14 @@ label {
   margin-bottom: -50px;
 }
 
+.p-10 {
+  padding: 10px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
 .pt-16 {
   padding-top: 16px;
 }
@@ -558,7 +582,15 @@ label {
 }
 
 .text-onSurface {
-  color: #131317;
+  color: #131317 !important;
+}
+
+.text-critical {
+  color: #eb5a5a !important;
+}
+
+.text-secondary {
+  color: #6c6c78 !important;
 }
 
 .tf-checkbox {
@@ -594,8 +626,13 @@ label {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.hh {
-  align-items: center;
+.line-r {
+  border-right: 1px solid #e5e5e5;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .header {
@@ -799,13 +836,14 @@ label {
 }
 .modal.action-sheet .modal-dialog {
   padding: 0;
-  margin: 0;
   bottom: 0;
   position: fixed;
-  width: 100%;
-  min-width: 100%;
+  left: 0;
+  right: 0;
   z-index: 10000;
   transform: translate(0, 100%);
+  max-width: 100%;
+  margin: 20px;
 }
 .modal.action-sheet.show .modal-dialog {
   transform: translate(0, 0);
@@ -819,6 +857,27 @@ label {
 .modal.action-sheet .filter-content {
   height: 80vh;
   overflow: auto;
+}
+.modal.action-sheet .modal-setting {
+  pointer-events: auto;
+}
+.modal.action-sheet .modal-setting .heading {
+  border-radius: 12px;
+  background-color: #fff;
+}
+.modal.action-sheet .modal-setting .heading li a {
+  display: block;
+  padding: 16px;
+  color: #131317;
+  text-align: center;
+}
+.modal.action-sheet .modal-setting .heading li:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+.modal.action-sheet .modal-setting .bottom {
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 12px 0px;
 }
 .modal.modalRight .modal-dialog {
   transform: translate(100%, 0) !important;
@@ -849,6 +908,9 @@ label {
 }
 .modal.modalRight.show .modal-dialog {
   transform: translate(0, 0) !important;
+}
+.modal.modalCenter .modal-dialog-centered {
+  margin: 0 52px;
 }
 .modal.fade {
   transition: opacity 0.3s linear;
@@ -890,9 +952,9 @@ label {
 .modal .pwa-content .group-btn .btn-dismiss {
   background: #e6ecec;
 }
-.modal .modal-content.center {
-  border-radius: 16px;
-  padding: 20px;
+.modal .modal-content {
+  border: none;
+  border-radius: 14px;
 }
 .modal .modal-header {
   padding: 0;
@@ -905,6 +967,13 @@ label {
   line-height: normal;
 }
 
+.modal-backdrop {
+  background-color: #131317;
+}
+.modal-backdrop.show {
+  opacity: 0.25;
+}
+
 .listview-item {
   font-size: 16px;
   font-weight: 400;
@@ -913,9 +982,56 @@ label {
   align-items: center;
   gap: 8px;
 }
+.listview-item .content {
+  flex-grow: 1;
+}
 .listview-item .left {
   font-size: 20px;
   color: #131317;
+}
+.listview-item .right {
+  display: flex;
+  gap: 8px;
+}
+.listview-item .icon-right {
+  font-size: 20px;
+  color: #131317;
+}
+.listview-item .icon-plus {
+  font-size: 28px;
+}
+.listview-item .img-box {
+  width: 51px;
+  height: 51px;
+  border-radius: 51px;
+}
+
+.wg-list-avt {
+  display: inline-flex;
+}
+.wg-list-avt a {
+  margin-left: -4px;
+}
+.wg-list-avt a img {
+  border-radius: 50px;
+  border: 1px solid #fff;
+  width: 19px;
+}
+
+.group2-icon {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.group2-icon .icon {
+  border-radius: 61px;
+  background-color: #f5f5f5;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .signin-area .box-image {

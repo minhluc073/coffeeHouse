@@ -460,8 +460,17 @@ label {
     font-size: 14px;
     line-height: 18px;
 }
+.fw-3 {
+    font-weight: 300;
+}
 .fw-4 {
     font-weight: 400;
+}
+.fw-5 {
+    font-weight: 500;
+}
+.fw-7 {
+    font-weight: 700;
 }
 // spacing
 //  margin
@@ -482,6 +491,9 @@ label {
 }
 .mt-16 {
     margin-top: 16px;
+}
+.mt-18 {
+    margin-top: 18px;
 }
 .mt-20 {
     margin-top: 20px;
@@ -515,6 +527,13 @@ label {
 }
 
 // padding
+.p-10 {
+    padding: 10px;
+}
+.p-16 {
+    padding: 16px;
+}
+
 .pt-16 {
     padding-top: 16px;
 }
@@ -539,9 +558,14 @@ label {
     color: $primary !important;
 }
 .text-onSurface {
-    color: $onSurface;
+    color: $onSurface !important;
 }
-
+.text-critical {
+    color: $critical !important;
+}
+.text-secondary {
+    color: $secondary !important;
+}
 .tf-checkbox {
     position: relative;
     border: 1px solid $secondary;
@@ -571,6 +595,10 @@ label {
 .line-bt {
     border-bottom: 1px solid $line;
 }
-.hh {
-    align-items: center;
+.line-r {
+    border-right: 1px solid $line;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
