@@ -1,0 +1,62 @@
+.message-box {
+    position: relative;
+    input {
+        border-radius: 89px;
+        padding: 12px;
+        padding-right: 50px;
+        border: none;
+        &:focus {
+            border: none;
+        }
+    }
+    .btn-message {
+        position: absolute;
+        right: 12px;
+        top: 9px;
+    }
+}
+.bubble-you {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 20px 0px;
+    img {
+        width: 32px;
+        height: 32px;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        color: $onSurface;
+        border-radius: 18px;
+        padding: 7px 10px;
+        background-color: $surface;
+    }
+}
+.bubble-me {
+    text-align: end;
+    margin-bottom: 8px;
+    p {
+        color: $onSurface;
+        border-radius: 18px;
+        padding: 7px 10px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
+        background-color: $line;
+        display: inline-block;
+    }
+}
+.status-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    &.online {
+        background-color: $primary;
+        border: 2px solid $white;
+    }
+    &.offline {
+        background-color: $critical;
+    }
+}

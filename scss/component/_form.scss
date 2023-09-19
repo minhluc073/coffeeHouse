@@ -67,3 +67,19 @@
         }
     }
 }
+
+.search-box {
+    position: relative;
+    width: 100%;
+    .icon-search {
+        position: absolute;
+        font-size: 24px;
+        color: $primary;
+        top: 11px;
+        right: 12px;
+    }
+    .search-field {
+        padding: 12px;
+        padding-right: 45px;
+    }
+}

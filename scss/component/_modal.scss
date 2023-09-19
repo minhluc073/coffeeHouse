@@ -90,6 +90,7 @@
     &.modalCenter {
         .modal-dialog-centered {
             margin: 0 52px;
+            max-width: 100%;
         }
     }
     &.fade {

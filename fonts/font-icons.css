@@ -49,6 +49,8 @@
 
 .icon-scan:before {
   content: "\e907";
+  color: #131317;
+  font-size: 24px;
 }
 
 .icon-bell:before {
@@ -241,6 +243,8 @@
 
 .icon-edit:before {
   content: "\e92e";
+  color: #131317;
+  font-size: 24px;
 }
 
 .icon-plus:before {

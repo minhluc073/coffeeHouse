@@ -533,12 +533,20 @@ label {
 .p-16 {
     padding: 16px;
 }
-
+.pb-4 {
+    padding-bottom: 4px !important;
+}
 .pt-16 {
     padding-top: 16px;
 }
 .pb-16 {
     padding-bottom: 16px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pb-80 {
+    padding-bottom: 80px;
 }
 .pt-30 {
     padding-top: 30px;
@@ -601,4 +609,7 @@ label {
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+.gap-12 {
+    gap: 12px;
 }

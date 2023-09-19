@@ -29,6 +29,25 @@
         height: 51px;
         border-radius: 51px;
     }
+    .media {
+        position: relative;
+        img {
+            width: 56px;
+            height: 56px;
+            border-radius: 56px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 2px;
+            width: 12px;
+            height: 12px;
+            background-color: $success;
+            border: 2px solid $white;
+            border-radius: 50px;
+        }
+    }
 }
 
 .wg-list-avt {
@@ -54,4 +73,13 @@
         font-size: 20px;
         @include flex(center, center);
     }
+}
+
+.dot-icon {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: $primary;
+    display: inline-block;
+    margin: 0 4px;
 }

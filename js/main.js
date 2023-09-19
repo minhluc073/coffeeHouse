@@ -230,26 +230,7 @@
       window.history.go(-1);
     });
   };
-  /* click sidebar
-  ------------------------------------------------------------------------------------- */
-  const clickSideBar = function () {
-    const modalNav = $(".menu-mobile-popup");
-    if (modalNav.length) {
-      const open = function () {
-        modalNav.addClass("modal-menu--open");
-      };
-      const close = function () {
-        modalNav.removeClass("modal-menu--open");
-      };
-      // open();
-      $(".btn-sidebar, .btn-st2").on("click", function () {
-        open();
-      });
-      $(".modal-menu__backdrop").on("click", function () {
-        close();
-      });
-    }
-  };
+
   /* clear Text
   ------------------------------------------------------------------------------------- */
   const clearText = function () {
@@ -257,14 +238,38 @@
       $(".ip-field").val("");
     });
   };
-  /* preloader
+  /* message
   ------------------------------------------------------------------------------------- */
-  const preloaderIndex = function () {
-    setTimeout(function () {
-      $(".preloadIndex").fadeOut("slow", function () {
-        $(this).remove();
-      });
-    }, 150);
+  var handleMessage = function () {
+    $(".btn-message").on("click", function () {
+      var ipMessage = $(".ip-message");
+      var messValue = ipMessage.val();
+      //   var chatEmojiArea = $(".append-media").html();
+
+      //   var current = new Date();
+      //   var ampm = current.getHours() >= 12 ? "pm" : "am";
+      //   var actualTime =
+      //     (current.getHours() % 12) + ":" + current.getMinutes() + " " + ampm;
+
+      var domMessage =
+        '<div class="bubble-me">' +
+        '<p>' +
+        messValue +
+        "</p>" +
+        "</div>";
+      // '<div class="message-time">' +
+      // actualTime +
+      // "</div>" +
+      // "</div>" +
+      // "</div>";
+
+      if (messValue.length > 0) {
+        var appendMess = $(".chat-area").append(domMessage);
+      }
+
+      window.scrollTo(0, document.body.scrollHeight);
+      var clearMess = ipMessage.val("");
+    });
   };
 
   /* preloader 2
@@ -291,10 +296,9 @@
     Suggest();
     backPage();
     clearText();
-    clickSideBar();
     activeSuggest();
+    handleMessage();
     fixedBody();
-    preloaderIndex();
     preloader();
   });
 })(jQuery);
