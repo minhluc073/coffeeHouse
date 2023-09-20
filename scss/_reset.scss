@@ -583,6 +583,9 @@ label {
 .text-secondary {
     color: $secondary !important;
 }
+.text-warning {
+    color: $warning !important;
+}
 .tf-checkbox {
     position: relative;
     border: 1px solid $secondary;
