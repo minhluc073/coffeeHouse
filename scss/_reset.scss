@@ -606,10 +606,25 @@ label {
 .line-r {
     border-right: 1px solid $line;
 }
+.line-8 {
+    height: 8px;
+    background-color: #eef0f3;
+}
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+}
+.gap-4 {
+    gap: 4px !important;
+}
 .gap-12 {
     gap: 12px;
+}
+.gap-20 {
+    gap: 20px;
 }

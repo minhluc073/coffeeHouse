@@ -36,7 +36,7 @@
             </div>
             <div class="mt-20 d-flex align-items-center justify-content-between">
                 <h4>List Message</h4>
-                <a href="#" class="icon-edit"></a>
+                <a href="#" class="icon-edit" data-bs-toggle="modal" data-bs-target="#settingChat"></a>
             </div>
             <ul class="mt-12 mb-16">
                 <li>
@@ -46,7 +46,7 @@
                         </div>
                         <div class="content">
                             <h5>Coffee bean </h5>
-                            <p class="text-medium text-secondary fw-3">can i help u? you can...  <span>10:13 PM</span></p>
+                            <p class="text-medium text-onSurface fw-4">can i help u? you can...  <span class="fw-3">10:13 PM</span></p>
                         </div>
                         <span class="status-icon offline"></span>
                     </a>
@@ -132,6 +132,23 @@
                 </li>
             </ul>
       
+        </div>
+    </div>
+
+    <div class="modal fade action-sheet" id="settingChat">
+        <div class="modal-dialog" role="document">
+            <div class="modal-setting">
+                <ul class="heading">
+                    <li><a href="#" class="text-large fw-5" data-bs-dismiss="modal">Archive</a> </li>
+                    <li><a href="#" class="text-large fw-5" data-bs-dismiss="modal">Delete</a> </li>
+                    <li><a href="#" class="text-large fw-5" data-bs-dismiss="modal">Mute</a> </li>
+                    <li><a href="#" class="text-large fw-5" data-bs-dismiss="modal">Block</a> </li>
+                </ul>
+                <div class="bottom mt-8 text-center" data-bs-dismiss="modal">
+                    <a href="#" class="text-critical text-large fw-5">Dismiss</a> 
+                </div>
+            </div>
+            
         </div>
     </div>
     

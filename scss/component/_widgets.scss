@@ -83,3 +83,13 @@
     display: inline-block;
     margin: 0 4px;
 }
+.list-star {
+    display: flex;
+    li {
+        font-size: 16px;
+        color: $line;
+        &:not(:last-child) {
+            color: $warning;
+        }
+    }
+}

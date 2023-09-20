@@ -14,3 +14,15 @@
         @include flex(center, center);
     }
 }
+
+.box-latest-review {
+    .box-img {
+        display: flex;
+        gap: 8px;
+        img {
+            width: 60px;
+            border-radius: 4px;
+        }
+    }
+}
+

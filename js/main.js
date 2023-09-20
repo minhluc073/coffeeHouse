@@ -252,11 +252,7 @@
       //     (current.getHours() % 12) + ":" + current.getMinutes() + " " + ampm;
 
       var domMessage =
-        '<div class="bubble-me">' +
-        '<p>' +
-        messValue +
-        "</p>" +
-        "</div>";
+        '<div class="bubble-me">' + "<p>" + messValue + "</p>" + "</div>";
       // '<div class="message-time">' +
       // actualTime +
       // "</div>" +
@@ -271,7 +267,15 @@
       var clearMess = ipMessage.val("");
     });
   };
-
+  /* gallery
+  ------------------------------------------------------------------------------------- */
+  var lightGalleryBox = function () {
+    if ($("#lightgallery").length > 0) {
+      lightGallery(document.getElementById("lightgallery"), {
+        plugins: [lgZoom, lgThumbnail],
+      });
+    }
+  };
   /* preloader 2
   ------------------------------------------------------------------------------------- */
   const preloader = function () {
@@ -298,6 +302,7 @@
     clearText();
     activeSuggest();
     handleMessage();
+    lightGalleryBox();
     fixedBody();
     preloader();
   });

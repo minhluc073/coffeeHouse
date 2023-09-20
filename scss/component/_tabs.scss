@@ -1,0 +1,48 @@
+.tab-content > .tab-pane {
+    display: none;
+    // transition: all 0.2s;
+    // transform: translateX(1rem);
+}
+.tab-content > .active {
+    display: block;
+    // transform: translateX(0rem);
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+.fade {
+    transition: opacity 0.15s linear;
+}
+.nav-tabs {
+    border-bottom: 0;
+}
+
+.user-tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .nav-link {
+        padding: 0;
+        padding-bottom: 10px;
+        text-align: center;
+        border-bottom: 2px solid #5858584d;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #5858584d;
+        &.active {
+            border-bottom: 2px solid $onSurface;
+            color: $onSurface;
+            svg {
+                path {
+                    fill: $onSurface;
+                    fill-opacity: 1;
+                }
+            }
+        }
+    }
+}
