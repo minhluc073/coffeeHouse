@@ -539,6 +539,12 @@ label {
 .pt-16 {
     padding-top: 16px;
 }
+.pt-20 {
+    padding-top: 20px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
 .pb-16 {
     padding-bottom: 16px;
 }
@@ -559,6 +565,9 @@ label {
 }
 .bg-white {
     background-color: $white !important;
+}
+.bg-surface {
+    background-color: $surface;
 }
 
 // color text
@@ -602,6 +611,9 @@ label {
 }
 .line-bt {
     border-bottom: 1px solid $line;
+}
+.line4-bt {
+    border-bottom: 4px solid $line;
 }
 .line-r {
     border-right: 1px solid $line;

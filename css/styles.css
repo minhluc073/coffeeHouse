@@ -561,6 +561,14 @@ label {
   padding-top: 16px;
 }
 
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
 .pb-16 {
   padding-bottom: 16px;
 }
@@ -587,6 +595,10 @@ label {
 
 .bg-white {
   background-color: #fff !important;
+}
+
+.bg-surface {
+  background-color: #f5f5f5;
 }
 
 .text-primary {
@@ -636,6 +648,10 @@ label {
 
 .line-bt {
   border-bottom: 1px solid #e5e5e5;
+}
+
+.line4-bt {
+  border-bottom: 4px solid #e5e5e5;
 }
 
 .line-r {
@@ -1183,6 +1199,60 @@ label {
 }
 .list-star li:not(:last-child) {
   color: #fabe3c;
+}
+
+.banner-store {
+  box-shadow: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 171px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+.banner-store .box-rate {
+  height: 74px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 77.08%);
+  padding: 13px;
+}
+.banner-store .box-rate .item-rate {
+  border-radius: 4px;
+  background: rgba(250, 190, 60, 0.3);
+  padding: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.banner-store .box-rate .item-rate .icon-star {
+  font-size: 12px;
+  color: #fabe3c;
+}
+.banner-store .box-rate span {
+  font-size: 11px;
+  color: #fff;
+  line-height: 13px;
+}
+.banner-store .box-heart {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.box-heart {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.box-heart .icon {
+  font-size: 20px;
+  color: #eb5a5a;
 }
 
 .signin-area .box-image {

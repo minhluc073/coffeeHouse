@@ -93,3 +93,55 @@
         }
     }
 }
+
+.banner-store {
+    box-shadow: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 171px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    .box-rate {
+        height: 74px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 77.08%);
+        padding: 13px;
+        .item-rate {
+            border-radius: 4px;
+            background: rgba(250, 190, 60, 0.3);
+            padding: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            .icon-star {
+                font-size: 12px;
+                color: $warning;
+            }
+        }
+        span {
+            font-size: 11px;
+            color: $white;
+            line-height: 13px;
+        }
+    }
+    .box-heart {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+.box-heart {
+    width: 32px;
+    height: 32px;
+    background-color: $white;
+    @include flex(center, center);
+    border-radius: 50%;
+    .icon {
+        font-size: 20px;
+        color: $critical;
+    }
+}
