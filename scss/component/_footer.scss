@@ -6,3 +6,50 @@
         width: 100%;
     }
 }
+
+.menubar-footer {
+    padding: 12px 20px 20px;
+    &.footer-fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: $white;
+    }
+    .inner-bar {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        max-width: 1024px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        li {
+            padding: 0 0;
+            width: 20%;
+            a {
+                color: $secondary;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+                font-size: 12px;
+
+                // span {
+                //     font-size: 24px;
+                //     color: $bg-icon;
+                // }
+            }
+            &.active {
+                a {
+                    color: $primary;
+                    font-weight: 600;
+                    // span {
+                    //     color: $primary;
+                    // }
+                }
+            }
+        }
+    }
+}

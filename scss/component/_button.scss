@@ -29,3 +29,15 @@
 .lg-zoom-in {
     display: none;
 }
+.btn-direction {
+    padding: 8px 12px 8px 8px;
+    border-radius: 100px;
+    background-color: $surface;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $primary;
+}

@@ -82,6 +82,10 @@
     background-color: $primary;
     display: inline-block;
     margin: 0 4px;
+    &.secondary {
+        background-color: $secondary;
+        margin: 0;
+    }
 }
 .list-star {
     display: flex;
