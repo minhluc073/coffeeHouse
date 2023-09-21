@@ -16,6 +16,22 @@
         @include flex(center, flex-end);
     }
 }
+.header-style1 {
+    display: flex;
+    // gap: 16px;
+    padding: 8px 38px;
+    .icon {
+        height: 28px;
+        width: 36px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+    h3 {
+        flex-grow: 1;
+        text-align: center;
+    }
+}
 .fixed-top {
     position: fixed;
     top: 0;
@@ -25,4 +41,8 @@
     // padding: 20px;
     left: 0;
     right: 0;
+}
+
+.header-search {
+    padding: 10px 20px 8px;
 }

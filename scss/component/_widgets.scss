@@ -96,8 +96,16 @@
             color: $warning;
         }
     }
+    &.st2 {
+        gap: 4px;
+        li {
+            color: $surface;
+            &:not(:last-child) {
+                color: $warning;
+            }
+        }
+    }
 }
-
 .banner-store {
     box-shadow: none;
     background-size: cover;
@@ -130,14 +138,21 @@
             color: $white;
             line-height: 13px;
         }
+        &.st2 {
+            padding: 12px 15px;
+        }
     }
     .box-heart {
         position: absolute;
         top: 15px;
         right: 15px;
     }
+    .box-bookmark {
+        position: absolute;
+        bottom: 12px;
+        right: 15px;
+    }
 }
-
 .box-heart {
     width: 32px;
     height: 32px;
@@ -147,5 +162,27 @@
     .icon {
         font-size: 20px;
         color: $critical;
+    }
+}
+.box-bookmark {
+    width: 40px;
+    height: 40px;
+    background-color: $white;
+    @include flex(center, center);
+    border-radius: 50%;
+}
+.lr-wrap {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.box-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 100px;
+    border: 1px solid $surface;
+    @include flex(center, center);
+    i {
+        font-size: 24px;
+        color: $secondary;
     }
 }

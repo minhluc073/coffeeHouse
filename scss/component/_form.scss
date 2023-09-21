@@ -82,4 +82,17 @@
         padding: 12px;
         padding-right: 45px;
     }
+    &.st2 {
+        .search-field {
+            padding: 12px;
+            padding-left: 33px;
+        }
+        .icon-search-2 {
+            position: absolute;
+            font-size: 18px;
+            color: $onSurface;
+            top: 12px;
+            left: 12px;
+        }
+    }
 }

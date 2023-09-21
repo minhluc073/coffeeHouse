@@ -460,6 +460,10 @@ label {
     font-size: 14px;
     line-height: 18px;
 }
+.text-xsmall {
+    font-size: 11px;
+    line-height: 13px;
+}
 .fw-3 {
     font-weight: 300;
 }
@@ -468,6 +472,9 @@ label {
 }
 .fw-5 {
     font-weight: 500;
+}
+.fw-6 {
+    font-weight: 600;
 }
 .fw-7 {
     font-weight: 700;
@@ -510,6 +517,7 @@ label {
 .mt-60 {
     margin-top: 60px;
 }
+
 .mb-12 {
     margin-bottom: 12px;
 }
@@ -542,6 +550,9 @@ label {
 .pt-20 {
     padding-top: 20px;
 }
+.pb-10 {
+    padding-bottom: 10px;
+}
 .pb-20 {
     padding-bottom: 20px;
 }
@@ -566,6 +577,9 @@ label {
 .pt-45 {
     padding-top: 44px;
 }
+.pt-65 {
+    padding-top: 65px;
+}
 .bg-white {
     background-color: $white !important;
 }
@@ -582,6 +596,9 @@ label {
 }
 .text-critical {
     color: $critical !important;
+}
+.bg-critical{
+    background-color: $critical;
 }
 .text-secondary {
     color: $secondary !important;
@@ -622,7 +639,7 @@ label {
     border-bottom: 1px solid $line;
 }
 .line4-bt {
-    border-bottom: 4px solid $line;
+    border-bottom: 4px solid $surface;
 }
 .line-r {
     border-right: 1px solid $line;
@@ -640,8 +657,15 @@ label {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1px;
 }
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 .gap-4 {
     gap: 4px !important;
+}
+.gap-8 {
+    gap: 8px !important;
 }
 .gap-12 {
     gap: 12px;

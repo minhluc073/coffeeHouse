@@ -107,11 +107,15 @@ if ($(".drink-swiper-3").length > 0) {
     },
   });
 }
+
+
+
 if ($(".cate-swiper").length > 0) {
   var swiper4 = new Swiper(".cate-swiper", {
     speed: 1500,
     slidesPerView: "auto",
-    spaceBetween: 0,
+    loop: true,
+    spaceBetween: 8,
     observer: true,
     observeParents: true,
   });
