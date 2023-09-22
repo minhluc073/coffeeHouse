@@ -322,11 +322,9 @@
   };
   /* dropOptionForm 
   ------------------------------------------------------------------------------------- */
-  var dropOptionForm = function () {
-    if ($("select").length > 0) {
-      $(
-        "select:not(#billing_country):not(.country_select):not(#billing_state)"
-      ).niceSelect();
+  var cusSelect = function () {
+    if ($(".cus-select").length > 0) {
+      $(".cus-select").niceSelect();
     }
   };
   /* preloader 2
@@ -357,7 +355,7 @@
     activeSuggest();
     handleMessage();
     lightGalleryBox();
-    dropOptionForm();
+    cusSelect();
     fixedBody();
     preloader();
   });

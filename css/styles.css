@@ -854,6 +854,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 .tf-btn.primary {
   background-color: #2dc28d;
@@ -1221,6 +1222,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .modal.modalRight.show .modal-dialog {
   transform: translate(0, 0) !important;
+}
+.modal.modalRight .modal-filter {
+  overflow: auto;
 }
 .modal.modalCenter .modal-dialog-centered {
   margin: 0 52px;

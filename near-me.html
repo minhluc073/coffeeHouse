@@ -9,6 +9,8 @@
     <!-- Icons -->
     <link rel="stylesheet" href="fonts/font-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
@@ -33,7 +35,7 @@
     <div class="pt-65 pb-72">
         <div class="tf-container line-bt">
             <div class="wrap-swiper d-flex align-items-center swiper-wrapper-r pb-10">
-                <a href="#" class="btn-slider">
+                <a href="#" class="btn-slider" data-bs-toggle="modal" data-bs-target="#filter">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <g clip-path="url(#clip0_0_3639)">
                             <path
@@ -84,93 +86,100 @@
             </div>
 
         </div>
-        <div class="wd-dir-stor pt-20 pb-20 line4-bt">
+        <div class="line4-bt">
             <div class="tf-container">
-                <div class="banner-store" style="background-image: url(images/banner-coffee/coffee-lg-1.jpg);">
-                    <div class="box-rate st2 d-flex flex-column justify-content-end">
-                        <div class="d-flex align-items-center gap-4">
-                            <div class="item-rate">
-                                <i class="icon-star"></i>
-                                <span class="fw-5">4.7</span>
+                <div class="wd-dir-store pt-20 pb-20">
+                    <div class="banner-store" style="background-image: url(images/banner-coffee/coffee-lg-1.jpg);">
+                        <div class="box-rate st2 d-flex flex-column justify-content-end">
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="item-rate">
+                                    <i class="icon-star"></i>
+                                    <span class="fw-5">4.7</span>
+                                </div>
+                                <span>(1.2k Rating)</span>
                             </div>
-                            <span>(1.2k Rating)</span>
+                            <h6 class="mt-4 text-medium"><a href="#" class="text-white">Cophehangen Coffee Lab</a></h6>
                         </div>
-                        <h6 class="mt-4 text-medium"><a href="#" class="text-white">Cophehangen Coffee Lab</a></h6>
+                        <a class="box-bookmark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M15.8333 17.5L10 13.3333L4.16666 17.5V4.16667C4.16666 3.72464 4.34226 3.30072 4.65482 2.98816C4.96738 2.67559 5.3913 2.5 5.83333 2.5H14.1667C14.6087 2.5 15.0326 2.67559 15.3452 2.98816C15.6577 3.30072 15.8333 3.72464 15.8333 4.16667V17.5Z"
+                                    stroke="#2DC28D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
                     </div>
-                    <a class="box-bookmark">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path
-                                d="M15.8333 17.5L10 13.3333L4.16666 17.5V4.16667C4.16666 3.72464 4.34226 3.30072 4.65482 2.98816C4.96738 2.67559 5.3913 2.5 5.83333 2.5H14.1667C14.6087 2.5 15.0326 2.67559 15.3452 2.98816C15.6577 3.30072 15.8333 3.72464 15.8333 4.16667V17.5Z"
-                                stroke="#2DC28D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                    <div class="mt-12 info">
+                        <p><i class="icon-map-pin"></i> 0.6 miles - 1501 S Mullen St. #991, Airway... </p>
+                        <p class="mt-4 d-flex align-items-center gap-4"><i class="icon-clock"></i> <span
+                                class="text-success">Opened</span><span class="dot-icon secondary"></span>Close at 22:00 PM
+                        </p>
+                    </div>
                 </div>
-                <div class="mt-12 info">
-                    <p><i class="icon-map-pin"></i> 0.6 miles - 1501 S Mullen St. #991, Airway... </p>
-                    <p class="mt-4 d-flex align-items-center gap-4"><i class="icon-clock"></i> <span
-                            class="text-success">Opened</span><span class="dot-icon secondary"></span>Close at 22:00 PM
-                    </p>
-                </div>
+                
             </div>
 
         </div>
-        <div class="wd-dir-stor pt-20 pb-20 mt-4 line4-bt">
+        <div class="line4-bt">
             <div class="tf-container">
-                <div class="banner-store" style="background-image: url(images/banner-coffee/coffee-lg-2.jpg);">
-                    <div class="box-rate st2 d-flex flex-column justify-content-end">
-                        <div class="d-flex align-items-center gap-4">
-                            <div class="item-rate">
-                                <i class="icon-star"></i>
-                                <span class="fw-5">4.7</span>
+                <div class="wd-dir-store pt-20 pb-20 mt-4">
+                    <div class="banner-store" style="background-image: url(images/banner-coffee/coffee-lg-2.jpg);">
+                        <div class="box-rate st2 d-flex flex-column justify-content-end">
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="item-rate">
+                                    <i class="icon-star"></i>
+                                    <span class="fw-5">4.7</span>
+                                </div>
+                                <span>(1.2k Rating)</span>
                             </div>
-                            <span>(1.2k Rating)</span>
+                            <h6 class="mt-4 text-medium"><a href="#" class="text-white">Cophehangen Coffee Lab</a></h6>
                         </div>
-                        <h6 class="mt-4 text-medium"><a href="#" class="text-white">Cophehangen Coffee Lab</a></h6>
+                        <a class="box-bookmark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M15.8333 17.5L10 13.3333L4.16666 17.5V4.16667C4.16666 3.72464 4.34226 3.30072 4.65482 2.98816C4.96738 2.67559 5.3913 2.5 5.83333 2.5H14.1667C14.6087 2.5 15.0326 2.67559 15.3452 2.98816C15.6577 3.30072 15.8333 3.72464 15.8333 4.16667V17.5Z"
+                                    stroke="#2DC28D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
                     </div>
-                    <a class="box-bookmark">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path
-                                d="M15.8333 17.5L10 13.3333L4.16666 17.5V4.16667C4.16666 3.72464 4.34226 3.30072 4.65482 2.98816C4.96738 2.67559 5.3913 2.5 5.83333 2.5H14.1667C14.6087 2.5 15.0326 2.67559 15.3452 2.98816C15.6577 3.30072 15.8333 3.72464 15.8333 4.16667V17.5Z"
-                                stroke="#2DC28D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="mt-12 info">
-                    <p><i class="icon-map-pin"></i> 0.6 miles - 1501 S Mullen St. #991, Airway... </p>
-                    <p class="mt-4 d-flex align-items-center gap-4"><i class="icon-clock"></i> <span
-                            class="text-success">Opened</span><span class="dot-icon secondary"></span>Close at 22:00 PM
-                    </p>
-                </div>
+                    <div class="mt-12 info">
+                        <p><i class="icon-map-pin"></i> 0.6 miles - 1501 S Mullen St. #991, Airway... </p>
+                        <p class="mt-4 d-flex align-items-center gap-4"><i class="icon-clock"></i> <span
+                                class="text-success">Opened</span><span class="dot-icon secondary"></span>Close at 22:00 PM
+                        </p>
+                    </div>
+                </div>    
             </div>
 
         </div>
-        <div class="wd-dir-stor pt-20 pb-20 mt-4 line4-bt">
+        <div class="line4-bt">
             <div class="tf-container">
-                <div class="banner-store" style="background-image: url(images/banner-coffee/coffee-lg-1.jpg);">
-                    <div class="box-rate st2 d-flex flex-column justify-content-end">
-                        <div class="d-flex align-items-center gap-4">
-                            <div class="item-rate">
-                                <i class="icon-star"></i>
-                                <span class="fw-5">4.7</span>
+                <div class="wd-dir-store pt-20 pb-20 mt-4">
+                    <div class="banner-store" style="background-image: url(images/banner-coffee/coffee-lg-1.jpg);">
+                        <div class="box-rate st2 d-flex flex-column justify-content-end">
+                            <div class="d-flex align-items-center gap-4">
+                                <div class="item-rate">
+                                    <i class="icon-star"></i>
+                                    <span class="fw-5">4.7</span>
+                                </div>
+                                <span>(1.2k Rating)</span>
                             </div>
-                            <span>(1.2k Rating)</span>
+                            <h6 class="mt-4 text-medium"><a href="#" class="text-white">Cophehangen Coffee Lab</a></h6>
                         </div>
-                        <h6 class="mt-4 text-medium"><a href="#" class="text-white">Cophehangen Coffee Lab</a></h6>
+                        <a class="box-bookmark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M15.8333 17.5L10 13.3333L4.16666 17.5V4.16667C4.16666 3.72464 4.34226 3.30072 4.65482 2.98816C4.96738 2.67559 5.3913 2.5 5.83333 2.5H14.1667C14.6087 2.5 15.0326 2.67559 15.3452 2.98816C15.6577 3.30072 15.8333 3.72464 15.8333 4.16667V17.5Z"
+                                    stroke="#2DC28D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
                     </div>
-                    <a class="box-bookmark">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path
-                                d="M15.8333 17.5L10 13.3333L4.16666 17.5V4.16667C4.16666 3.72464 4.34226 3.30072 4.65482 2.98816C4.96738 2.67559 5.3913 2.5 5.83333 2.5H14.1667C14.6087 2.5 15.0326 2.67559 15.3452 2.98816C15.6577 3.30072 15.8333 3.72464 15.8333 4.16667V17.5Z"
-                                stroke="#2DC28D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-                <div class="mt-12 info">
-                    <p><i class="icon-map-pin"></i> 0.6 miles - 1501 S Mullen St. #991, Airway... </p>
-                    <p class="mt-4 d-flex align-items-center gap-4"><i class="icon-clock"></i> <span
-                            class="text-success">Opened</span><span class="dot-icon secondary"></span>Close at 22:00 PM
-                    </p>
-                </div>
+                    <div class="mt-12 info">
+                        <p><i class="icon-map-pin"></i> 0.6 miles - 1501 S Mullen St. #991, Airway... </p>
+                        <p class="mt-4 d-flex align-items-center gap-4"><i class="icon-clock"></i> <span
+                                class="text-success">Opened</span><span class="dot-icon secondary"></span>Close at 22:00 PM
+                        </p>
+                    </div>
+                </div>    
             </div>
 
         </div>    
@@ -274,11 +283,125 @@
         </ul>
     </div>
 
+    <div class="modal fade modalRight" id="filter">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                
+                <div class="header-style1 fixed-top bg-white line-bt">
+                    <a href="#" class="icon"  data-bs-dismiss="modal"><i class="icon-left"></i></a>
+                    <h3>Filter</h3>
+                </div>
+                <div class="modal-filter pt-45 pb-200">
+                    <div class="tf-container">
+                        <h4 class="mt-12">Location:</h4>
+                        <div class="swiper cate-swiper swiper-wrapper-r mt-12">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="categories-item st2">
+                                        Near by
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="categories-item st2">
+                                        Favorite places
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="categories-item st2">
+                                        Labeled
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="categories-item st2">
+                                        List of destinations
+                                    </a>
+                                </div>
+            
+                            </div>
+                        </div>
+                        <ul class="d-flex gap-8 mt-12">
+                            <li>
+                              <select class="cus-select">
+                                <option>Country</option>
+                                <option>USA</option>
+                                <option>Japan</option>
+                              </select>
+                            </li>
+                            <li>
+                              <select class="cus-select">
+                                <option>City</option>
+                                <option>New York</option>
+                                <option>Tokyo</option>
+                              </select>
+                            </li>
+                            <li>
+                              <select class="cus-select">
+                                <option>District</option>
+                                <option>Iowa</option>
+                                <option>Hawaii</option>
+                              </select>
+                            </li>               
+                        </ul>
+                        <div class="mb-20 mt-20">
+                            <div class="d-flex justify-content-between align-items-center mb-14">
+                                <p class="text-medium text-onSurface">Maximum distance</p>
+                                <span class="text-medium text-primary" id="field-range"></span>
+                            </div>
+                            <div id="range-one-val"></div>
+                        </div>
+                        <div class="mt-20">
+                            <div class="d-flex justify-content-between align-items-center mb-14">
+                                <p class="text-medium text-onSurface">Price</p>
+                                <div class="text-medium text-primary">
+                                    <span id="skip-value-lower"></span>  - <span id="skip-value-upper"></span>
+                                </div>
+                            </div>
+                            <div id="range-two-val"></div>
+                        </div>
+                        <h6 class="text-medium text-onSurface fw-3 mt-20">Rating</h6>
+                        <ul class="grid-5 gap-8 mt-8">
+                            <li><a href="#" class="rate-item fw-4">Any</a> </li>
+                            <li><a href="#" class="rate-item fw-5 active">3.5 <i class="icon-star"></i></a> </li>
+                            <li><a href="#" class="rate-item fw-5">4.0 <i class="icon-star"></i></a> </li>
+                            <li><a href="#" class="rate-item fw-5">4.5 <i class="icon-star"></i></a> </li>
+                        </ul>
+                        <h6 class="text-medium text-onSurface fw-3 mt-20">Time</h6>
+                        <ul class="d-flex gap-8 mt-8">
+                            <li><a href="#" class="categories-item st2">Any</a> </li>
+                            <li><a href="#" class="categories-item st2">Open now </a> </li>
+                            <li>
+                                <a href="#" class="time-select">
+                                    <select>
+                                        <option>6AM</option>
+                                        <option>12AM</option>
+                                        <option>1AM</option>
+                                        <option>2AM</option>
+                                        <option>3AM</option>
+                                        <option>4AM</option>
+                                        <option>5AM</option>
+                                        <option>6AM</option>
+                                      </select>
+                                </a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menubar-footer footer-fixed">
+                    <div class="mw-wrapper">
+                        <a href="#" class="tf-btn primary lh-md">Apply</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/nouislider.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
     <script>
