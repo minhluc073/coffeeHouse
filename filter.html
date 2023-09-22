@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet"type="text/css" href="css/styles.css"/>
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/48.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
+
+    <title>filter</title>
+</head>
+
+<body>
+    <div class="header-style1 fixed-top bg-white line-bt">
+        <a href="#" class="icon back-btn"><i class="icon-left"></i></a>
+        <h3>Filter</h3>
+    </div>
+    <div class="pt-45 pb-200">
+        <div class="tf-container">
+            <h4 class="mt-12">Location:</h4>
+            <div class="swiper cate-swiper swiper-wrapper-r mt-12">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="categories-item st2">
+                            Near by
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="categories-item st2">
+                            Favorite places
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="categories-item st2">
+                            Labeled
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="categories-item st2">
+                            List of destinations
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <ul class="d-flex gap-8 mt-12">
+                <li>
+                  <select>
+                    <option>Country</option>
+                    <option>USA</option>
+                    <option>Japan</option>
+                  </select>
+                </li>
+                <li>
+                  <select>
+                    <option>City</option>
+                    <option>New York</option>
+                    <option>Tokyo</option>
+                  </select>
+                </li>
+                <li>
+                  <select>
+                    <option>District</option>
+                    <option>Iowa</option>
+                    <option>Hawaii</option>
+                  </select>
+                </li>           
+            </ul>
+            <div class="mb-20 mt-20">
+                <div class="d-flex justify-content-between align-items-center mb-14">
+                    <p class="text-medium text-onSurface">Maximum distance</p>
+                    <span class="text-medium text-primary" id="field-range"></span>
+                </div>
+                <div id="range-one-val"></div>
+            </div>
+            <div class="mt-20">
+                <div class="d-flex justify-content-between align-items-center mb-14">
+                    <p class="text-medium text-onSurface">Price</p>
+                    <div class="text-medium text-primary">
+                        <span id="skip-value-lower"></span>  - <span id="skip-value-upper"></span>
+                    </div>
+                </div>
+                <div id="range-two-val"></div>
+            </div>
+            <h6 class="text-medium text-onSurface fw-3 mt-20">Rating</h6>
+            <ul class="grid-5 gap-8 mt-8">
+                <li><a href="#" class="rate-item fw-4">Any</a> </li>
+                <li><a href="#" class="rate-item fw-5 active">3.5 <i class="icon-star"></i></a> </li>
+                <li><a href="#" class="rate-item fw-5">4.0 <i class="icon-star"></i></a> </li>
+                <li><a href="#" class="rate-item fw-5">4.5 <i class="icon-star"></i></a> </li>
+            </ul>
+            <h6 class="text-medium text-onSurface fw-3 mt-20">Time</h6>
+            <ul class="d-flex gap-8 mt-8">
+                <li><a href="#" class="categories-item st2">Any</a> </li>
+                <li><a href="#" class="categories-item st2">Open now </a> </li>
+                <li>
+                    <a href="#" class="time-select">
+                        <select>
+                            <option>6AM</option>
+                            <option>12AM</option>
+                            <option>1AM</option>
+                            <option>2AM</option>
+                            <option>3AM</option>
+                            <option>4AM</option>
+                            <option>5AM</option>
+                            <option>6AM</option>
+                          </select>
+                    </a> 
+                </li>
+            </ul>
+            <div>
+
+            </div>
+    </div>
+    <div class="menubar-footer footer-fixed">
+        <div class="mw-wrapper">
+            <a href="#" class="tf-btn primary lh-md">Apply</a>
+        </div>
+    </div>
+    
+    
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/nouislider.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script>
+    </script>
+    
+</body>
+</html>

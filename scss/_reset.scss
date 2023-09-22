@@ -448,6 +448,12 @@ label {
     padding-right: 20px;
     box-sizing: border-box;
 }
+.mw-wrapper {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .text-large {
     font-size: 17px;
     line-height: 24px;
@@ -568,6 +574,9 @@ label {
 .pb-80 {
     padding-bottom: 80px;
 }
+.pb-200 {
+    padding-bottom: 200px;
+}
 .pt-30 {
     padding-top: 30px;
 }
@@ -597,7 +606,7 @@ label {
 .text-critical {
     color: $critical !important;
 }
-.bg-critical{
+.bg-critical {
     background-color: $critical;
 }
 .text-secondary {
@@ -660,6 +669,10 @@ label {
 .grid-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+.grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 .gap-4 {
     gap: 4px !important;

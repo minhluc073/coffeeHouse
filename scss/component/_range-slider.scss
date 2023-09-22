@@ -1,63 +1,28 @@
 .noUi-horizontal {
     height: 2px;
-    padding-right: 15px;
 }
 .noUi-target {
     border: 0;
 }
 .noUi-connects {
-    background: red;
+    background: $line;
 }
 .noUi-connect {
-    background-color: red;
+    background-color: $warning;
 }
 .noUi-horizontal .noUi-handle,
 .noUi-vertical .noUi-handle {
-    height: 20px;
-    width: 20px;
+    height: 12px;
+    width: 12px;
     border-radius: 50px;
-    box-shadow: red;
-    border: 2px solid red;
-    background-color: red;
-    font-style: normal;
-    top: -9px;
+    border-color: $success;
+    background-color: $success;
+    box-shadow: unset;
 }
 .noUi-handle:after,
 .noUi-handle:before {
-    background-color: transparent;
+    display: none;
 }
-.noUi-handle-lower,
-.noUi-handle-upper {
-    &::before {
-        font-family: "icomoon";
-        font-size: 14px;
-        left: 0px;
-        top: 1px;
-        color: red;
-    }
-}
-.noUi-handle-lower {
-    &::before {
-        content: "\e910";
-    }
-}
-.noUi-handle-upper {
-    &::before {
-        content: "\e900";
-        left: 1px;
-    }
-}
-.noUi-horizontal {
-    .noUi-tooltip {
-        padding: 0;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: normal;
-        color: red;
-        border: 0;
-        &:before {
-            font-family: "SF Pro Display", sans-serif;
-            content: "$";
-        }
-    }
+html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+    right: -8px;
 }

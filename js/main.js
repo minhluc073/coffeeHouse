@@ -113,24 +113,68 @@
 
   /* range slider
   ------------------------------------------------------------------------------------- */
-  var rangeSlider = function () {
-    if ($("#range-two-val").length > 0) {
-      var rangeTwoSlider = document.getElementById("range-two-val");
-      noUiSlider.create(rangeTwoSlider, {
-        start: [17, 128],
-        connect: true,
-        tooltips: [true, true],
+
+  var rangeOne = function () {
+    if ($("#range-one-val").length > 0) {
+      var directionSlider = document.getElementById("range-one-val");
+      noUiSlider.create(directionSlider, {
+        start: 20,
+        behaviour: "snap",
+        connect: [true, false],
         range: {
           min: 0,
-          max: 160,
+          max: 50,
         },
         format: {
-          to: (v) => v | 0,
-          from: (v) => v | 0,
+          from: function (value) {
+            return parseInt(value);
+          },
+          to: function (value) {
+            return parseInt(value);
+          },
         },
+      });
+
+      var directionField = document.getElementById("field-range");
+      directionSlider.noUiSlider.on("update", function (values, handle) {
+        directionField.innerHTML = values[handle] + "km";
       });
     }
   };
+  // keypress slider  ============
+  var rangeTwo = function () {
+    if ($("#range-two-val").length > 0) {
+      var skipSlider = document.getElementById("range-two-val");
+      var skipValues = [
+        document.getElementById("skip-value-lower"),
+        document.getElementById("skip-value-upper"),
+      ];
+
+      noUiSlider.create(skipSlider, {
+        start: [0, 20],
+        connect: true,
+        behaviour: "drag",
+        step: 1,
+        range: {
+          min: 0,
+          max: 80,
+        },
+        format: {
+          from: function (value) {
+            return parseInt(value);
+          },
+          to: function (value) {
+            return parseInt(value);
+          },
+        },
+      });
+
+      skipSlider.noUiSlider.on("update", function (values, handle) {
+        skipValues[handle].innerHTML = "$" + values[handle];
+      });
+    }
+  };
+
   /* btnQuantity
   ------------------------------------------------------------------------------------- */
   var btnQuantity = function () {
@@ -276,6 +320,15 @@
       });
     }
   };
+  /* dropOptionForm 
+  ------------------------------------------------------------------------------------- */
+  var dropOptionForm = function () {
+    if ($("select").length > 0) {
+      $(
+        "select:not(#billing_country):not(.country_select):not(#billing_state)"
+      ).niceSelect();
+    }
+  };
   /* preloader 2
   ------------------------------------------------------------------------------------- */
   const preloader = function () {
@@ -291,7 +344,8 @@
     selectImages();
     otpInput();
     checkRadio();
-    rangeSlider();
+    rangeOne();
+    rangeTwo();
     btnQuantity();
     pressHeart();
     clearAll();
@@ -303,6 +357,7 @@
     activeSuggest();
     handleMessage();
     lightGalleryBox();
+    dropOptionForm();
     fixedBody();
     preloader();
   });
