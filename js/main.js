@@ -319,6 +319,11 @@
         plugins: [lgZoom, lgThumbnail],
       });
     }
+    if ($("#lightgallery2").length > 0) {
+      lightGallery(document.getElementById("lightgallery2"), {
+        plugins: [lgZoom, lgThumbnail],
+      });
+    }
   };
   /* dropOptionForm 
   ------------------------------------------------------------------------------------- */
