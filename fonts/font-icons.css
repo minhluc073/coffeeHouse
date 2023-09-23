@@ -203,6 +203,7 @@
 
 .icon-star:before {
   content: "\e924";
+  font-size: 16px;
 }
 
 .icon-search-2:before {

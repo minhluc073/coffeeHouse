@@ -1,0 +1,73 @@
+.wd-dir-store {
+    &.details {
+        .item-rate {
+            border-radius: 4px;
+            background: rgba(250, 190, 60, 0.12);
+            padding: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            .icon-star {
+                font-size: 16px;
+                color: $warning;
+            }
+        }
+        .group-btn {
+            .tf-btn {
+                padding: 11px 0px;
+                border-radius: 5px;
+                font-weight: 500;
+            }
+            .icon {
+                flex-shrink: 0;
+                width: 40px;
+                height: 40px;
+                @include flex(center, center);
+                color: $onSurface;
+                border-radius: 5px;
+                background-color: $line;
+            }
+        }
+    }
+}
+.box-cate-review {
+    display: flex;
+    column-gap: 12px;
+    row-gap: 8px;
+    flex-wrap: wrap;
+    li {
+        padding: 7px 16px;
+    }
+}
+.cate-review-item {
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: $surface;
+    border-radius: 100px;
+    a {
+        color: $secondary;
+    }
+}
+.box-upload {
+    display: flex;
+    gap: 8px;
+    img {
+        width: 52px;
+        height: 52px;
+        border-radius: 4px;
+    }
+    .upload {
+        width: 52px;
+        height: 52px;
+        border-radius: 4px;
+        @include flex(center,center);
+        border: 1px solid $line;
+        background-color: $surface;
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

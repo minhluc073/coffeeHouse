@@ -431,7 +431,8 @@ input[type="color"] {
     box-shadow: none;
 }
 textarea {
-    height: 106px;
+    height: 160px;
+    padding: 13px 12px;
 }
 label {
     font-size: 12px;
@@ -536,6 +537,12 @@ label {
 .mb-18 {
     margin-bottom: 18px;
 }
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mr--20 {
+    margin-right: -20px;
+}
 .mb--50 {
     margin-bottom: -50px;
 }
@@ -550,6 +557,9 @@ label {
 .pb-4 {
     padding-bottom: 4px !important;
 }
+.pt-12 {
+    padding-top: 12px;
+}
 .pt-16 {
     padding-top: 16px;
 }
@@ -558,6 +568,9 @@ label {
 }
 .pb-10 {
     padding-bottom: 10px;
+}
+.pb-12 {
+    padding-bottom: 12px;
 }
 .pb-20 {
     padding-bottom: 20px;
@@ -595,7 +608,6 @@ label {
 .bg-surface {
     background-color: $surface;
 }
-
 // color text
 .text-primary {
     color: $primary !important;
@@ -676,6 +688,9 @@ label {
 }
 .gap-4 {
     gap: 4px !important;
+}
+.gap-6 {
+    gap: 6px !important;
 }
 .gap-8 {
     gap: 8px !important;

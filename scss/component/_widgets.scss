@@ -74,7 +74,6 @@
         @include flex(center, center);
     }
 }
-
 .dot-icon {
     width: 4px;
     height: 4px;
@@ -106,6 +105,13 @@
         }
     }
 }
+.list-star-full {
+    display: flex;
+    .icon-star {
+        color: $warning;
+        font-size: 16px;
+    }
+}
 .banner-store {
     box-shadow: none;
     background-size: cover;
@@ -129,7 +135,7 @@
             align-items: center;
             gap: 4px;
             .icon-star {
-                font-size: 12px;
+                font-size: 16px;
                 color: $warning;
             }
         }
@@ -205,7 +211,6 @@
         border-color: transparent;
     }
 }
-
 .time-select {
     .nice-select {
         .current {
@@ -229,8 +234,54 @@
                 &:not(:last-child) {
                     border-bottom: 1px solid $line;
                 }
-
             }
         }
     }
+}
+.wd-list-other {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    img {
+        width: 64px;
+        height: 64px;
+        border-radius: 5px;
+    }
+}
+
+//rating
+.wd-rating-check {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    gap: 4px;
+}
+
+.wd-rating-check:not(:checked) > input {
+    position: absolute;
+    opacity: 0;
+}
+
+.wd-rating-check:not(:checked) label {
+    cursor: pointer;
+    white-space: nowrap;
+    color: $line;
+}
+
+.wd-rating-check:not(:checked) > label:before {
+    font-family: "icomoon";
+    content: "\e924";
+    font-size: 26px;
+}
+
+.wd-rating-check > input:checked ~ label {
+    color: $warning;
+}
+
+.wd-rating-check > input:checked + label:hover,
+.wd-rating-check > input:checked + label:hover ~ label,
+.wd-rating-check > input:checked ~ label:hover,
+.wd-rating-check > input:checked ~ label:hover ~ label,
+.wd-rating-check > label:hover ~ input:checked ~ label {
+    color: $warning;
 }

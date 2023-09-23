@@ -2,6 +2,21 @@
     position: relative;
 }
 
+.form-select {
+    padding: 12px;
+    background-color: $surface;
+    border: 1px solid $white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    color: $secondary;
+    &:focus {
+        border-color: $white;
+        box-shadow: unset;
+    }
+}
+
 .show-pass,
 .show-pass2 {
     position: absolute;
@@ -93,6 +108,19 @@
             color: $onSurface;
             top: 12px;
             left: 12px;
+        }
+    }
+}
+.box-review {
+    position: relative;
+    .meta-review {
+        position: absolute;
+        bottom: 20px;
+        left: 13px;
+        right: 13px;
+        img {
+            width: 20px;
+            height: 20px;
         }
     }
 }
