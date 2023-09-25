@@ -649,6 +649,10 @@ label {
   background-color: #f5f5f5;
 }
 
+.bg-secondary {
+  background-color: #e5e5e5 !important;
+}
+
 .text-primary {
   color: #2dc28d !important;
 }
@@ -756,12 +760,20 @@ label {
   gap: 8px !important;
 }
 
+.gap-10 {
+  gap: 10px;
+}
+
 .gap-12 {
   gap: 12px;
 }
 
 .gap-20 {
   gap: 20px;
+}
+
+.lr-radius {
+  border-radius: 12px 12px 0px 0px;
 }
 
 .header {
@@ -944,6 +956,30 @@ label {
 }
 .btn-showmore:focus, .btn-showmore:hover {
   color: #2dc28d;
+}
+
+.btn-find {
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  border: 1px solid #0076f3;
+  color: #0076f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.btn-add {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  border: 1px solid #2dc28d;
+  color: #2dc28d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px !important;
 }
 
 .noUi-horizontal {
@@ -1166,6 +1202,14 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .cate-swiper .swiper-slide-active .categories-item svg path {
   stroke: #fff;
 }
+.cate-swiper .swiper-slide-active .cate-item {
+  color: #fff;
+  background-color: #2dc28d;
+  border-color: #2dc28d;
+}
+.cate-swiper .swiper-slide-active .cate-item svg path {
+  fill: #fff;
+}
 
 .swiper-wrapper-r {
   margin-right: -20px;
@@ -1189,6 +1233,27 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 12px;
   line-height: 16px;
   padding: 8px 12px;
+}
+
+.cate-item {
+  padding: 7px 16px;
+  background-color: #f5f5f5;
+  display: inline-flex;
+  align-items: center;
+  color: #131317;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  border-radius: 100px;
+  gap: 8px;
+}
+
+.favourite-swiper .swiper-slide {
+  width: auto;
+}
+.favourite-swiper .wd-dir-store img {
+  width: 242px;
+  height: 100px;
 }
 
 .modal.action-sheet {
@@ -1404,6 +1469,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border: 2px solid #fff;
   border-radius: 50px;
 }
+.listview-item .box-btn .tf-btn {
+  padding: 5px 20px;
+  width: auto;
+  font-weight: 500;
+}
 
 .wg-list-avt {
   display: inline-flex;
@@ -1544,6 +1614,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+}
+.box-bookmark.st2 {
+  border: 1px solid #e5e5e5;
 }
 
 .lr-wrap {

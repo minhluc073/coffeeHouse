@@ -608,6 +608,9 @@ label {
 .bg-surface {
     background-color: $surface;
 }
+.bg-secondary {
+    background-color: $line !important;
+}
 // color text
 .text-primary {
     color: $primary !important;
@@ -695,9 +698,15 @@ label {
 .gap-8 {
     gap: 8px !important;
 }
+.gap-10 {
+    gap: 10px;
+}
 .gap-12 {
     gap: 12px;
 }
 .gap-20 {
     gap: 20px;
+}
+.lr-radius {
+    border-radius: 12px 12px 0px 0px;
 }

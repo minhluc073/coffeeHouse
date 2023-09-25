@@ -36,6 +36,7 @@
     &.lh-md {
         font-weight: 500;
     }
+
 }
 .lg-zoom-in {
     display: none;
@@ -70,4 +71,22 @@
     &:hover {
         color: $primary;
     }
+}
+.btn-find {
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    border: 1px solid $blue-primary;
+    color: $blue-primary;
+    @include flex(center, center);
+    font-size: 12px;
+}
+.btn-add {
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    border: 1px solid $primary;
+    color: $primary;
+    @include flex(center, center);
+    font-size: 14px !important;
 }

@@ -48,6 +48,14 @@
             border-radius: 50px;
         }
     }
+    .box-btn {
+        .tf-btn {
+            padding: 5px 20px;
+            width: auto;
+            font-weight: 500;
+        }
+    }
+    
 }
 
 .wg-list-avt {
@@ -176,6 +184,9 @@
     background-color: $white;
     @include flex(center, center);
     border-radius: 50%;
+    &.st2 {
+        border: 1px solid $line;
+    }
 }
 .lr-wrap {
     margin-left: -20px;
