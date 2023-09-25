@@ -81,3 +81,32 @@
         }
     }
 }
+.banner-store-sw {
+    .left {
+        img {
+            width: 157px;
+            height: 156px;
+            border-radius: 10px;
+        }
+    }
+    .group-img {
+        a {
+            display: block;
+            &:first-child{
+                margin-bottom: 4px;
+            }
+        }
+        img {
+            width: 98px;
+            height: 76px;
+            border-radius: 10px;
+        }
+    }
+    .right {
+        img {
+            width: 157px;
+            height: 156px;
+            border-radius: 10px;
+        }
+    }
+}

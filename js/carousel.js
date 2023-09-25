@@ -37,3 +37,14 @@ if ($(".cate-swiper").length > 0) {
     observeParents: true,
   });
 }
+
+if ($(".store-swiper").length > 0) {
+  var swiper4 = new Swiper(".store-swiper", {
+    speed: 1500,
+    slidesPerView: 0.85,
+    loop: false,
+    spaceBetween: 20,
+    observer: true,
+    observeParents: true,
+  });
+}

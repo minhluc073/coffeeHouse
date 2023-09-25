@@ -1256,6 +1256,28 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 100px;
 }
 
+.banner-store-sw .left img {
+  width: 157px;
+  height: 156px;
+  border-radius: 10px;
+}
+.banner-store-sw .group-img a {
+  display: block;
+}
+.banner-store-sw .group-img a:first-child {
+  margin-bottom: 4px;
+}
+.banner-store-sw .group-img img {
+  width: 98px;
+  height: 76px;
+  border-radius: 10px;
+}
+.banner-store-sw .right img {
+  width: 157px;
+  height: 156px;
+  border-radius: 10px;
+}
+
 .modal.action-sheet {
   z-index: 5000;
 }
