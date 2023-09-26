@@ -31,7 +31,7 @@ if ($(".cate-swiper").length > 0) {
   var swiper4 = new Swiper(".cate-swiper", {
     speed: 1500,
     slidesPerView: "auto",
-    loop: true,
+    loop: false,
     spaceBetween: spacing,
     observer: true,
     observeParents: true,

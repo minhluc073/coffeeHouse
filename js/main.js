@@ -220,10 +220,11 @@
   /* Clear Item History
   ------------------------------------------------------------------------------------- */
   var clearItem = function () {
-    $(".item-history").each(function (e) {
-      var el = this.querySelector(".clear-item");
-      el.addEventListener("click", function () {
-        el.closest(".item-history").style.display = "none";
+    $(".list-favorite").each(function () {
+      var el = this.querySelector(".del-item");
+      el.addEventListener("click", function (e) {
+        var idx = $(this).addClass("hhh")
+        idx.closest(".list-favorite").style.display = "none";
       });
     });
   };
@@ -263,6 +264,13 @@
     });
     $(".clear-fixed").on("click", function () {
       $("body").removeClass("fixed-body");
+    });
+  };
+  /* press heart
+  ------------------------------------------------------------------------------------- */
+  var activePhoto = function () {
+    $(".edit-photo").on("click", function () {
+      $(this).toggleClass("active");
     });
   };
   /* back Page
@@ -325,13 +333,14 @@
       });
     }
   };
-  /* dropOptionForm 
+  /* dropdown select 
   ------------------------------------------------------------------------------------- */
   var cusSelect = function () {
     if ($(".cus-select").length > 0) {
       $(".cus-select").niceSelect();
     }
   };
+
   /* preloader 2
   ------------------------------------------------------------------------------------- */
   const preloader = function () {
@@ -362,6 +371,7 @@
     lightGalleryBox();
     cusSelect();
     fixedBody();
+    activePhoto();
     preloader();
   });
 })(jQuery);
