@@ -1784,10 +1784,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   transition: all 0.3s ease;
   position: relative;
 }
-.list-favorite .content {
-  position: relative;
-  z-index: 5;
-}
 .list-favorite .del-item {
   width: 76px;
   height: 80px;
@@ -1803,23 +1799,20 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   flex-shrink: 0;
   position: absolute;
   right: 0;
-  z-index: 4;
 }
 .list-favorite:hover {
   margin-right: -20px;
   margin-left: -50px;
 }
-.list-favorite:hover .del-item {
+.list-favorite .show-del {
   display: flex;
-}
-.list-favorite:hover .content {
-  z-index: 2;
 }
 
 .list-favorite-item {
   display: flex;
   gap: 12px;
   align-items: center;
+  justify-content: space-between;
 }
 .list-favorite-item .img-box {
   width: 80px;

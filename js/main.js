@@ -223,11 +223,22 @@
     $(".list-favorite").each(function () {
       var el = this.querySelector(".del-item");
       el.addEventListener("click", function (e) {
-        var idx = $(this).addClass("hhh")
-        idx.closest(".list-favorite").style.display = "none";
+        el.closest(".list-favorite").style.display = "none";
       });
     });
   };
+
+  var dlBlock = function () {
+    $(".list-favorite").on("click", function () {
+      $(this).parent(".box-favorite").find(".show-del").removeClass("show-del");
+      $(this).find(".del-item").addClass("show-del");
+    });
+  };
+  // $(document).on("click", function (e) {
+  //   if (!$(event.target).closest(".del-item").length) {
+  //     $(".del-item").removeClass("show-del");
+  //   }
+  // });
   /* Clear Checkbox 
   ------------------------------------------------------------------------------------- */
   var clearCheckbox = function () {
@@ -371,6 +382,7 @@
     lightGalleryBox();
     cusSelect();
     fixedBody();
+    dlBlock();
     activePhoto();
     preloader();
   });

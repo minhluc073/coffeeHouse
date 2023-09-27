@@ -313,10 +313,7 @@
     cursor: pointer;
     @include transition3;
     position: relative;
-    .content {
-        position: relative;
-        z-index: 5;
-    }
+
     .del-item {
         width: 76px;
         height: 80px;
@@ -330,24 +327,21 @@
         flex-shrink: 0;
         position: absolute;
         right: 0;
-        z-index: 4;
     }
     &:hover {
         margin-right: -20px;
         margin-left: -50px;
-        .del-item {
-            display: flex;
-            // z-index: 7;
-        }
-        .content {
-            z-index: 2;
-        }
+    }
+
+    .show-del {
+        display: flex;
     }
 }
 .list-favorite-item {
     display: flex;
     gap: 12px;
     align-items: center;
+    justify-content: space-between;
     .img-box {
         width: 80px;
         height: 80px;
