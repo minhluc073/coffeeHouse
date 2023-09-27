@@ -1,1 +1,37 @@
-
+.cf-onboarding {
+    .boarding-box {
+        .img-box {
+            max-width: 375px;
+            height: 340px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .tf-content {
+            h2 {
+                padding: 0 60px;
+            }
+            p {
+                padding: 0 53px;
+            }
+        }
+    }
+}
+.modal-noti-app {
+    .top {
+        padding: 16px 16px 24px;
+    }
+    .bottom {
+        li {
+            padding: 11px;
+            a {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 22px;
+                color: $primary;
+            }
+        }
+    }
+}

@@ -45,4 +45,29 @@
 
 .header-search {
     padding: 10px 20px 8px;
+
+    &.st2 {
+        .search-box {
+            .search-field {
+                padding: 8px 12px;
+                padding-right: 35px;
+            }
+            .search-field:valid ~ .icon-cancel {
+                @include flex(center, center);
+            }
+
+            .icon-cancel {
+                display: none;
+                position: absolute;
+                top: 9px;
+                right: 12px;
+                background-color: $secondary;
+                color: $white;
+                font-size: 10px;
+                width: 16px;
+                height: 16px;
+                border-radius: 100px;
+            }
+        }
+    }
 }

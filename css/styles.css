@@ -501,6 +501,14 @@ label {
   margin-top: 4px !important;
 }
 
+.mb-4 {
+  margin-bottom: 4px !important;
+}
+
+.mt-6 {
+  margin-top: 6px;
+}
+
 .mt-8 {
   margin-top: 8px;
 }
@@ -581,6 +589,10 @@ label {
   padding-bottom: 4px !important;
 }
 
+.pb-8 {
+  padding-bottom: 8px;
+}
+
 .pt-12 {
   padding-top: 12px;
 }
@@ -603,6 +615,10 @@ label {
 
 .pb-20 {
   padding-bottom: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
 }
 
 .pb-16 {
@@ -635,6 +651,10 @@ label {
 
 .pt-45 {
   padding-top: 44px;
+}
+
+.pt-50 {
+  padding-top: 50px;
 }
 
 .pt-65 {
@@ -831,6 +851,27 @@ label {
 
 .header-search {
   padding: 10px 20px 8px;
+}
+.header-search.st2 .search-box .search-field {
+  padding: 8px 12px;
+  padding-right: 35px;
+}
+.header-search.st2 .search-box .search-field:valid ~ .icon-cancel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-search.st2 .search-box .icon-cancel {
+  display: none;
+  position: absolute;
+  top: 9px;
+  right: 12px;
+  background-color: #6c6c78;
+  color: #fff;
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100px;
 }
 
 .tab-content > .tab-pane {
@@ -1286,6 +1327,22 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-radius: 10px;
 }
 
+.dots-tes {
+  position: unset;
+}
+.dots-tes .swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  background-color: #b9b9bf;
+  opacity: 0.5;
+}
+.dots-tes .swiper-pagination-bullet-active {
+  background-color: #2dc28d;
+  opacity: 1;
+  width: 28px;
+  border-radius: 30px;
+}
+
 .modal.action-sheet {
   z-index: 5000;
 }
@@ -1480,15 +1537,21 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 51px;
   border-radius: 51px;
 }
-.listview-item .media {
+.listview-item .box-btn .tf-btn {
+  padding: 5px 20px;
+  width: auto;
+  font-weight: 500;
+}
+
+.media {
   position: relative;
 }
-.listview-item .media img {
+.media img {
   width: 56px;
   height: 56px;
   border-radius: 56px;
 }
-.listview-item .media::after {
+.media::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -1498,11 +1561,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: #188038;
   border: 2px solid #fff;
   border-radius: 50px;
-}
-.listview-item .box-btn .tf-btn {
-  padding: 5px 20px;
-  width: auto;
-  font-weight: 500;
 }
 
 .wg-list-avt {
@@ -1861,6 +1919,108 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.list-cmt .img-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+}
+.list-cmt .content .icon-heart {
+  font-size: 16px;
+}
+
+.preload {
+  overflow: hidden;
+}
+
+.preload-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #2dc28d;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999999999;
+  display: block;
+  overflow: hidden;
+}
+
+.preload-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  z-index: 100;
+  margin: -45px 0 0 -45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2dc28d;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: preload 1s linear infinite alternate;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+.cf-onboarding .boarding-box .img-box {
+  max-width: 375px;
+  height: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.cf-onboarding .boarding-box .tf-content h2 {
+  padding: 0 60px;
+}
+.cf-onboarding .boarding-box .tf-content p {
+  padding: 0 53px;
+}
+
+.modal-noti-app .top {
+  padding: 16px 16px 24px;
+}
+.modal-noti-app .bottom li {
+  padding: 11px;
+}
+.modal-noti-app .bottom li a {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #2dc28d;
 }
 
 .signin-area .box-image {

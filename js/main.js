@@ -297,7 +297,7 @@
   /* clear Text
   ------------------------------------------------------------------------------------- */
   const clearText = function () {
-    $(".icon-close").on("click", function () {
+    $(".icon-cancel").on("click", function () {
       $(".ip-field").val("");
     });
   };
@@ -352,6 +352,14 @@
     }
   };
 
+  var setTimeIn = function () {
+    if ($("#modalIndex").length > 0) {
+      setTimeout(function () {
+        $("#modalIndex").modal('show');
+      }, 3000);
+    }
+  };
+
   /* preloader 2
   ------------------------------------------------------------------------------------- */
   const preloader = function () {
@@ -359,7 +367,7 @@
       $(".preload").fadeOut("slow", function () {
         $(this).remove();
       });
-    }, 100);
+    }, 500);
   };
 
   $(function () {
@@ -384,6 +392,7 @@
     fixedBody();
     dlBlock();
     activePhoto();
+    setTimeIn();
     preloader();
   });
 })(jQuery);

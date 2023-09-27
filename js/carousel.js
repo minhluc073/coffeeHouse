@@ -1,10 +1,10 @@
 if ($(".boarding-swiper").length > 0) {
   var swiperBoarding = new Swiper(".boarding-swiper", {
-    speed: 1500,
+    speed: 1000,
     parallax: true,
     slidesPerView: "auto",
-    spaceBetween: 0,
-    autoplay: true,
+    spaceBetween: 40,
+    // autoplay: true,
     loop: false,
     observer: true,
     observeParents: true,
