@@ -234,6 +234,7 @@ body {
   font-size: 12px;
   line-height: 16px;
   font-weight: 300;
+  background-color: #fff;
   color: #6c6c78;
   min-height: 100vh;
   width: 100%;
@@ -825,7 +826,7 @@ label {
 
 .header-style1 {
   display: flex;
-  padding: 8px 38px;
+  padding: 8px 20px;
 }
 .header-style1 .icon {
   height: 28px;

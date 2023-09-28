@@ -39,26 +39,7 @@
       }
     });
   };
-  /* image select
-  ------------------------------------------------------------------------------------- */
-  var selectImages = function () {
-    if ($(".image-select").length > 0) {
-      const selectIMG = $(".image-select");
-      selectIMG.find("option").each((idx, elem) => {
-        const selectOption = $(elem);
-        const imgURL = selectOption.attr("data-thumbnail");
-        if (imgURL) {
-          selectOption.attr(
-            "data-content",
-            "<img src='%i'/> %s"
-              .replace(/%i/, imgURL)
-              .replace(/%s/, selectOption.text())
-          );
-        }
-      });
-      selectIMG.selectpicker();
-    }
-  };
+
   /* otp input
   ------------------------------------------------------------------------------------- */
   var otpInput = function () {
@@ -101,15 +82,6 @@
         });
     }
   };
-  /* check radio
-  ------------------------------------------------------------------------------------- */
-  var checkRadio = function () {
-    $(".check-ip-bg:checked").parent().addClass("check");
-    $(".check-ip-bg").on("click", function () {
-      $(".check-ip-bg:not(:checked)").parent().removeClass("check");
-      $(".check-ip-bg:checked").parent().addClass("check");
-    });
-  };
 
   /* range slider
   ------------------------------------------------------------------------------------- */
@@ -141,7 +113,8 @@
       });
     }
   };
-  // keypress slider  ============
+  /* range slider two
+  ------------------------------------------------------------------------------------- */
   var rangeTwo = function () {
     if ($("#range-two-val").length > 0) {
       var skipSlider = document.getElementById("range-two-val");
@@ -175,49 +148,7 @@
     }
   };
 
-  /* btnQuantity
-  ------------------------------------------------------------------------------------- */
-  var btnQuantity = function () {
-    $(".minus-btn").on("click", function (e) {
-      e.preventDefault();
-      var $this = $(this);
-      var $input = $this.closest("div").find("input");
-      var value = parseInt($input.val());
-
-      if (value > 1) {
-        value = value - 1;
-      }
-
-      $input.val(value);
-    });
-    $(".plus-btn").on("click", function (e) {
-      e.preventDefault();
-      var $this = $(this);
-      var $input = $this.closest("div").find("input");
-      var value = parseInt($input.val());
-
-      if (value > 0) {
-        value = value + 1;
-      }
-
-      $input.val(value);
-    });
-  };
-  /* press heart
-  ------------------------------------------------------------------------------------- */
-  var pressHeart = function () {
-    $(".heart").on("click", function () {
-      $(this).toggleClass("active");
-    });
-  };
-  /* Clear all
-  ------------------------------------------------------------------------------------- */
-  var clearAll = function () {
-    $(".clear-all").on("click", function () {
-      $(".history").css("display", "none");
-    });
-  };
-  /* Clear Item History
+  /* Clear Item 
   ------------------------------------------------------------------------------------- */
   var clearItem = function () {
     $(".list-favorite").each(function () {
@@ -239,45 +170,8 @@
   //     $(".del-item").removeClass("show-del");
   //   }
   // });
-  /* Clear Checkbox 
-  ------------------------------------------------------------------------------------- */
-  var clearCheckbox = function () {
-    $(".clear-checkbox").on("click", function () {
-      $(".group-checkbox").find("input").prop("checked", false);
-    });
 
-    $(".clear-checkbox").on("click", function (e) {
-      e.preventDefault();
-    });
-  };
-
-  /* Suggestions
-  ------------------------------------------------------------------------------------- */
-  var Suggest = function () {
-    $(".suggest").on("click", function () {
-      var val = $(this).text();
-      $(".suggest_value").val(val);
-    });
-  };
-  /* active Suggestions
-  ------------------------------------------------------------------------------------- */
-  var activeSuggest = function () {
-    $(".rate-suggest").click(function () {
-      $(".rate-suggest.active").removeClass("active");
-      $(this).addClass("active");
-    });
-  };
-  /* fixed body popup
-  ------------------------------------------------------------------------------------- */
-  var fixedBody = function () {
-    $(".btn-sidebar").on("click", function () {
-      $("body").addClass("fixed-body");
-    });
-    $(".clear-fixed").on("click", function () {
-      $("body").removeClass("fixed-body");
-    });
-  };
-  /* press heart
+  /* active photo
   ------------------------------------------------------------------------------------- */
   var activePhoto = function () {
     $(".edit-photo").on("click", function () {
@@ -352,15 +246,15 @@
     }
   };
 
-  var setTimeIn = function () {
-    if ($("#modalIndex").length > 0) {
-      setTimeout(function () {
-        $("#modalIndex").modal('show');
-      }, 3000);
-    }
-  };
+  // var setTimeIn = function () {
+  //   if ($("#modalIndex").length > 0) {
+  //     setTimeout(function () {
+  //       $("#modalIndex").modal("show");
+  //     }, 3000);
+  //   }
+  // };
 
-  /* preloader 2
+  /* preloader 
   ------------------------------------------------------------------------------------- */
   const preloader = function () {
     setTimeout(function () {
@@ -372,27 +266,18 @@
 
   $(function () {
     showPass();
-    selectImages();
     otpInput();
-    checkRadio();
     rangeOne();
     rangeTwo();
-    btnQuantity();
-    pressHeart();
-    clearAll();
     clearItem();
-    clearCheckbox();
-    Suggest();
     backPage();
     clearText();
-    activeSuggest();
     handleMessage();
     lightGalleryBox();
     cusSelect();
-    fixedBody();
     dlBlock();
     activePhoto();
-    setTimeIn();
+    // setTimeIn();
     preloader();
   });
 })(jQuery);
