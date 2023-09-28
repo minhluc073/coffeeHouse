@@ -1833,6 +1833,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 40px;
   cursor: pointer;
 }
+#map .mapboxgl-ctrl-bottom-left,
+#map .mapboxgl-ctrl-bottom-right {
+  display: none;
+}
 
 .list-favorite {
   cursor: pointer;

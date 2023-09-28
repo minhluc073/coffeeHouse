@@ -309,6 +309,10 @@
         height: 40px;
         cursor: pointer;
     }
+    .mapboxgl-ctrl-bottom-left,
+    .mapboxgl-ctrl-bottom-right {
+        display: none;
+    }
 }
 .list-favorite {
     cursor: pointer;
