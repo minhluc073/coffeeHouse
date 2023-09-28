@@ -1694,6 +1694,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 20px;
   color: #eb5a5a;
 }
+.box-heart.active svg {
+  fill: #eb5a5a;
+}
+.box-heart.active svg path {
+  stroke: #eb5a5a;
+}
 
 .box-bookmark {
   width: 40px;
@@ -1706,6 +1712,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .box-bookmark.st2 {
   border: 1px solid #e5e5e5;
+}
+.box-bookmark.active svg {
+  fill: #2dc28d;
 }
 
 .lr-wrap {
@@ -2140,6 +2149,14 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: #131317;
   border-radius: 5px;
   background-color: #e5e5e5;
+}
+.wd-dir-store.details .box-img.lr-wrap {
+  position: relative;
+}
+.wd-dir-store.details .box-img.lr-wrap .box-bookmark {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 .box-cate-review {

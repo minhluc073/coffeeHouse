@@ -177,6 +177,14 @@
         font-size: 20px;
         color: $critical;
     }
+    &.active {
+        svg {
+            fill: $critical;
+            path {
+                stroke: $critical;
+            }
+        }
+    }
 }
 .box-bookmark {
     width: 40px;
@@ -186,6 +194,11 @@
     border-radius: 50%;
     &.st2 {
         border: 1px solid $line;
+    }
+    &.active {
+        svg {
+            fill: $primary;
+        }
     }
 }
 .lr-wrap {

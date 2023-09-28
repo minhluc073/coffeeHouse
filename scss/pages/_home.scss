@@ -28,6 +28,16 @@
                 background-color: $line;
             }
         }
+        .box-img {
+            &.lr-wrap {
+                position: relative;
+                .box-bookmark{
+                    position: absolute;
+                    top: 12px;
+                    right: 12px;
+                }
+            }
+        }
     }
 }
 .box-cate-review {
@@ -62,7 +72,7 @@
         width: 52px;
         height: 52px;
         border-radius: 4px;
-        @include flex(center,center);
+        @include flex(center, center);
         border: 1px solid $line;
         background-color: $surface;
         img {

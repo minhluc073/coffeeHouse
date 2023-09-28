@@ -188,6 +188,13 @@
     });
   };
 
+    /* press heart
+  ------------------------------------------------------------------------------------- */
+  var pressToggle = function () {
+    $(".press-toggle").on("click", function () {
+      $(this).toggleClass("active");
+    });
+  };
   /* clear Text
   ------------------------------------------------------------------------------------- */
   const clearText = function () {
@@ -276,6 +283,7 @@
     lightGalleryBox();
     cusSelect();
     dlBlock();
+    pressToggle();
     activePhoto();
     // setTimeIn();
     preloader();
