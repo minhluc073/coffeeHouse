@@ -55,6 +55,12 @@
         line-height: 16px;
         padding: 8px 12px;
     }
+    &.time-st.active,
+    &.active {
+        background-color: $primary;
+        color: $white;
+        border-color: $primary;
+    }
 }
 .cate-item {
     padding: 7px 16px;

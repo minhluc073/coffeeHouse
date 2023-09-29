@@ -124,3 +124,15 @@
         }
     }
 }
+.lo-select,.time-select {
+    &.active {
+        .current {
+            background-color: $primary;
+            color: $white;
+            border-color: $primary;
+        }
+        &::after {
+            border-color: $white;
+        }
+    }
+}

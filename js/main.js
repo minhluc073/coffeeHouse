@@ -248,8 +248,8 @@
   /* dropdown select 
   ------------------------------------------------------------------------------------- */
   var cusSelect = function () {
-    if ($(".cus-select").length > 0) {
-      $(".cus-select").niceSelect();
+    if ($(".cus-select, .lo-select, .time-select").length > 0) {
+      $(".cus-select, .lo-select, .time-select").niceSelect();
     }
   };
 
@@ -264,8 +264,18 @@
   /* active Suggestions
   ------------------------------------------------------------------------------------- */
   var activeSuggest = function () {
-    $(".active-suggest").click(function () {
-      $(".active-suggest.active").removeClass("active");
+    $(".active-suggest, .lo-select").click(function () {
+      $(".active-suggest.active, .lo-select.active").removeClass("active");
+      $(this).toggleClass("active");
+    });
+
+    $(".rate-suggest").click(function () {
+      $(".rate-suggest.active").removeClass("active");
+      $(this).toggleClass("active");
+    });
+
+    $(".time-select, .time-st").click(function () {
+      $(".time-select.active, .time-st.active").removeClass("active");
       $(this).toggleClass("active");
     });
   };

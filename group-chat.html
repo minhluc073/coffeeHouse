@@ -30,112 +30,129 @@
     <div class="header fixed-top bg-white line-bt">
         <a href="#" class="icon back-btn"><i class="icon-left"></i></a>
         <h3>Group Chat</h3>
-        <a href="setting.html" class="icon-setting right"></a>
+        <a href="home-location.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g clip-path="url(#clip0_163_2818)">
+                  <path d="M19.4608 8.69904C19.4603 8.69858 19.4599 8.69812 19.4594 8.69766L11.301 0.539551C10.9532 0.19165 10.4909 0 9.9991 0C9.50731 0 9.04497 0.191498 8.69707 0.539398L0.542928 8.69339C0.540182 8.69614 0.537435 8.69904 0.534688 8.70178C-0.179423 9.42001 -0.178202 10.5853 0.538198 11.3017C0.865499 11.6292 1.29778 11.8188 1.75997 11.8387C1.77874 11.8405 1.79766 11.8414 1.81673 11.8414H2.1419V17.8453C2.1419 19.0334 3.10854 20 4.2969 20H7.48873C7.81221 20 8.07467 19.7377 8.07467 19.4141V14.707C8.07467 14.1649 8.51564 13.7239 9.05779 13.7239H10.9404C11.4826 13.7239 11.9235 14.1649 11.9235 14.707V19.4141C11.9235 19.7377 12.1858 20 12.5095 20H15.7013C16.8897 20 17.8563 19.0334 17.8563 17.8453V11.8414H18.1578C18.6495 11.8414 19.1118 11.6499 19.4599 11.302C20.177 10.5844 20.1773 9.41711 19.4608 8.69904Z" fill="#6C6C78"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_163_2818">
+                    <rect width="20" height="20" fill="white"/>
+                  </clipPath>
+                </defs>
+            </svg>
+        </a>
     </div>
     <div class="pt-45">
         <div class="tf-container">
-            <div class="mt-12 d-flex align-items-center justify-content-between gap-12">
+            <div class="mt-12">
                 <div class="search-box">
                     <a href="search.html" class="icon-search"></a>
                     <input type="text" class="search-field" value="Philip">
                 </div>
-                <a href="#" class="icon-scan"></a>
+                <!-- <a href="#" class="icon-scan"></a> -->
             </div>
             <div class="mt-20 d-flex align-items-center justify-content-between">
                 <h4>List Message</h4>
-                <a href="#" class="icon-edit" data-bs-toggle="modal" data-bs-target="#settingChat"></a>
+                <a href="search.html" class="icon-edit"></a>
             </div>
             <ul class="mt-12 mb-16">
                 <li>
-                    <a href="chat.html" class="listview-item pb-16">
+                    <div class="listview-item pb-16">
                         <div class="media">
                             <img src="images/avt/avt-coffee1.jpg" alt="img">
                         </div>
                         <div class="content">
-                            <h5>Coffee bean </h5>
-                            <p class="text-medium text-onSurface fw-4">can i help u? you can...  <span class="fw-3">10:13 PM</span></p>
+                            <h5><a href="chat.html">Coffee bean </a></h5>
+                            <a href="chat.html" class="text-medium text-onSurface fw-4">can i help u? <span class="fw-3">10:13 PM</span></a>
                         </div>
-                        <span class="status-icon offline"></span>
-                    </a>
+                        <!-- <span class="status-icon offline"></span> -->
+                        <span class="icon-more rolate-90" data-bs-toggle="modal" data-bs-target="#settingChat"></span>
+                    </div>
                 </li>
                 <li>
-                    <a href="chat.html" class="listview-item pb-16">
+                    <div class="listview-item pb-16">
                         <div class="media">
                            <img src="images/avt/avt-coffee2.jpg" alt="img">
                         </div>
                         <div class="content">
-                            <h5>The Coffee Club</h5>
-                            <p class="text-medium text-secondary fw-3">here’s your code <span>10:13 PM</span></p>
+                            <h5><a href="chat.html">The Coffee Club</a></h5>
+                            <a href="chat.html" class="text-medium text-secondary fw-3">here’s your code <span>10:13 PM</span></a>
                         </div>
-                    </a>
+                        <span class="icon-more rolate-90" data-bs-toggle="modal" data-bs-target="#settingChat"></span>
+                    </div>
                 </li>
                 <li>
-                    <a href="chat.html" class="listview-item pb-16">
+                    <div class="listview-item pb-16">
                         <div class="media">
                             <img src="images/avt/avt-coffee3.jpg" alt="img">
                         </div>
                         <div class="content">
-                            <h5>Always Coffee Store</h5>
-                            <p class="text-medium text-secondary fw-3">Let me think <span>10:13 PM</span></p>
+                            <h5><a href="chat.html"> Always Coffee Store</a></h5>
+                            <a href="chat.html" class="text-medium text-secondary fw-3">Let me think <span>10:13 PM</span></a>
                         </div>
-                    </a>
+                        <span class="icon-more rolate-90" data-bs-toggle="modal" data-bs-target="#settingChat"></span>
+                    </div>
                 </li>
                 <li>
-                    <a href="chat.html" class="listview-item pb-16">
+                    <div class="listview-item pb-16">
                         <div class="media">
                             <img src="images/avt/avt-coffee4.jpg" alt="img">
                         </div>
                         <div class="content">
-                            <h5>Office Coffee Store</h5>
-                            <p class="text-medium text-secondary fw-3">Nice to meet you here <span>10:13 PM</span></p>
+                            <h5><a href="chat.html">Office Coffee Store</a></h5>
+                            <a href="chat.html" class="text-medium text-secondary fw-3">Nice to meet you here <span>10:13 PM</span></a>
                         </div>
-                    </a>
+                        <span class="icon-more rolate-90" data-bs-toggle="modal" data-bs-target="#settingChat"></span>
+                    </div>
                 </li>
                 <li>
-                    <a href="chat.html" class="listview-item pb-16">
+                    <div class="listview-item pb-16">
                         <div class="media">
                             <img src="images/avt/avt-coffee5.jpg" alt="img">
                         </div>
                         <div class="content">
-                            <h5>New Coffee</h5>
-                            <p class="text-medium text-secondary fw-3">Can’t believe that <span>10:13 PM</span></p>
+                            <h5><a href="chat.html">New Coffee</a></h5>
+                            <a href="chat.html" class="text-medium text-secondary fw-3">Can’t believe that <span>10:13 PM</span></a>
                         </div>
-                    </a>
+                        <span class="icon-more rolate-90" data-bs-toggle="modal" data-bs-target="#settingChat"></span>
+                    </div>
                 </li>
                 <li>
-                    <a href="chat.html" class="listview-item pb-16">
+                    <div class="listview-item pb-16">
                         <div class="media">
                            <img src="images/avt/avt-coffee1.jpg" alt="img">
-
                         </div>
                         <div class="content">
-                            <h5>Cong Coffee</h5>
-                            <p class="text-medium text-secondary fw-3">Are there anyone here <span>10:13 PM</span></p>
+                            <h5><a href="chat.html">Cong Coffee</a></h5>
+                            <a href="chat.html" class="text-medium text-secondary fw-3">Are there anyone here <span>10:13 PM</span></a>
                         </div>
-                    </a>
+                        <span class="icon-more rolate-90" data-bs-toggle="modal" data-bs-target="#settingChat"></span>
+                    </div>
                 </li>
                 <li>
-                    <a href="chat.html" class="listview-item pb-16">
+                    <div class="listview-item pb-16">
                         <div class="media">
-                         <img src="images/avt/avt-coffee2.jpg"  alt="img">
-
+                            <img src="images/avt/avt-coffee2.jpg"  alt="img">
                         </div>
                         <div class="content">
-                            <h5>1987s Coffee</h5>
-                            <p class="text-medium text-secondary fw-3">So funny <span>10:13 PM</span></p>
+                            <h5><a href="chat.html">1987s Coffee</a></h5>
+                            <a href="chat.html" class="text-medium text-secondary fw-3">So funny <span>10:13 PM</span></a>
                         </div>
-                    </a>
+                        <span class="icon-more rolate-90" data-bs-toggle="modal" data-bs-target="#settingChat"></span>
+                    </div>
                 </li>
                 <li>
-                    <a href="chat.html" class="listview-item">
+                    <div class="listview-item">
                         <div class="media">
                             <img src="images/avt/avt-coffee3.jpg" alt="img">
                         </div>
                         <div class="content">
-                            <h5>Coffee Station</h5>
-                            <p class="text-medium text-secondary fw-3">Trust me haha <span>10:13 PM</span></p>
+                            <h5><a href="chat.html">Coffee Station</a></h5>
+                            <a href="chat.html" class="text-medium text-secondary fw-3">Trust me haha <span>10:13 PM</span></a>
                         </div>
-                    </a>
+                        <span class="icon-more rolate-90" data-bs-toggle="modal" data-bs-target="#settingChat"></span>
+                    </div>
                 </li>
             </ul>
       

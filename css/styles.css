@@ -809,6 +809,10 @@ label {
   min-height: 100vh;
 }
 
+.rolate-90 {
+  transform: rotate(90deg);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -818,7 +822,7 @@ label {
 }
 .header .icon {
   height: 28px;
-  width: 40px;
+  width: 30px;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -1195,6 +1199,15 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   height: 20px;
 }
 
+.lo-select.active .current, .time-select.active .current {
+  background-color: #2dc28d;
+  color: #fff;
+  border-color: #2dc28d;
+}
+.lo-select.active::after, .time-select.active::after {
+  border-color: #fff;
+}
+
 .footer {
   background: #fff;
 }
@@ -1292,6 +1305,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 12px;
   line-height: 16px;
   padding: 8px 12px;
+}
+.categories-item.time-st.active, .categories-item.active {
+  background-color: #2dc28d;
+  color: #fff;
+  border-color: #2dc28d;
 }
 
 .cate-item {
@@ -1767,27 +1785,26 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-color: transparent;
 }
 
-.time-select .nice-select .current {
+.time-select .current {
   padding-right: 35px;
-  background-color: #2dc28d;
-  color: #fff;
+  color: #6c6c78;
 }
-.time-select .nice-select::after {
-  border-color: #fff;
+.time-select::after {
+  border-color: #6c6c78;
 }
-.time-select .nice-select .list {
+.time-select .list {
   max-height: 100px;
   border-color: #fff;
   margin: 0;
 }
-.time-select .nice-select .list .option {
+.time-select .list .option {
   font-size: 11px;
   font-weight: 400;
   line-height: 13px;
   color: #6c6c78;
   text-align: center;
 }
-.time-select .nice-select .list .option:not(:last-child) {
+.time-select .list .option:not(:last-child) {
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -2188,6 +2205,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .cate-review-item a {
   color: #6c6c78;
+}
+.cate-review-item.active {
+  background-color: #2dc28d;
+}
+.cate-review-item.active a {
+  color: #fff;
 }
 
 .box-upload {

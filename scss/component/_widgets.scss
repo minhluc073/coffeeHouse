@@ -236,28 +236,25 @@
     }
 }
 .time-select {
-    .nice-select {
-        .current {
-            padding-right: 35px;
-            background-color: $primary;
-            color: $white;
-        }
-        &::after {
-            border-color: $white;
-        }
-        .list {
-            max-height: 100px;
-            border-color: $white;
-            margin: 0;
-            .option {
-                font-size: 11px;
-                font-weight: 400;
-                line-height: 13px;
-                color: $secondary;
-                text-align: center;
-                &:not(:last-child) {
-                    border-bottom: 1px solid $line;
-                }
+    .current {
+        padding-right: 35px;
+        color: $secondary;
+    }
+    &::after {
+        border-color: $secondary;
+    }
+    .list {
+        max-height: 100px;
+        border-color: $white;
+        margin: 0;
+        .option {
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 13px;
+            color: $secondary;
+            text-align: center;
+            &:not(:last-child) {
+                border-bottom: 1px solid $line;
             }
         }
     }

@@ -59,6 +59,12 @@
     a {
         color: $secondary;
     }
+    &.active {
+        background-color: $primary;
+        a{
+            color: $white;
+        }
+    }
 }
 .box-upload {
     display: flex;
