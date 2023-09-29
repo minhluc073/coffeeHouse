@@ -188,7 +188,7 @@
     });
   };
 
-    /* press heart
+  /* press heart
   ------------------------------------------------------------------------------------- */
   var pressToggle = function () {
     $(".press-toggle").on("click", function () {
@@ -261,6 +261,14 @@
   //   }
   // };
 
+  /* active Suggestions
+  ------------------------------------------------------------------------------------- */
+  var activeSuggest = function () {
+    $(".active-suggest").click(function () {
+      $(".active-suggest.active").removeClass("active");
+      $(this).toggleClass("active");
+    });
+  };
   /* preloader 
   ------------------------------------------------------------------------------------- */
   const preloader = function () {
@@ -285,6 +293,7 @@
     dlBlock();
     pressToggle();
     activePhoto();
+    activeSuggest();
     // setTimeIn();
     preloader();
   });

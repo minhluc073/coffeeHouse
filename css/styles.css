@@ -630,6 +630,10 @@ label {
   padding-bottom: 30px;
 }
 
+.pb-60 {
+  padding-bottom: 60px;
+}
+
 .pb-72 {
   padding-bottom: 72px;
 }
@@ -801,6 +805,10 @@ label {
   border-radius: 4px;
 }
 
+.mh-full {
+  min-height: 100vh;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -834,6 +842,7 @@ label {
   font-size: 20px;
   display: flex;
   align-items: center;
+  position: absolute;
 }
 .header-style1 h3 {
   flex-grow: 1;
