@@ -1425,6 +1425,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .modal.full .modal-newfeed {
   border-radius: 12px 12px 0px 0px;
   background: #fff;
+  pointer-events: auto;
+}
+.modal.full .modal-newfeed .icon-cancel {
+  font-size: 20px;
+  color: #131317;
 }
 .modal.full .modal-newfeed .heading {
   padding: 20px;
@@ -1434,6 +1439,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
 }
 .modal.modalRight .modal-dialog {
   transform: translate(100%, 0) !important;
@@ -2243,6 +2249,20 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   background-color: #fff;
+}
+
+.heart-press.active svg {
+  fill: #eb5a5a;
+}
+.heart-press.active svg path {
+  stroke: #eb5a5a;
+}
+
+.bookmark-press.active svg {
+  fill: #2dc28d;
+}
+.bookmark-press.active svg path {
+  stroke: #2dc28d;
 }
 
 .box-img-profile {

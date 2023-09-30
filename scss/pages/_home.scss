@@ -31,7 +31,7 @@
         .box-img {
             &.lr-wrap {
                 position: relative;
-                .box-bookmark{
+                .box-bookmark {
                     position: absolute;
                     top: 12px;
                     right: 12px;
@@ -61,7 +61,7 @@
     }
     &.active {
         background-color: $primary;
-        a{
+        a {
             color: $white;
         }
     }
@@ -93,4 +93,24 @@
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     background-color: $white;
+}
+.heart-press {
+    &.active {
+        svg {
+            fill: #eb5a5a;
+            path {
+                stroke: #eb5a5a;
+            }
+        }
+    }
+}
+.bookmark-press {
+    &.active {
+        svg {
+            fill: $primary;
+            path {
+                stroke: $primary;
+            }
+        }
+    }
 }
