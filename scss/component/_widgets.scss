@@ -343,11 +343,14 @@
         position: absolute;
         right: 0;
     }
-    &:hover {
+    // &:hover {
+    //     margin-right: -20px;
+    //     margin-left: -50px;
+    // }
+    &.mr-lf {
         margin-right: -20px;
         margin-left: -50px;
     }
-
     .show-del {
         display: flex;
     }

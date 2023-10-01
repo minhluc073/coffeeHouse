@@ -160,11 +160,13 @@
   };
 
   var dlBlock = function () {
-    $(".list-favorite").on("click", function () {
-      $(this).parent(".box-favorite").find(".show-del").removeClass("show-del");
-      $(this).find(".del-item").addClass("show-del");
+    $(".list-favorite").on("click", function (event) {
+      // $(this).parent(".box-favorite").find(".show-del").removeClass("show-del");
+      $(this).toggleClass("mr-lf");
+      $(this).find(".del-item").toggleClass("show-del");
     });
   };
+
   // $(document).on("click", function (e) {
   //   if (!$(event.target).closest(".del-item").length) {
   //     $(".del-item").removeClass("show-del");

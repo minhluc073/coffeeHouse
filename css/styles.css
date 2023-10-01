@@ -1904,7 +1904,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   position: absolute;
   right: 0;
 }
-.list-favorite:hover {
+.list-favorite.mr-lf {
   margin-right: -20px;
   margin-left: -50px;
 }
