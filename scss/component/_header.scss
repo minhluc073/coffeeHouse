@@ -2,6 +2,7 @@
     @include flex(center, space-between);
     gap: 16px;
     padding: 8px 20px;
+    padding-left: 15px;
     .icon {
         height: 28px;
         width: 30px;
@@ -20,6 +21,7 @@
     display: flex;
     // gap: 16px;
     padding: 8px 20px;
+    padding-left: 15px;
     .icon {
         height: 28px;
         width: 36px;

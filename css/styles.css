@@ -819,6 +819,7 @@ label {
   justify-content: space-between;
   gap: 16px;
   padding: 8px 20px;
+  padding-left: 15px;
 }
 .header .icon {
   height: 28px;
@@ -839,6 +840,7 @@ label {
 .header-style1 {
   display: flex;
   padding: 8px 20px;
+  padding-left: 15px;
 }
 .header-style1 .icon {
   height: 28px;
