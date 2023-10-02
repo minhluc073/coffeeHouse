@@ -820,20 +820,61 @@ label {
   width: 100%;
 }
 #map .marker {
-  background-image: url("../images/logo/40.png");
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-#map .marker:not(:last-child) {
   background-image: url("../images/logo/location.png");
+  background-size: cover;
   width: 30px;
   height: 30px;
+  cursor: pointer;
+}
+#map .marker:last-child {
+  background-image: url("../images/logo/cf-lo.png");
+  width: 32px;
+  height: 32px;
 }
 #map .mapboxgl-ctrl-bottom-left,
 #map .mapboxgl-ctrl-bottom-right {
   display: none;
+}
+#map .mapboxgl-popup-content {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 15px 8px 10px;
+  border-radius: 10px;
+}
+#map .mapboxgl-popup-content .img-cf {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+#map .mapboxgl-popup-content .mapboxgl-popup-close-button {
+  width: auto;
+  color: #131317;
+  font-size: 20px;
+  padding: 0;
+  top: 0px;
+  right: 3px;
+  font-weight: 300;
+  background-color: #fff;
+}
+#map .mapboxgl-popup-content p {
+  color: #131317;
+}
+#map .mapboxgl-popup-content span {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #131317;
+  font-weight: 600;
+}
+#map .mapboxgl-popup-content span i {
+  color: #fabe3c;
+}
+#map .mapboxgl-popup-tip {
+  border-width: 5px;
+}
+#map .mapboxgl-popup {
+  top: 10px;
 }
 
 .header {

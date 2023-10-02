@@ -14,35 +14,63 @@ const geojson = {
       type: "Feature",
       geometry: {
         type: "Point",
+        coordinates: [-74.251468, 40.67254],
+      },
+      properties: {
+        title: "An Coffee",
+        rate: "4.8",
+        imgSrc: "../images/banner-coffee/cf-store1.jpg",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-74.248564, 40.673232],
+      },
+      properties: {
+        title: "An Coffee",
+        rate: "4.7",
+
+        imgSrc: "../images/banner-coffee/cf-store5.jpg",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-74.250455, 40.673137],
+      },
+      properties: {
+        title: "An Coffee",
+        rate: "4.7",
+
+        imgSrc: "../images/banner-coffee/cf-store3.jpg",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-74.251675, 40.674093],
+      },
+      properties: {
+        title: "An Coffee",
+        rate: "4.7",
+        imgSrc: "../images/banner-coffee/cf-store2.jpg",
+      },
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
         coordinates: [-74.249574, 40.671783],
       },
       properties: {
-        title: "Mapbox",
-        description: "Washington, D.C.",
-        imgSrc: "../images/logo/40.png",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-122.414, 37.776],
-      },
-      properties: {
-        title: "Mapbox",
-        description: "San Francisco, California",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-122.414, 37.776],
-      },
-      properties: {
-        title: "Mapbox",
-        description: "San Francisco, California",
-        imgSrc: "../images/avt/avt-coffee1.jpg"
+        title: "Coffee Lab",
+        rate: "4.8",
+
+        imgSrc: "../images/banner-coffee/cf-store5.jpg",
       },
     },
   ],
@@ -59,7 +87,7 @@ for (const feature of geojson.features) {
     .setPopup(
       new mapboxgl.Popup({ offset: 25 }) // add popups
         .setHTML(
-          `<img src="${feature.properties.imgSrc}" alt='image' /><h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+          `<img src="${feature.properties.imgSrc}" alt='image' class="img-cf" /><div><p>${feature.properties.title}</p><span><i class="icon-star"></i>${feature.properties.rate}</span></div>`
         )
     )
     .addTo(map);

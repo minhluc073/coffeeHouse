@@ -742,19 +742,60 @@ label {
     bottom: 0;
     width: 100%;
     .marker {
-        background-image: url("../images/logo/40.png");
+        background-image: url("../images/logo/location.png");
         background-size: cover;
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
-        &:not(:last-child) {
-            background-image: url("../images/logo/location.png");
-            width: 30px;
-            height: 30px;
+        &:last-child {
+            background-image: url("../images/logo/cf-lo.png");
+            width: 32px;
+            height: 32px;
         }
     }
     .mapboxgl-ctrl-bottom-left,
     .mapboxgl-ctrl-bottom-right {
         display: none;
+    }
+    .mapboxgl-popup-content {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 15px 8px 10px;
+        border-radius: 10px;
+        .img-cf {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        .mapboxgl-popup-close-button {
+            width: auto;
+            color: $onSurface;
+            font-size: 20px;
+            padding: 0;
+            top: 0px;
+            right: 3px;
+            font-weight: 300;
+            background-color: $white;
+        }
+        p {
+            color: $onSurface;
+        }
+        span {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            color: $onSurface;
+            font-weight: 600;
+            i {
+                color: $warning;
+            }
+        }
+    }
+    .mapboxgl-popup-tip {
+        border-width: 5px;
+    }
+    .mapboxgl-popup {
+        top: 10px;
     }
 }
