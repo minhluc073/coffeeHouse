@@ -1,20 +1,19 @@
 /*
  * show pass
- * image select
  * otp input
- * check radio
- * range slider
- * btnQuantity
- * press heart
- * Clear all
- * Clear Item History
- * Clear Checkbox
- * Suggestions
- * active Suggestions
- * fixed body popup
+ * range slider one
+ * range slider two
+ * clear Item 
+ * block delete 
+ * active photo
  * back Page
- * click sidebar
- * preloader
+ * press toggles
+ * clear Text
+ * message
+ * gallery
+ * custom select 
+ * active Suggestions
+ * preloader 
  */
 (function ($) {
   "use strict";
@@ -83,9 +82,8 @@
     }
   };
 
-  /* range slider
+  /* range slider one
   ------------------------------------------------------------------------------------- */
-
   var rangeOne = function () {
     if ($("#range-one-val").length > 0) {
       var directionSlider = document.getElementById("range-one-val");
@@ -148,7 +146,7 @@
     }
   };
 
-  /* Clear Item 
+  /* clear Item 
   ------------------------------------------------------------------------------------- */
   var clearItem = function () {
     $(".list-favorite").each(function () {
@@ -158,20 +156,14 @@
       });
     });
   };
-
+   /* block delete 
+  ------------------------------------------------------------------------------------- */
   var dlBlock = function () {
     $(".list-favorite").on("click", function (event) {
-      // $(this).parent(".box-favorite").find(".show-del").removeClass("show-del");
       $(this).toggleClass("mr-lf");
       $(this).find(".del-item").toggleClass("show-del");
     });
   };
-
-  // $(document).on("click", function (e) {
-  //   if (!$(event.target).closest(".del-item").length) {
-  //     $(".del-item").removeClass("show-del");
-  //   }
-  // });
 
   /* active photo
   ------------------------------------------------------------------------------------- */
@@ -190,7 +182,7 @@
     });
   };
 
-  /* press heart
+  /* press toggles
   ------------------------------------------------------------------------------------- */
   var pressToggle = function () {
     $(".press-toggle").on("click", function () {
@@ -199,7 +191,7 @@
   };
   /* clear Text
   ------------------------------------------------------------------------------------- */
-  const clearText = function () {
+  var clearText = function () {
     $(".icon-cancel").on("click", function () {
       $(".ip-field").val("");
     });
@@ -210,21 +202,8 @@
     $(".btn-message").on("click", function () {
       var ipMessage = $(".ip-message");
       var messValue = ipMessage.val();
-      //   var chatEmojiArea = $(".append-media").html();
-
-      //   var current = new Date();
-      //   var ampm = current.getHours() >= 12 ? "pm" : "am";
-      //   var actualTime =
-      //     (current.getHours() % 12) + ":" + current.getMinutes() + " " + ampm;
-
       var domMessage =
         '<div class="bubble-me">' + "<p>" + messValue + "</p>" + "</div>";
-      // '<div class="message-time">' +
-      // actualTime +
-      // "</div>" +
-      // "</div>" +
-      // "</div>";
-
       if (messValue.length > 0) {
         var appendMess = $(".chat-area").append(domMessage);
       }
@@ -247,21 +226,13 @@
       });
     }
   };
-  /* dropdown select 
+  /* custom select 
   ------------------------------------------------------------------------------------- */
   var cusSelect = function () {
     if ($(".cus-select, .lo-select, .time-select").length > 0) {
       $(".cus-select, .lo-select, .time-select").niceSelect();
     }
   };
-
-  // var setTimeIn = function () {
-  //   if ($("#modalIndex").length > 0) {
-  //     setTimeout(function () {
-  //       $("#modalIndex").modal("show");
-  //     }, 3000);
-  //   }
-  // };
 
   /* active Suggestions
   ------------------------------------------------------------------------------------- */
@@ -281,9 +252,23 @@
       $(this).toggleClass("active");
     });
   };
+  /* load more
+  ------------------------------------------------------------------------------------- */
+  var loadmore = function() {
+    if ($('ul').hasClass('loadmore-item')) {
+        $(".fl-item").slice(0, 3).show();
+        $("#button-loadmore").on('click', function (e) {
+            e.preventDefault();
+            $(".fl-item:hidden").slice(0, 3).slideDown();
+            if ($(".fl-item:hidden").length == 0) {
+                $("#button-loadmore").hide();
+            }
+        });
+    }   
+};
   /* preloader 
   ------------------------------------------------------------------------------------- */
-  const preloader = function () {
+  var preloader = function () {
     setTimeout(function () {
       $(".preload").fadeOut("slow", function () {
         $(this).remove();
@@ -306,7 +291,7 @@
     pressToggle();
     activePhoto();
     activeSuggest();
-    // setTimeIn();
+    loadmore();
     preloader();
   });
 })(jQuery);

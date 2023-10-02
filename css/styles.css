@@ -813,6 +813,29 @@ label {
   transform: rotate(90deg);
 }
 
+#map {
+  position: absolute;
+  top: 105px;
+  bottom: 0;
+  width: 100%;
+}
+#map .marker {
+  background-image: url("../images/logo/40.png");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+#map .marker:not(:last-child) {
+  background-image: url("../images/logo/location.png");
+  width: 30px;
+  height: 30px;
+}
+#map .mapboxgl-ctrl-bottom-left,
+#map .mapboxgl-ctrl-bottom-right {
+  display: none;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -1863,24 +1886,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: #fabe3c;
 }
 
-#map {
-  position: absolute;
-  top: 105px;
-  bottom: 0;
-  width: 100%;
-}
-#map .marker {
-  background-image: url("../../images/logo/location.png");
-  background-size: cover;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-#map .mapboxgl-ctrl-bottom-left,
-#map .mapboxgl-ctrl-bottom-right {
-  display: none;
-}
-
 .list-favorite {
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -2047,6 +2052,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .lg-show-in .lg-next,
 .lg-show-in .lg-pager-outer {
   opacity: 0;
+}
+
+.loadmore-item .fl-item {
+  display: none;
 }
 
 .cf-onboarding .boarding-box .img-box {

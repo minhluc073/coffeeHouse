@@ -1,6 +1,4 @@
 html {
-    // scrollbar-width: none;
-    // overflow-y: scroll;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -736,4 +734,27 @@ label {
 }
 .rolate-90 {
     transform: rotate(90deg);
+}
+
+#map {
+    position: absolute;
+    top: 105px;
+    bottom: 0;
+    width: 100%;
+    .marker {
+        background-image: url("../images/logo/40.png");
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        &:not(:last-child) {
+            background-image: url("../images/logo/location.png");
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .mapboxgl-ctrl-bottom-left,
+    .mapboxgl-ctrl-bottom-right {
+        display: none;
+    }
 }

@@ -307,23 +307,7 @@
     color: $warning;
 }
 
-#map {
-    position: absolute;
-    top: 105px;
-    bottom: 0;
-    width: 100%;
-    .marker {
-        background-image: url("../../images/logo/location.png");
-        background-size: cover;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-    }
-    .mapboxgl-ctrl-bottom-left,
-    .mapboxgl-ctrl-bottom-right {
-        display: none;
-    }
-}
+
 .list-favorite {
     cursor: pointer;
     @include transition3;
@@ -502,4 +486,9 @@
 .lg-show-in .lg-next,
 .lg-show-in .lg-pager-outer {
     opacity: 0;
+}
+.loadmore-item {
+    .fl-item {
+        display: none;
+    }
 }
