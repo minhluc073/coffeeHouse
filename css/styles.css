@@ -2040,6 +2040,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     transform: scale3d(1, 1, 1);
   }
 }
+.lg-show-in .lg-toolbar,
+.lg-show-in .lg-prev,
+.lg-show-in .lg-next,
+.lg-show-in .lg-pager-outer {
+  opacity: 0;
+}
+
 .cf-onboarding .boarding-box .img-box {
   max-width: 375px;
   height: 340px;
