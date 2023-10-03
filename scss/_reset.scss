@@ -761,7 +761,7 @@ label {
         display: flex;
         align-items: center;
         gap: 4px;
-        padding: 15px 8px 10px;
+        padding: 8px;
         border-radius: 10px;
         .img-cf {
             width: 40px;
@@ -769,12 +769,13 @@ label {
             border-radius: 10px;
         }
         .mapboxgl-popup-close-button {
+            position: unset;
             width: auto;
             color: $onSurface;
             font-size: 20px;
             padding: 0;
-            top: 0px;
-            right: 3px;
+            margin-top: -20px;
+            margin-left: 4px;
             font-weight: 300;
             background-color: $white;
         }

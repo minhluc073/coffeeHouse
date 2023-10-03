@@ -839,7 +839,7 @@ label {
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 15px 8px 10px;
+  padding: 8px;
   border-radius: 10px;
 }
 #map .mapboxgl-popup-content .img-cf {
@@ -848,12 +848,13 @@ label {
   border-radius: 10px;
 }
 #map .mapboxgl-popup-content .mapboxgl-popup-close-button {
+  position: unset;
   width: auto;
   color: #131317;
   font-size: 20px;
   padding: 0;
-  top: 0px;
-  right: 3px;
+  margin-top: -20px;
+  margin-left: 4px;
   font-weight: 300;
   background-color: #fff;
 }
