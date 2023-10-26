@@ -1,0 +1,81 @@
+// setting color
+.modal-themes-color {
+    padding: 30px;
+    border-radius: 12px 12px 0px 0px;
+    pointer-events: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px 25px;
+    .color-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 4px;
+        .check-color {
+            display: none;
+        }
+        label {
+            width: 55px;
+            height: 55px;
+            border-radius: 999px;
+            position: relative;
+            display: block;
+            // background-color: red;
+            &::after {
+                content: "\e95d";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                display: none;
+                transform: translate(-50%, -50%);
+                font-family: $fontIcon;
+                font-weight: 900;
+                font-size: 16px;
+                color: var(--white);
+            }
+        }
+        input:checked + label {
+            &:after {
+                display: block;
+            }
+        }
+    }
+
+    input[value="color_primary"] + label {
+        background-color: #873b0a;
+    }
+    input[value="color_green"] + label {
+        background-color: #143d33;
+    }
+    input[value="color_orange"] + label {
+        background-color: #ff9c2e;
+    }
+    input[value="color_blue_1"] + label {
+        background-color: #69d2e7;
+    }
+    input[value="color_blue_2"] + label {
+        background-color: #a7dbd8;
+    }
+    input[value="color_orange_2"] + label {
+        background-color: #fa6900;
+    }
+    input[value="color_pink"] + label {
+        background-color: #fe4365;
+    }
+    input[value="color_orange_3"] + label {
+        background-color: #f9cdad;
+    }
+    input[value="color_purple"] + label {
+        background-color: #542437;
+    }
+    input[value="color_green_2"] + label {
+        background-color: #c7f464;
+    }
+    input[value="color_blue_3"] + label {
+        background-color: #4ecdc4;
+    }
+    input[value="color_dark"] + label {
+        background-color: #031634;
+    }
+}

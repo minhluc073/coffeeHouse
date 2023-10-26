@@ -3,17 +3,17 @@
  * otp input
  * range slider one
  * range slider two
- * clear Item 
- * block delete 
+ * clear Item
+ * block delete
  * active photo
  * back Page
  * press toggles
  * clear Text
  * message
  * gallery
- * custom select 
+ * custom select
  * active Suggestions
- * preloader 
+ * preloader
  */
 (function ($) {
   "use strict";
@@ -156,7 +156,7 @@
       });
     });
   };
-   /* block delete 
+  /* block delete 
   ------------------------------------------------------------------------------------- */
   var dlBlock = function () {
     $(".list-favorite").on("click", function (event) {
@@ -254,18 +254,18 @@
   };
   /* load more
   ------------------------------------------------------------------------------------- */
-  var loadmore = function() {
-    if ($('ul').hasClass('loadmore-item')) {
-        $(".fl-item").slice(0, 3).show();
-        $("#button-loadmore").on('click', function (e) {
-            e.preventDefault();
-            $(".fl-item:hidden").slice(0, 3).slideDown();
-            if ($(".fl-item:hidden").length == 0) {
-                $("#button-loadmore").hide();
-            }
-        });
-    }   
-};
+  var loadmore = function () {
+    if ($("ul").hasClass("loadmore-item")) {
+      $(".fl-item").slice(0, 3).show();
+      $("#button-loadmore").on("click", function (e) {
+        e.preventDefault();
+        $(".fl-item:hidden").slice(0, 3).slideDown();
+        if ($(".fl-item:hidden").length == 0) {
+          $("#button-loadmore").hide();
+        }
+      });
+    }
+  };
   /* preloader 
   ------------------------------------------------------------------------------------- */
   var preloader = function () {
@@ -274,6 +274,28 @@
         $(this).remove();
       });
     }, 500);
+  };
+
+  function setCookie(cname, cvalue, exhours) {
+    var d = new Date();
+    d.setTime(d.getTime() + 30 * 60 * 1000); /* 30 Minutes */
+    var expires = "expires=" + d.toString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+
+  /*
+  ------------------------------------------------------------------------------------- */
+  var themeSetting = function () {
+    // var theme = getUrlParameter("color-theme");
+    // console.log(theme);
+    var isCookieSet = true;
+    $('input[name="theme_color"]').on("click", function () {
+      alert("hhh");
+      $("body").attr("data-theme-color", this.value);
+      if (isCookieSet) {
+        setCookie("themeColor_value", this.value);
+      }
+    });
   };
 
   $(function () {
@@ -293,5 +315,6 @@
     activeSuggest();
     loadmore();
     preloader();
+    themeSetting();
   });
 })(jQuery);

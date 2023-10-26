@@ -235,9 +235,9 @@ body {
     font-family: $font-main-family;
     font-size: $font-main-size;
     line-height: $font-main-line;
-    font-weight: 300;
+    font-weight: 400;
     background-color: $white;
-    color: $secondary;
+    color: var(--black);
     min-height: 100vh;
     width: 100%;
     // margin: 0 auto;
@@ -296,6 +296,10 @@ h5 {
     font-size: $h5-fs;
     line-height: $h5-lh;
 }
+h6 {
+    font-size: $h6-fs;
+    line-height: $h6-lh;
+}
 
 h1,
 h2,
@@ -303,8 +307,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-main-family;
-    color: $onSurface;
+    font-family: $font-title-family;
+    color: var(--black);
     font-weight: 500;
     a {
         // color: $primary;
@@ -313,9 +317,7 @@ h6 {
         }
     }
 }
-h5 {
-    font-weight: 600;
-}
+
 
 button {
     border: none;
