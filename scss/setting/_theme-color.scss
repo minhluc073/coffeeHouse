@@ -1,50 +1,75 @@
 // primary
 [data-theme-color="theme-primary"]{
     --primary: #873B0A;
+    --primary-bold: #5B2400;
+    --primary-btn:#C96A28;
 }
 // green 
 [data-theme-color="theme-green"]{
     --primary: #143d33;
+    --primary-bold: #143d33;
+
+    --primary-btn:#325e53;
 }
  // green 02
 [data-theme-color="theme-green-2"]{
     --primary: #c7f464;
+    --primary-bold: #c7f464;
+
 }
  // orange 
 [data-theme-color="theme-orange"]{
     --primary: #ff9c2e;
+    --primary-bold: #ff9c2e;
+
 }
  // orange  02
 [data-theme-color="theme-orange-2"]{
     --primary: #fa6900;
+    --primary-bold: #fa6900;
+
 }
  // orange  03
 [data-theme-color="theme-orange-3"]{
     --primary: #f9cdad;
+    --primary-bold: #f9cdad;
+
 }
 
  // pink
  [data-theme-color="theme-pink"]{
     --primary: #fe4365;
+    --primary-bold: #fe4365;
+
 }
  // orange  04
 [data-theme-color="theme-purple"]{
     --primary: #542437;
+    --primary-bold: #542437;
+
 }
 
 // blue
 [data-theme-color="theme-blue"]{
     --primary: #69d2e7;
+    --primary-bold: #69d2e7;
+
 }
 // blue 02
 [data-theme-color="theme-blue-2"]{
     --primary: #a7dbd8;
+    --primary-bold: #a7dbd8;
+
 }
 //blue 03
 [data-theme-color="theme-blue-3"]{
     --primary: #a7dbd8;
+    --primary-bold: #a7dbd8;
+
 }
 //blue 03
 [data-theme-color="theme-dark"]{
     --primary: #031634;
+    --primary-bold: #031634;
+
 }

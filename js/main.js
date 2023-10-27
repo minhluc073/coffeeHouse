@@ -287,13 +287,34 @@
   ------------------------------------------------------------------------------------- */
   var themeSetting = function () {
     // var theme = getUrlParameter("color-theme");
-    // console.log(theme);
+
     var isCookieSet = true;
     $('input[name="theme_color"]').on("click", function () {
-      alert("hhh");
       $("body").attr("data-theme-color", this.value);
       if (isCookieSet) {
-        setCookie("themeColor_value", this.value);
+        // setCookie("themeColor_value", this.value);
+        sessionStorage.setItem("themeColor", this.value);
+      }
+    });
+  };
+
+  var setThemePanel = function () {
+    jQuery.each(themeOption, function (index, themeOptionItem) {
+      themeOptionItemValue = getCookie(themeOptionItem + "_value");
+
+      /* Only For Tanam Package Kit */
+      if (!isCookieSet && themeOptionItem == "themeColor") {
+        return true;
+      }
+      /* Only For Tanam Package Kit END */
+
+      if (themeOptionItemValue != "" && themeOptionItemValue != 1) {
+        if (themeOptionItem == "themeColor") {
+          body.attr("data-theme-color", themeOptionItemValue);
+        } else if (themeOptionItem == "themeVersion") {
+          body.addClass(themeOptionItemValue);
+          jQuery(".theme-btn").addClass("active");
+        }
       }
     });
   };
@@ -316,5 +337,6 @@
     loadmore();
     preloader();
     themeSetting();
+    setThemePanel();
   });
 })(jQuery);

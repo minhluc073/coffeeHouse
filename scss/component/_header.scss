@@ -1,21 +1,38 @@
 .header {
-    @include flex(center, space-between);
-    gap: 16px;
-    padding: 8px 20px;
-    padding-left: 15px;
+    @include flex(center, center);
+    gap: 20px;
+    padding: 10px  20px 0px;
+    position: relative;
+    min-height: 50px;
     .icon {
-        height: 28px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
         font-size: 20px;
-        display: flex;
-        align-items: center;
+        border-radius: 12px;
+        border:  1px solid var(--line);
+        @include flex(center,center);
     }
-    .right {
-        height: 28px;
-        width: 30px;
-        font-size: 20px;
-        @include flex(center, flex-end);
+    h3{
+        font-weight: 600;
     }
+    .left{
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        .icon{
+            font-size: 14px;
+        }
+    }
+    .right{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        .icon{
+            font-size: 22px;
+            color: var(--text-4);
+        }
+    }
+   
 }
 .header-style1 {
     display: flex;

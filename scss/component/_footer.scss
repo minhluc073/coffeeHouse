@@ -8,7 +8,7 @@
 }
 
 .menubar-footer {
-    padding: 12px 20px 20px;
+    padding: 17px 20px 18px;
     &.footer-fixed {
         position: fixed;
         bottom: 0;
@@ -38,9 +38,24 @@
             }
             &.active {
                 a {
-                    color: $primary;
+                    color: var(--primary);
                     font-weight: 600;
-                   
+                }
+            }
+        }
+        .action-home {
+            margin-top: -30px;
+            a {
+                @include flex(center, center);
+                border-radius: 9999px;
+                width: 46px;
+                height: 46px;
+                background-color: var(--primary-btn);
+                box-shadow: var(--shadow);
+                margin: 0 auto;
+                .icon-home {
+                    font-size: 18px;
+                    color: #fff;
                 }
             }
         }

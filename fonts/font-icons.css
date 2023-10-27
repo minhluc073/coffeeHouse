@@ -25,16 +25,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-close .path1:before {
+.icon-close1 .path1:before {
   content: "\e904";
   color: rgb(108, 108, 120);
 }
-.icon-close .path2:before {
+.icon-close1 .path2:before {
   content: "\e905";
   margin-left: -1em;
   color: rgb(255, 255, 255);
 }
-.icon-close .path3:before {
+.icon-close1 .path3:before {
   content: "\e906";
   margin-left: -1em;
   color: rgb(255, 255, 255);
@@ -126,7 +126,6 @@
 }
 .icon-setting:before {
   content: "\e917";
-  color: #d3d5da;
 }
 .icon-send .path1:before {
   content: "\e918";
@@ -146,7 +145,7 @@
   content: "\e91b";
   color: #d3d5da;
 }
-.icon-rigt-sm:before {
+.icon-right-sm:before {
   content: "\e91c";
 }
 .icon-report:before {
@@ -273,7 +272,6 @@
 }
 .icon-light:before {
   content: "\e93a";
-  color: #873b0a;
 }
 .icon-language:before {
   content: "\e93b";
@@ -293,7 +291,6 @@
 }
 .icon-home:before {
   content: "\e93f";
-  color: #fff;
 }
 .icon-img:before {
   content: "\e940";
@@ -353,7 +350,7 @@
   content: "\e94d";
   color: #d3d5da;
 }
-.icon-close1:before {
+.icon-close:before {
   content: "\e94e";
 }
 .icon-category:before {
@@ -410,7 +407,6 @@
 }
 .icon-left-btn:before {
   content: "\e95c";
-  color: #fff;
 }
 .icon-check:before {
   content: "\e95d";
