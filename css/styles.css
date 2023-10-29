@@ -2505,6 +2505,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-weight: 700;
   line-height: 22.4px;
 }
+.nav-link-item .icon {
+  font-size: 20px;
+  color: var(--text-4);
+}
+
 .cf-onboarding .boarding-box .img-box {
   max-width: 375px;
   height: 340px;
