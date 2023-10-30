@@ -1,42 +1,246 @@
 .tf-btn {
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21px;
-    display: flex;
-    gap: 8px;
-    border-radius: 100px;
+    font-family: $font-btn-family;
+    font-weight: 600;
+    border-radius: 20px;
     padding: 12px;
     @include flex(center, center);
-    width: 100%;
-    &.primary {
-        background-color: $primary;
-        color: $white;
-        border-color: $primary;
+    gap: 10px;
+    // width: 100%;
+    // sizes
+    &.btn-lg {
+        font-size: 16px;
+        line-height: 21px;
+        padding: 20px 0px;
     }
-    &.secondary {
-        background-color: $line;
-        color: $secondary;
+    &.btn-md {
+        font-size: 15px;
+        line-height: 21px;
+        padding: 16px 0px;
+        border-radius: 16px;
+    }
+    &.btn-sm {
         font-size: 14px;
-        font-weight: 500;
-        line-height: 18px;
-        .icon-google {
-            width: 20px;
-            height: 20px;
+        line-height: 21px;
+        padding: 10px 0px;
+        border-radius: 12px;
+    }
+    // color
+    &.primary {
+        background: var(--primary);
+        border: 1px solid var(--primary);
+        color: $white;
+        &:hover {
+            color: var(--primary);
+            background: var(--white);
         }
     }
-    &.xsmall {
-        border-radius: 20px;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 16px;
+    &.secondary {
+        background: var(--white);
+        border: 1px solid var(--secondary);
+        color: var(--primary);
+        &:hover {
+            color: $white;
+            background: var(--primary);
+            border-color: var(--secondary);
+        }
     }
+    &.success {
+        background: var(--success);
+        border: 1px solid var(--success);
+        color: $white;
+        &:hover {
+            color: var(--success);
+            background: var(--white);
+        }
+    }
+    &.danger {
+        background: var(--danger);
+        border: 1px solid var(--danger);
+        color: $white;
+        &:hover {
+            color: var(--danger);
+            background: var(--white);
+        }
+    }
+    &.warning {
+        background: var(--warning);
+        border: 1px solid var(--warning);
+        color: $white;
+        &:hover {
+            color: var(--warning);
+            background: var(--white);
+        }
+    }
+    &.info {
+        background: var(--info);
+        border: 1px solid var(--info);
+        color: $white;
+        &:hover {
+            color: var(--info);
+            background: var(--white);
+        }
+    }
+    &.light {
+        background: var(--light);
+        border: 1px solid var(--light);
+        color: $black;
+        &:hover {
+            color: var(--light);
+            background: $black;
+        }
+    }
+    &.dark {
+        background: var(--dark);
+        border: 1px solid var(--dark);
+        color: $white;
+        &:hover {
+            color: var(--dark);
+            background: var(--white);
+        }
+    }
+    &.disable {
+        background: var(--disable);
+        border: 1px solid var(--disable);
+        color: $white;
+        &:hover {
+            color: var(--disable);
+            background: var(--white);
+        }
+    }
+    &.light-btn-primary {
+        background: var(--rgba-primary);
+        border: 1px solid transparent;
+        color: var(--primary);
+        &:hover {
+            background: var(--primary);
+            color: $white;
+        }
+    }
+    &.light-btn-success {
+        background: var(--rgba-success);
+        border: 1px solid transparent;
+        color: var(--success);
+        &:hover {
+            background: var(--success);
+            color: $white;
+        }
+    }
+    &.light-btn-danger {
+        background: var(--rgba-danger);
+        border: 1px solid transparent;
+        color: var(--danger);
+        &:hover {
+            background: var(--danger);
+            color: $white;
+        }
+    }
+    &.light-btn-warning {
+        background: var(--rgba-warning);
+        border: 1px solid transparent;
+        color: var(--warning);
+        &:hover {
+            background: var(--warning);
+            color: $white;
+        }
+    }
+    &.light-btn-info {
+        background: var(--rgba-info);
+        border: 1px solid transparent;
+        color: var(--info);
+        &:hover {
+            background: var(--info);
+            color: $white;
+        }
+    }
+    &.light-btn-dark {
+        background: var(--rgba-dark);
+        border: 1px solid transparent;
+        color: var(--dark);
+        &:hover {
+            background: var(--dark);
+            color: $white;
+        }
+    }
+    &.outline-btn-primary {
+        background: var(--white);
+        border: 1px solid var(--primary);
+        color: var(--primary);
+        &:hover {
+            background: var(--primary);
+            color: $white;
+        }
+    }
+    &.outline-btn-success {
+        background: var(--white);
+        border: 1px solid var(--success);
+        color: var(--success);
+        &:hover {
+            background: var(--success);
+            color: $white;
+        }
+    }
+    &.outline-btn-danger {
+        background: var(--white);
+        border: 1px solid var(--danger);
+        color: var(--danger);
+        &:hover {
+            background: var(--danger);
+            color: $white;
+        }
+    }
+    &.outline-btn-warning {
+        background: var(--white);
+        border: 1px solid var(--warning);
+        color: var(--warning);
+        &:hover {
+            background: var(--warning);
+            color: $white;
+        }
+    }
+    &.outline-btn-info {
+        background: var(--white);
+        border: 1px solid var(--info);
+        color: var(--info);
+        &:hover {
+            background: var(--info);
+            color: $white;
+        }
+    }
+    &.outline-btn-light {
+        background: var(--white);
+        border: 1px solid var(--light);
+        color: var(--black);
+        &:hover {
+            background: var(--light);
+        }
+    }
+    &.outline-btn-dark {
+        background: var(--white);
+        border: 1px solid var(--dark);
+        color: var(--dark);
+        &:hover {
+            background: var(--dark);
+            color: $white;
+        }
+    }
+
+    &.btn-square {
+        border-radius: 0;
+    }
+
     &.line {
         border: 1px solid $line;
     }
-    &.lh-md {
-        font-weight: 500;
-    }
 
+    &.icon {
+        img {
+            width: 22px;
+            height: 22px;
+        }
+    }
+    // &.lh-md {
+    //     font-weight: 500;
+    // }
 }
 .lg-zoom-in {
     display: none;

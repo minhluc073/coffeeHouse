@@ -271,7 +271,7 @@ img {
 
 b,
 strong {
-    font-weight: 900;
+    font-weight: 500;
 }
 
 h1 {
@@ -321,6 +321,7 @@ h6 {
 
 button {
     border: none;
+    font-family: $font-btn-family;
 }
 
 button,
@@ -332,18 +333,14 @@ input[type="submit"] {
     font-size: 16px;
     font-weight: 700;
     line-height: 21px;
-    background-color: $primary;
-    border: 1px solid $primary;
-    color: $white;
+    // background-color: $primary;
+    // border: 1px solid $primary;
+    // color: $white;
     text-transform: capitalize;
-    border-radius: 100px;
+    border-radius: 20px;
     @include flex(center, center);
     @include transition3;
-
-    &:hover {
-        color: $primary;
-        background-color: $white;
-    }
+  
 }
 
 select,
@@ -365,18 +362,20 @@ input[type="color"] {
     font-family: $font-main-family;
     width: 100%;
     font-size: 14px;
-    border: 1px solid transparent;
-    background-color: $surface;
-    color: $onSurface;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    padding: 13px 16px;
-    border-radius: 8px;
+    line-height: 19.6px;
+    font-weight: 400;
+    color: var(--black);
+ 
 }
 input[type="password"] {
     // font-size: 18px;
     // -webkit-text-security: square;
+}
+form {
+    label {
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
 }
 
 textarea:focus,
@@ -401,10 +400,10 @@ input[type="color"]:focus {
 
 textarea::placeholder,
 input::placeholder {
-    color: $secondary;
+    color: var(--text);
     font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
+    line-height: 19.6px;
+    font-weight: 400;
 }
 
 textarea,
@@ -434,13 +433,10 @@ textarea {
     height: 160px;
     padding: 13px 12px;
 }
-label {
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 16px;
-    color: $secondary;
-}
 
+code {
+    color: var(--primary-btn);
+}
 .tf-container {
     max-width: 1024px;
     margin-left: auto;
@@ -518,6 +514,9 @@ label {
 .mt-24 {
     margin-top: 24px;
 }
+.mt-26 {
+    margin-top: 26px;
+}
 .mt-30 {
     margin-top: 30px;
 }
@@ -527,7 +526,9 @@ label {
 .mt-60 {
     margin-top: 60px;
 }
-
+.mb-10{
+    margin-bottom: 10px !important;
+}
 .mb-12 {
     margin-bottom: 12px;
 }
@@ -663,6 +664,9 @@ label {
 .text-4 {
     color: var(--text-4);
 }
+.text-5 {
+    color: var(--text-5);
+}
 
 .tf-checkbox {
     position: relative;
@@ -720,6 +724,7 @@ label {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
+// gap
 .gap-4 {
     gap: 4px !important;
 }
@@ -737,6 +742,9 @@ label {
 }
 .gap-20 {
     gap: 20px;
+}
+.gap-25{
+    gap: 25px;
 }
 .lr-radius {
     border-radius: 12px 12px 0px 0px;
@@ -822,5 +830,5 @@ label {
     line-height: normal;
 }
 .app-content {
-    padding: 50px 0px 80px;
+    padding: 50px 0px 85px;
 }
