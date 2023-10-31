@@ -265,17 +265,17 @@
     display: inline-block;
     @include flex(center, center);
 }
-.btn-showmore {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-    color: $primary;
-    text-decoration: underline;
-    &:focus,
-    &:hover {
-        color: $primary;
-    }
-}
+// .btn-showmore {
+//     font-size: 12px;
+//     font-weight: 500;
+//     line-height: 16px;
+//     color: $primary;
+//     text-decoration: underline;
+//     &:focus,
+//     &:hover {
+//         color: $primary;
+//     }
+// }
 .btn-find {
     width: 16px;
     height: 16px;
@@ -293,4 +293,17 @@
     color: $primary;
     @include flex(center, center);
     font-size: 14px !important;
+}
+
+.btn-showmore{
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    svg {
+        path{
+            stroke: var(--primary);
+        }
+    }
 }

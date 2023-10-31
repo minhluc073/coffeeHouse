@@ -648,7 +648,7 @@ code {
 }
 
 .pb-12 {
-  padding-bottom: 12px;
+  padding-bottom: 12px !important;
 }
 
 .pb-20 {
@@ -797,7 +797,7 @@ code {
 }
 
 .line-bt {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--line) !important;
 }
 
 .line4-bt {
@@ -1383,17 +1383,6 @@ code {
   justify-content: center;
 }
 
-.btn-showmore {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 16px;
-  color: #873B0A;
-  text-decoration: underline;
-}
-.btn-showmore:focus, .btn-showmore:hover {
-  color: #873B0A;
-}
-
 .btn-find {
   width: 16px;
   height: 16px;
@@ -1416,6 +1405,17 @@ code {
   align-items: center;
   justify-content: center;
   font-size: 14px !important;
+}
+
+.btn-showmore {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+.btn-showmore svg path {
+  stroke: var(--primary);
 }
 
 .noUi-horizontal {
@@ -2320,6 +2320,26 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-top: 2px;
 }
 
+.card {
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+  border-color: transparent;
+  background-color: var(--white);
+}
+.card .card-header {
+  background-color: transparent;
+  padding: 0;
+  border-color: transparent;
+}
+.card .card-header .card-title {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+}
+.card .card-body {
+  padding: 0;
+}
+
 .badge {
   font-family: "Poppins", sans-serif;
   border-radius: 12px;
@@ -3124,22 +3144,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .loadmore-item .fl-item {
   display: none;
-}
-
-.card {
-  padding: 16px;
-  border-radius: 16px;
-  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
-  border-color: transparent;
-  background-color: var(--white);
-}
-.card .card-header {
-  background-color: transparent;
-  padding: 0;
-  border-color: transparent;
-}
-.card .card-body {
-  padding: 0;
 }
 
 [data-theme-color=theme-primary] {

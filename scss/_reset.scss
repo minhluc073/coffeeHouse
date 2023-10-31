@@ -575,7 +575,7 @@ code {
     padding-bottom: 10px;
 }
 .pb-12 {
-    padding-bottom: 12px;
+    padding-bottom: 12px !important;
 }
 .pb-20 {
     padding-bottom: 20px;
@@ -693,7 +693,7 @@ code {
     }
 }
 .line-bt {
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--line) !important;
 }
 .line4-bt {
     border-bottom: 4px solid $surface;
