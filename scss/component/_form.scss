@@ -303,75 +303,7 @@
 
 // switch check
 
-.tf-switch-check {
-    position: relative;
-    width: 45px;
-    height: 22px;
-    -webkit-appearance: none;
-    background: #c5c5c5;
-    border-radius: 100px;
-    transition: 0.2s;
-    margin-right: 0;
 
-    &::before {
-        content: "";
-        border-radius: 100px;
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        top: 2px;
-        left: 3px;
-        background: #fff;
-        transition: 0.5s;
-    }
-    &:checked:checked[type="checkbox"] {
-        background: #f3ebe7;
-        &::before {
-            background: var(--primary);
-            left: 24px;
-        }
-    }
-    // &.success {
-    //     &:checked:checked[type="checkbox"] {
-    //         background: $success_color;
-    //         transition: 0.5s;
-    //         &::before {
-    //             background: #fff;
-    //             left: 28px;
-    //         }
-    //     }
-    // }
-    // &.warning {
-    //     &:checked:checked[type="checkbox"] {
-    //         background: $warning_color;
-    //         transition: 0.5s;
-    //         &::before {
-    //             background: #fff;
-    //             left: 28px;
-    //         }
-    //     }
-    // }
-    // &.danger {
-    //     &:checked:checked[type="checkbox"] {
-    //         background: $critical_color;
-    //         transition: 0.5s;
-    //         &::before {
-    //             background: #fff;
-    //             left: 28px;
-    //         }
-    //     }
-    // }
-    // &.dark {
-    //     &:checked:checked[type="checkbox"] {
-    //         background: $on_surface_color;
-    //         transition: 0.5s;
-    //         &::before {
-    //             background: #fff;
-    //             left: 28px;
-    //         }
-    //     }
-    // }
-}
 //  radio button 
 
 

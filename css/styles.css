@@ -1127,6 +1127,7 @@ code {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  width: 100%;
 }
 .tf-btn.btn-lg {
   font-size: 16px;
@@ -1747,35 +1748,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-color: #fff;
 }
 
-.tf-switch-check {
-  position: relative;
-  width: 45px;
-  height: 22px;
-  -webkit-appearance: none;
-  background: #c5c5c5;
-  border-radius: 100px;
-  transition: 0.2s;
-  margin-right: 0;
-}
-.tf-switch-check::before {
-  content: "";
-  border-radius: 100px;
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  top: 2px;
-  left: 3px;
-  background: #fff;
-  transition: 0.5s;
-}
-.tf-switch-check:checked:checked[type=checkbox] {
-  background: #f3ebe7;
-}
-.tf-switch-check:checked:checked[type=checkbox]::before {
-  background: var(--primary);
-  left: 24px;
-}
-
 .footer {
   background: #fff;
 }
@@ -2147,6 +2119,77 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border: 1px solid #fff;
 }
 
+.tf-switch-check {
+  position: relative;
+  width: 38px;
+  height: 22px;
+  -webkit-appearance: none;
+  background: #f3ebe7;
+  border-radius: 100px;
+  transition: 0.2s;
+  margin-right: 0;
+}
+.tf-switch-check::before {
+  content: "";
+  border-radius: 100px;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  background: var(--primary);
+  transition: 0.5s;
+}
+.tf-switch-check:checked:checked {
+  background: var(--primary);
+}
+.tf-switch-check:checked:checked::before {
+  background: var(--white);
+  left: 18px;
+}
+.tf-switch-check.success:checked:checked {
+  background: var(--success);
+  transition: 0.5s;
+}
+.tf-switch-check.success:checked:checked::before {
+  background: var(--white);
+  left: 28px;
+}
+.tf-switch-check.warning:checked:checked {
+  background: var(--warning);
+  transition: 0.5s;
+}
+.tf-switch-check.warning:checked:checked::before {
+  background: var(--white);
+  left: 28px;
+}
+.tf-switch-check.danger:checked:checked {
+  background: var(--danger);
+  transition: 0.5s;
+}
+.tf-switch-check.danger:checked:checked::before {
+  background: var(--white);
+  left: 28px;
+}
+.tf-switch-check.dark:checked:checked {
+  background: var(--dark);
+  transition: 0.5s;
+}
+.tf-switch-check.dark:checked:checked::before {
+  background: var(--white);
+  left: 18px;
+}
+
+.fieldset-sw {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.sw-disabled {
+  opacity: 0.5;
+}
+
 .tf-radio {
   position: relative;
   border: 1px solid var(--line-2);
@@ -2222,7 +2265,130 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .fieldset-radio label {
   font-weight: 500;
-  margin-top: 4px;
+  margin-top: 2px;
+}
+
+.badge {
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  padding: 10px;
+}
+.badge.badge-lg {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 20px;
+}
+.badge.badge-md {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 10px;
+}
+.badge.badge-sm {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 4px 10px;
+}
+.badge.primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+.badge.secondary {
+  border-color: var(--secondary);
+  color: var(--primary);
+}
+.badge.success {
+  border-color: #54b24c;
+  background: #54b24c;
+  color: var(--white);
+}
+.badge.danger {
+  background: var(--danger);
+  border-color: var(--danger);
+  color: var(--white);
+}
+.badge.light-primary {
+  background: var(--rgba-primary);
+  color: var(--primary);
+}
+.badge.light-success {
+  background: var(--rgba-success);
+  color: var(--success);
+}
+.badge.light-danger {
+  background: var(--rgba-danger);
+  color: var(--danger);
+}
+.badge.light-warning {
+  background: var(--rgba-warning);
+  color: var(--warning);
+}
+.badge.light-info {
+  background: var(--rgba-info);
+  color: var(--info);
+}
+.badge.light-badge {
+  background: var(--light);
+  color: var(--black);
+}
+.badge.light-dark {
+  background: var(--rgba-dark);
+  color: var(--dark);
+}
+.badge.badge-circle {
+  border-radius: 50%;
+  padding: 0;
+  width: 30px;
+  min-width: 30px;
+  display: inline-flex;
+  height: 30px;
+  justify-content: center;
+  line-height: 30px;
+}
+.badge.badge-circle.primary {
+  background-color: var(--white);
+  color: var(--primary);
+}
+.badge.badge-circle.success {
+  background-color: var(--white);
+  color: var(--success);
+}
+.badge.badge-circle.danger {
+  border-color: var(--danger);
+  background-color: var(--white);
+  color: var(--danger);
+}
+.badge.badge-circle.warning {
+  border-color: var(--warning);
+  background-color: var(--white);
+  color: var(--warning);
+}
+.badge.badge-circle.info {
+  border-color: var(--info);
+  background-color: var(--white);
+  color: var(--info);
+}
+.badge.badge-circle.light {
+  border-color: var(--light);
+  background-color: var(--white);
+  color: var(--black);
+}
+.badge.badge-circle.dark {
+  border-color: var(--dark);
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+.tf-btn .badge {
+  position: absolute;
+  right: -8px;
+  top: -5px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal.action-sheet {
