@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="images/logo/48.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
 
-    <title>ui components</title>
+    <title>Radio button</title>
 </head>
 
 <body>
@@ -31,118 +31,126 @@
         <div class="left">
           <a href="javascript:void(0);" class="icon back-btn"><i class="icon-left-btn"></i></a>
         </div>
-        <h3>Component</h3>
+        <h3>Radio Button</h3>
        
     </div>
     <div class="app-content">
         <div class="tf-container">
-            <ul>
-              <li><a href="ui-alert.html" class="nav-link-item pt-20 pb-16 line-bt">
-                <i class="icon icon-alert"></i>
-                <span>Alert</span>
-              </a></li>
-              <li><a href="ui-avatar.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-avt"></i>
-                <span>Avatar</span>
-              </a></li>
-              <li><a href="ui-button.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-btn"></i>
-                <span>Button</span>
-              </a></li>
-              <li><a href="ui-radio.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-radio"></i>
-                <span>Radio button</span>
-              </a></li>
-              <li><a href="ui-input.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-input"></i>
-                <span>Input</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-badge"></i>
-                <span>Badge</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-btn-group"></i>
-                <span>Button group</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-card"></i>
-                <span>Card</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-chart"></i>
-                <span>Charts</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-dropdown"></i>
-                <span>Dropdown</span>
-              </a></li>
-             
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-timeline"></i>
-                <span>Timeline</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-listgroup"></i>
-                <span>List group</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-modal"></i>
-                <span>Modal</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-menubar"></i>
-                <span>Menubar</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-progress"></i>
-                <span>Progressbar</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-social"></i>
-                <span>Social</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-typo"></i>
-                <span>Typography</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-toast"></i>
-                <span>Toast</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-treeview"></i>
-                <span>Treeview</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-sw"></i>
-                <span>Switch</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-stepper"></i>
-                <span>Stepper</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-spin"></i>
-                <span>Spinner</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-range"></i>
-                <span>Range slider</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-gallery"></i>
-                <span>Light gallery</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-divider"></i>
-                <span>Divider</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16">
-                <i class="icon icon-language"></i>
-                <span>Language</span>
-              </a></li>
-            </ul>
+            <div class="card mt-20">
+                <div class="card-header"> 
+                    <h3 class="fw-6">Square Radio</h3>
+                </div>
+                <div class="card-body mt-20">
+                    <fieldset class="fieldset-radio">
+                        <input type="radio" class="tf-radio square" name="radioSquare" id="radioSquare1" checked> 
+                        <label for="radioSquare1">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio square" name="radioSquare" id="radioSquare2"> 
+                        <label for="radioSquare2">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio square" name="radioSquare" id="radioSquare3"> 
+                        <label for="radioSquare3">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio square" name="radioSquare" id="radioSquare4"> 
+                        <label for="radioSquare4">Style 01</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="card mt-20">
+                <div class="card-header"> 
+                    <h3 class="fw-6">Square Radio 2</h3>
+                </div>
+                <div class="card-body mt-20">
+                    <fieldset class="fieldset-radio">
+                        <input type="radio" class="tf-radio square-2" name="radioSquareStyle2" id="radioSquare5" checked> 
+                        <label for="radioSquare5">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio square-2" name="radioSquareStyle2" id="radioSquare6"> 
+                        <label for="radioSquare6">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio square-2" name="radioSquareStyle2" id="radioSquare7"> 
+                        <label for="radioSquare7">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio square-2" name="radioSquareStyle2" id="radioSquare8"> 
+                        <label for="radioSquare8">Style 01</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="card mt-20">
+                <div class="card-header"> 
+                    <h3 class="fw-6">Circle Radio</h3>
+                </div>
+                <div class="card-body mt-20">
+                    <fieldset class="fieldset-radio">
+                        <input type="radio" class="tf-radio" name="radioCircle" id="radioCircle1" checked> 
+                        <label for="radioCircle1">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio" name="radioCircle" id="radioCircle2"> 
+                        <label for="radioCircle2">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio" name="radioCircle" id="radioCircle3"> 
+                        <label for="radioCircle3">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio" name="radioCircle" id="radioCircle4"> 
+                        <label for="radioCircle4">Style 01</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="card mt-20">
+                <div class="card-header"> 
+                    <h3 class="fw-6">Circle Radio 2</h3>
+                </div>
+                <div class="card-body mt-20">
+                    <fieldset class="fieldset-radio">
+                        <input type="radio" class="tf-radio circle-2" name="radioCircleStyle2" id="radioCircle5" checked> 
+                        <label for="radioCircle5">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio circle-2" name="radioCircleStyle2" id="radioCircle6"> 
+                        <label for="radioCircle6">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio circle-2" name="radioCircleStyle2" id="radioCircle7"> 
+                        <label for="radioCircle7">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio circle-2" name="radioCircleStyle2" id="radioCircle8"> 
+                        <label for="radioCircle8">Style 01</label>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="card mt-20">
+                <div class="card-header"> 
+                    <h3 class="fw-6">Circle Radio 3</h3>
+                </div>
+                <div class="card-body mt-20">
+                    <fieldset class="fieldset-radio">
+                        <input type="radio" class="tf-radio circle-3" name="radioCircleStyle3" id="radioCircle9" checked> 
+                        <label for="radioCircle9">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio circle-3" name="radioCircleStyle3" id="radioCircle10"> 
+                        <label for="radioCircle10">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio circle-3" name="radioCircleStyle3" id="radioCircle11"> 
+                        <label for="radioCircle11">Style 01</label>
+                    </fieldset>
+                    <fieldset class="fieldset-radio mt-12">
+                        <input type="radio" class="tf-radio circle-3" name="radioCircleStyle3" id="radioCircle12"> 
+                        <label for="radioCircle12">Style 01</label>
+                    </fieldset>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -184,23 +192,6 @@
       </ul>
          
     </div>
-    
-    <div class="modal fade modalCenter" id="logout">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="p-16 line-bt">
-                    <h5 class="text-center">Log Out</h5>
-                    <p class="mt-8 text-center text-small fw-4">You will be returned to the login screen.</p>
-                </div>
-                <div class="grid-2">
-                   <a href="#" class="line-r text-center text-small fw-5 p-10" data-bs-dismiss="modal">Cancel</a>
-                   <a href="sign-in.html" class="text-center text-small fw-5 p-10 text-critical">Log Out</a>
-                </div>
-               
-            </div>
-        </div>
-    </div>
-
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>

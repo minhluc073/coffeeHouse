@@ -24,7 +24,9 @@
   --blue3: #4ECDC4;
   --blue4: #036564;
   --dark2: #031634;
+  --bg-ip: #F7F7F7;
   --shadow:0px 15px 20px 0px rgba(201, 106, 40, 0.44);
+  --shadow2: 0px 1px 4px 0px rgba(0, 0, 0, 0.07) inset;
   --text: #6F7582;
   --text-2:#C9CBCE;
   --text-3: #343434;
@@ -405,6 +407,11 @@ input[type=color] {
   color: var(--black);
 }
 
+textarea {
+  height: 140px;
+  resize: none;
+}
+
 form label {
   font-weight: 500;
   margin-bottom: 8px;
@@ -460,11 +467,6 @@ input[type=color] {
   -moz-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
-}
-
-textarea {
-  height: 160px;
-  padding: 13px 12px;
 }
 
 code {
@@ -947,7 +949,7 @@ code {
 }
 
 .app-content {
-  padding: 50px 0px 85px;
+  padding: 60px 0px 85px;
 }
 
 .header {
@@ -955,9 +957,9 @@ code {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  padding: 10px 20px 0px;
+  padding: 10px 20px;
   position: relative;
-  min-height: 50px;
+  min-height: 60px;
 }
 .header .icon {
   height: 40px;
@@ -1121,7 +1123,6 @@ code {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   border-radius: 20px;
-  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1457,42 +1458,184 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 14px;
   line-height: 19.6px;
   border-color: transparent;
+  background: var(--white);
+}
+.form-control:focus {
+  box-shadow: unset;
+  border-color: var(--primary) !important;
 }
 
-.input-stroke {
-  margin-bottom: 20px;
+.input-icon {
+  position: relative;
 }
+.input-icon .form-control {
+  padding: 20px;
+  padding-left: 50px;
+  border-radius: 20px;
+  border-color: var(--secondary);
+}
+.input-icon .icon {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  font-size: 22px;
+  color: var(--text-4);
+}
+.input-icon .box-view-hide .show-pass,
+.input-icon .box-view-hide .show-pass2,
+.input-icon .box-view-hide .show-pass3,
+.input-icon .box-view-hide .show-pass4 {
+  top: 20px;
+  right: 20px;
+}
+.input-icon .ip-textarea {
+  padding-left: 20px;
+}
+
 .input-stroke .form-control {
   padding: 16px;
   border-radius: 12px;
   border-color: var(--secondary);
 }
 
-.upload-file {
+.input-fill .form-control {
+  padding: 16px;
+  border-radius: 10px;
+  background: var(--bg-ip);
+  box-shadow: var(--shadow2);
+}
+
+.input-line .form-control {
+  padding: 16px;
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-color: var(--secondary);
+}
+
+.input-upload {
+  position: relative;
+}
+.input-upload .icon {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: calc(50% + 32px);
+  transform: translateY(-50%);
+  color: var(--text-4);
+  font-size: 22px;
+}
+.input-upload .upload-file {
   position: relative;
   overflow: hidden;
   height: 50px;
+  width: 100%;
   border: 1px dashed var(--line-2);
   background-color: var(--white);
   border-radius: 14px;
 }
-.upload-file::before {
+.input-upload .upload-file::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  padding: 12.5px 17px 12.5px 45px;
-  content: "Choose file";
-  display: inline-block;
+  content: "Upload file";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -10px;
   border: none;
   background-color: var(--white);
-  color: #161616;
+  color: var(--black);
+}
+.input-upload.up-lg .upload-file {
+  height: 60px;
 }
 
-.box-auth-pass {
+.drop-select {
+  display: flex;
   position: relative;
+  border: 1px solid var(--secondary);
+  border-radius: 20px;
+}
+.drop-select .bootstrap-select {
+  width: auto !important;
+}
+.drop-select .bootstrap-select button {
+  background: var(--white);
+  padding: 20px;
+  padding-right: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 0;
+}
+.drop-select .bootstrap-select button:focus {
+  outline: 0 !important;
+  box-shadow: unset;
+}
+.drop-select .bootstrap-select .dropdown-toggle::after {
+  display: none;
+}
+.drop-select .bootstrap-select img {
+  width: 22px;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+.drop-select .bootstrap-select .dropdown-item.active {
+  background: var(--primary);
+}
+.drop-select .form-control {
+  transition: unset;
+  padding-left: 0;
+  border: 0;
+}
+.drop-select:focus-within {
+  border-color: var(--primary);
+}
+
+.box-view-hide {
+  position: relative;
+}
+.box-view-hide .form-control {
+  padding-right: 40px;
+}
+.box-view-hide .show-pass,
+.box-view-hide .show-pass2,
+.box-view-hide .show-pass3,
+.box-view-hide .show-pass4 {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+}
+.box-view-hide .show-pass .icon-view,
+.box-view-hide .show-pass2 .icon-view,
+.box-view-hide .show-pass3 .icon-view,
+.box-view-hide .show-pass4 .icon-view {
+  display: none;
+}
+.box-view-hide .show-pass .icon-pass,
+.box-view-hide .show-pass2 .icon-pass,
+.box-view-hide .show-pass3 .icon-pass,
+.box-view-hide .show-pass4 .icon-pass {
+  font-size: 22px;
+  color: var(--text-4);
+}
+.box-view-hide .show-pass.active .icon-view,
+.box-view-hide .show-pass2.active .icon-view,
+.box-view-hide .show-pass3.active .icon-view,
+.box-view-hide .show-pass4.active .icon-view {
+  display: inline-block;
+}
+.box-view-hide .show-pass.active .icon-hide,
+.box-view-hide .show-pass2.active .icon-hide,
+.box-view-hide .show-pass3.active .icon-hide,
+.box-view-hide .show-pass4.active .icon-hide {
+  display: none;
 }
 
 .form-select {
@@ -1508,27 +1651,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .form-select:focus {
   border-color: #fff;
   box-shadow: unset;
-}
-
-.show-pass,
-.show-pass2 {
-  position: absolute;
-  right: 16px;
-  top: 15px;
-  cursor: pointer;
-}
-.show-pass .icon-eye-show,
-.show-pass2 .icon-eye-show {
-  display: none;
-}
-.show-pass.active .icon-eye-show,
-.show-pass2.active .icon-eye-show {
-  display: inline-block;
-  margin-top: 3px;
-}
-.show-pass.active .icon-eye-hide,
-.show-pass2.active .icon-eye-hide {
-  display: none;
 }
 
 .group-cb {
@@ -2023,6 +2145,84 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .list-stacked .avt-list .avatar {
   border: 1px solid #fff;
+}
+
+.tf-radio {
+  position: relative;
+  border: 1px solid var(--line-2);
+  border-radius: 50%;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+  height: 22px;
+  width: 22px;
+  -webkit-appearance: none;
+}
+.tf-radio:checked {
+  border-color: var(--primary);
+}
+.tf-radio:checked::before {
+  opacity: 1;
+}
+.tf-radio::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary);
+  opacity: 0;
+}
+.tf-radio.square {
+  border-radius: 0;
+}
+.tf-radio.square::before {
+  border-radius: 0;
+}
+.tf-radio.square-2 {
+  border-radius: 7px;
+}
+.tf-radio.square-2::before {
+  border-radius: 5px;
+}
+.tf-radio.circle-2:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.tf-radio.circle-2::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: var(--white);
+}
+.tf-radio.circle-3:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.tf-radio.circle-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.fieldset-radio {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fieldset-radio label {
+  font-weight: 500;
+  margin-top: 4px;
 }
 
 .modal.action-sheet {
@@ -2812,7 +3012,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: block;
 }
 .modal-themes-color .color-item label::after {
-  content: "\e95d";
+  content: "\e96d";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2930,7 +3130,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .nav-link-item::after {
   position: absolute;
   font-family: "icomoon";
-  content: "\e91c";
+  content: "\e92c";
   right: 0;
   color: var(--text-3);
   font-size: 16px;

@@ -8,6 +8,7 @@
     <!-- Icons -->
     <link rel="stylesheet" href="fonts/font-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet"type="text/css" href="css/styles.css"/>
@@ -38,9 +39,116 @@
         <div class="tf-container">
             <div class="card mt-20">
                 <div class="card-header"> 
+                    <h3 class="fw-6">Input With Group Icon</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <fieldset class="mt-20 input-icon">
+                            <span class="icon icon-profile"></span>
+                            <input type="text" placeholder="Enter your name" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-icon">
+                            <span class="icon icon-mess"></span>
+                            <input type="text" placeholder="Enter your email address" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-icon">
+                            <div class="box-view-hide">
+                                <span class="icon icon-lock"></span>
+                                <input type="password" required placeholder="Enter your password" class="form-control password-field">
+                                <span class="show-pass">
+                                    <i class="icon-pass icon-view"></i>
+                                    <i class="icon-pass icon-hide"></i>
+                                </span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="mt-20 input-icon">
+                            <span class="icon icon-website"></span>
+                            <input type="text" placeholder="Website" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-icon drop-select">
+                            <div class="inner-group-ip">
+                                <select class="image-select">
+                                    <option data-thumbnail="images/flags/germany.png"></option>
+                                    <option data-thumbnail="images/flags/usa.png"></option>
+                                    <option data-thumbnail="images/flags/vn.png"></option>
+                                </select>
+                            </div>
+                            <input type="number" placeholder="Enter your phone number" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-icon">
+                            <span class="icon icon-calendar"></span>
+                            <input type="date" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-upload up-lg">
+                            <span class="icon icon-upload2"></span>
+                            <input type="file" class="upload-file">
+                        </fieldset>
+                        <fieldset class="mt-20 input-icon">
+                            <textarea class="form-control ip-textarea" placeholder="Write your review"></textarea>
+                        </fieldset>
+                        <button class="mt-20 tf-btn btn-lg primary">Button</button>
+                    </form>
+
+
+
+                </div>
+            </div>
+            <div class="card mt-20">
+                <div class="card-header"> 
+                    <h3 class="fw-6">Input Fill</h3>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <fieldset class="mt-20 input-fill">
+                            <label>Your name</label>
+                            <input type="text" placeholder="Enter your name" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-fill">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email address" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-fill">
+                            <label>Password</label>
+                            <div class="box-view-hide">
+                                <input type="password" required placeholder="Enter your password" class="form-control password-field2">
+                                <span class="show-pass2">
+                                    <i class="icon-pass icon-view"></i>
+                                    <i class="icon-pass icon-hide"></i>
+                                </span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="mt-20 input-fill">
+                            <label>Website</label>
+                            <input type="text" placeholder="Website" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-fill">
+                            <label>Phone Number</label>
+                            <input type="number" placeholder="Enter your phone number" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-fill">
+                            <label>Birthday</label>
+                            <input type="date" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-upload">
+                            <span class="icon icon-upload2"></span>
+                            <input type="file" class="upload-file">
+                        </fieldset>
+                        <fieldset class="mt-20 input-fill">
+                            <label>Message</label>
+                            <textarea class="form-control" placeholder="Write your review"></textarea>
+                        </fieldset>
+                        <button class="mt-20 tf-btn btn-lg primary">Button</button>
+                    </form>
+
+
+
+                </div>
+            </div>
+            <div class="card mt-20">
+                <div class="card-header"> 
                     <h3 class="fw-6">Input Stroke</h3>
                 </div>
-                <div class="card-body mt-20">
+                <div class="card-body">
                     <form>
                         <fieldset class="mt-20 input-stroke">
                             <label>Your name</label>
@@ -52,24 +160,35 @@
                         </fieldset>
                         <fieldset class="mt-20 input-stroke">
                             <label>Password</label>
-                            <input type="text" placeholder="Enter your password" class="form-control">
+                            <div class="box-view-hide">
+                                <input type="password" required placeholder="Enter your password" class="form-control password-field3">
+                                <span class="show-pass3">
+                                    <i class="icon-pass icon-view"></i>
+                                    <i class="icon-pass icon-hide"></i>
+                                </span>
+                            </div>
                         </fieldset>
                         <fieldset class="mt-20 input-stroke">
                             <label>Website</label>
                             <input type="text" placeholder="Website" class="form-control">
                         </fieldset>
-                        <fieldset class="mt-20 input-stroke">
+                        <fieldset class="mt-26 input-stroke">
                             <label>Phone Number</label>
-                            <input type="text" placeholder="Enter your phone number" class="form-control">
+                            <input type="number" placeholder="Enter your phone number" class="form-control">
                         </fieldset>
                         <fieldset class="mt-20 input-stroke">
                             <label>Birthday</label>
                             <input type="date" class="form-control">
                         </fieldset>
-                        <fieldset class="mt-20 input-stroke">
-                            
+                        <fieldset class="mt-26 input-upload">
+                            <span class="icon icon-upload2"></span>
                             <input type="file" class="upload-file">
                         </fieldset>
+                        <fieldset class="mt-20 input-stroke">
+                            <label>Message</label>
+                            <textarea class="form-control" placeholder="Write your review"></textarea>
+                        </fieldset>
+                        <button class="mt-20 tf-btn btn-lg primary">Button</button>
                     </form>
 
 
@@ -78,22 +197,55 @@
             </div>
             <div class="card mt-20">
                 <div class="card-header"> 
-                    <h3 class="fw-6">Style Input</h3>
-                    <p class="mt-4 text-5">add <code>.btn-square</code> to change the style</p>
+                    <h3 class="fw-6">Input line</h3>
                 </div>
-                <div class="card-body mt-20 grid-2 gap-10">
-                    <button class="tf-btn btn-lg btn-square primary">Primary</button>
-                    <button class="tf-btn btn-lg btn-square secondary">Secondary</button>
-                    <button class="tf-btn btn-lg btn-square success">Success</button>
-                    <button class="tf-btn btn-lg btn-square danger">Danger</button>
-                    <button class="tf-btn btn-lg btn-square warning">Warning</button>
-                    <button class="tf-btn btn-lg btn-square info">Info</button>
-                    <button class="tf-btn btn-lg btn-square light">Light</button>
-                    <button class="tf-btn btn-lg btn-square dark">Dark</button>
-                    <button class="tf-btn btn-lg btn-square disable">Disable</button>
+                <div class="card-body">
+                    <form>
+                        <fieldset class="mt-20 input-line">
+                            <label>Your name</label>
+                            <input type="text" placeholder="Enter your name" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-line">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email address" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-line">
+                            <label>Password</label>
+                            <div class="box-view-hide">
+                                <input type="password" required placeholder="Enter your password" class="form-control password-field4">
+                                <span class="show-pass4">
+                                    <i class="icon-pass icon-view"></i>
+                                    <i class="icon-pass icon-hide"></i>
+                                </span>
+                            </div>
+                        </fieldset>
+                        <fieldset class="mt-20 input-line">
+                            <label>Website</label>
+                            <input type="text" placeholder="Website" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-26 input-line">
+                            <label>Phone Number</label>
+                            <input type="number" placeholder="Enter your phone number" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-20 input-line">
+                            <label>Birthday</label>
+                            <input type="date" class="form-control">
+                        </fieldset>
+                        <fieldset class="mt-26 input-upload">
+                            <span class="icon icon-upload2"></span>
+                            <input type="file" class="upload-file">
+                        </fieldset>
+                        <fieldset class="mt-20 input-line">
+                            <label>Message</label>
+                            <textarea class="form-control" placeholder="Write your review"></textarea>
+                        </fieldset>
+                        <button class="mt-20 tf-btn btn-lg primary">Button</button>
+                    </form>
+
+
+
                 </div>
-            </div>
-           
+            </div>   
         </div>
     </div>
     
@@ -138,6 +290,7 @@
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
     <script>
