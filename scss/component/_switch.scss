@@ -26,40 +26,92 @@
             left: 18px;
         }
     }
-    &.success {
+    &.light {
+        background: var(--rgba-success);
+
+        &::before {
+            background: var(--success);
+        }
         &:checked:checked {
             background: var(--success);
             transition: 0.5s;
             &::before {
                 background: var(--white);
 
-                left: 28px;
+                left: 18px;
+            }
+        }
+    }
+    &.success {
+        background: var(--rgba-success);
+
+        &::before {
+            background: #54b24c;
+        }
+        &:checked:checked {
+            background: #54b24c;
+            transition: 0.5s;
+            &::before {
+                background: var(--white);
+
+                left: 18px;
             }
         }
     }
     &.warning {
+        background: var(--rgba-warning);
+
+        &::before {
+            background: var(--warning);
+        }
         &:checked:checked {
             background: var(--warning);
             transition: 0.5s;
             &::before {
                 background: var(--white);
 
-                left: 28px;
+                left: 18px;
             }
         }
     }
     &.danger {
+        background: var(--rgba-danger);
+
+        &::before {
+            background: var(--danger);
+        }
         &:checked:checked {
             background: var(--danger);
             transition: 0.5s;
             &::before {
                 background: var(--white);
 
-                left: 28px;
+                left: 18px;
+            }
+        }
+    }
+    &.danger {
+        background: var(--rgba-info);
+
+        &::before {
+            background: var(--info);
+        }
+        &:checked:checked {
+            background: var(--info);
+            transition: 0.5s;
+            &::before {
+                background: var(--white);
+
+                left: 18px;
             }
         }
     }
     &.dark {
+        background: var(--rgba-dark);
+
+        &::before {
+            background: var(--dark);
+        }
         &:checked:checked {
             background: var(--dark);
             transition: 0.5s;

@@ -2147,13 +2147,39 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background: var(--white);
   left: 18px;
 }
-.tf-switch-check.success:checked:checked {
+.tf-switch-check.light {
+  background: var(--rgba-success);
+}
+.tf-switch-check.light::before {
   background: var(--success);
+}
+.tf-switch-check.light:checked:checked {
+  background: var(--success);
+  transition: 0.5s;
+}
+.tf-switch-check.light:checked:checked::before {
+  background: var(--white);
+  left: 18px;
+}
+.tf-switch-check.success {
+  background: var(--rgba-success);
+}
+.tf-switch-check.success::before {
+  background: #54b24c;
+}
+.tf-switch-check.success:checked:checked {
+  background: #54b24c;
   transition: 0.5s;
 }
 .tf-switch-check.success:checked:checked::before {
   background: var(--white);
-  left: 28px;
+  left: 18px;
+}
+.tf-switch-check.warning {
+  background: var(--rgba-warning);
+}
+.tf-switch-check.warning::before {
+  background: var(--warning);
 }
 .tf-switch-check.warning:checked:checked {
   background: var(--warning);
@@ -2161,7 +2187,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .tf-switch-check.warning:checked:checked::before {
   background: var(--white);
-  left: 28px;
+  left: 18px;
+}
+.tf-switch-check.danger {
+  background: var(--rgba-danger);
+}
+.tf-switch-check.danger::before {
+  background: var(--danger);
 }
 .tf-switch-check.danger:checked:checked {
   background: var(--danger);
@@ -2169,7 +2201,27 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .tf-switch-check.danger:checked:checked::before {
   background: var(--white);
-  left: 28px;
+  left: 18px;
+}
+.tf-switch-check.danger {
+  background: var(--rgba-info);
+}
+.tf-switch-check.danger::before {
+  background: var(--info);
+}
+.tf-switch-check.danger:checked:checked {
+  background: var(--info);
+  transition: 0.5s;
+}
+.tf-switch-check.danger:checked:checked::before {
+  background: var(--white);
+  left: 18px;
+}
+.tf-switch-check.dark {
+  background: var(--rgba-dark);
+}
+.tf-switch-check.dark::before {
+  background: var(--dark);
 }
 .tf-switch-check.dark:checked:checked {
   background: var(--dark);
