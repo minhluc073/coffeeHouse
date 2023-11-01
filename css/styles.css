@@ -34,6 +34,7 @@
   --text-5: #ABADB2;
   --line: #F2F2F2;
   --line-2:#d9d9d9;
+  --line-rgba: rgba(255,255,255,0.1);
   --backdrop: #000000;
   --rgba-primary: rgba(135, 59, 10, 0.10);
   --rgba-success: rgba(30, 127, 17, 0.10);
@@ -707,8 +708,40 @@ code {
   padding-top: 65px;
 }
 
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
 .bg-white {
-  background-color: #fff !important;
+  background-color: var(--white) !important;
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.bg-danger {
+  background-color: var(--danger) !important;
+}
+
+.bg-warning {
+  background-color: var(--warning) !important;
+}
+
+.bg-info {
+  background-color: var(--info) !important;
+}
+
+.bg-light {
+  background-color: var(--light) !important;
+}
+
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+
+.bg-disabled {
+  background-color: var(--disable) !important;
 }
 
 .bg-surface {
@@ -719,32 +752,40 @@ code {
   background-color: #e5e5e5 !important;
 }
 
+.text-white {
+  color: var(--white) !important;
+}
+
 .text-primary {
-  color: #873B0A !important;
+  color: var(--primary) !important;
 }
 
 .text-onSurface {
   color: #131317 !important;
 }
 
-.text-critical {
-  color: #eb5a5a !important;
+.text-success {
+  color: var(--success) !important;
 }
 
-.bg-critical {
-  background-color: #eb5a5a;
-}
-
-.text-secondary {
-  color: #6c6c78 !important;
+.text-danger {
+  color: var(--danger) !important;
 }
 
 .text-warning {
-  color: #fabe3c !important;
+  color: var(--warning) !important;
 }
 
-.text-success {
-  color: #188038 !important;
+.text-info {
+  color: var(--info) !important;
+}
+
+.text-light {
+  color: var(--light) !important;
+}
+
+.text-dark {
+  color: var(--dark) !important;
 }
 
 .text-1 {
@@ -798,6 +839,18 @@ code {
 
 .line-bt {
   border-bottom: 1px solid var(--line) !important;
+}
+
+.line-bt2 {
+  border-bottom: 1px solid var(--line-rgba) !important;
+}
+
+.line-bt3 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.line-bt4 {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1) !important;
 }
 
 .line4-bt {
@@ -1089,6 +1142,23 @@ code {
 
 .nav-tabs {
   border-bottom: 0;
+}
+
+.nav-item .nav-link {
+  color: var(--primary-btn);
+  font-weight: 700;
+}
+.nav-item .nav-link.active {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--line);
+  border-bottom-color: transparent;
+}
+.nav-item .nav-link.disabled {
+  color: var(--text-4);
+}
+.nav-item .nav-link:hover {
+  border-color: transparent;
 }
 
 .user-tab {

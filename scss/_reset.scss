@@ -431,7 +431,6 @@ input[type="color"] {
     box-shadow: none;
 }
 
-
 code {
     color: var(--primary-btn);
 }
@@ -619,8 +618,32 @@ code {
 .pt-65 {
     padding-top: 65px;
 }
+.bg-primary {
+    background-color: var(--primary) !important;
+}
 .bg-white {
-    background-color: $white !important;
+    background-color: var(--white) !important;
+}
+.bg-success {
+    background-color: var(--success) !important;
+}
+.bg-danger {
+    background-color: var(--danger) !important;
+}
+.bg-warning {
+    background-color: var(--warning) !important;
+}
+.bg-info {
+    background-color: var(--info) !important;
+}
+.bg-light {
+    background-color: var(--light) !important;
+}
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+.bg-disabled {
+    background-color: var(--disable) !important;
 }
 .bg-surface {
     background-color: $surface;
@@ -629,26 +652,32 @@ code {
     background-color: $line !important;
 }
 // color text
+.text-white {
+    color: var(--white) !important;
+}
 .text-primary {
-    color: $primary !important;
+    color: var(--primary) !important;
 }
 .text-onSurface {
     color: $onSurface !important;
 }
-.text-critical {
-    color: $critical !important;
+.text-success {
+    color: var(--success) !important;
 }
-.bg-critical {
-    background-color: $critical;
-}
-.text-secondary {
-    color: $secondary !important;
+.text-danger {
+    color: var(--danger) !important;
 }
 .text-warning {
-    color: $warning !important;
+    color: var(--warning) !important;
 }
-.text-success {
-    color: $success !important;
+.text-info {
+    color: var(--info) !important;
+}
+.text-light {
+    color: var(--light) !important;
+}
+.text-dark {
+    color: var(--dark) !important;
 }
 .text-1 {
     color: var(--text);
@@ -694,6 +723,15 @@ code {
 }
 .line-bt {
     border-bottom: 1px solid var(--line) !important;
+}
+.line-bt2 {
+    border-bottom: 1px solid var(--line-rgba) !important;
+}
+.line-bt3 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.line-bt4 {
+    border-bottom: 1px solid rgb(17, 17, 17, 0.1) !important;
 }
 .line4-bt {
     border-bottom: 4px solid $surface;

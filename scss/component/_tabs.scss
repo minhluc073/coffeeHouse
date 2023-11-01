@@ -17,6 +17,24 @@
 .nav-tabs {
     border-bottom: 0;
 }
+.nav-item {
+    .nav-link{
+        color: var(--primary-btn);
+        font-weight: 700;
+        &.active{
+            background: var(--white);
+            color: var(--black);
+            border-color: var(--line);
+            border-bottom-color: transparent ;
+        }
+        &.disabled{
+            color: var(--text-4);
+        }
+        &:hover{
+            border-color: transparent;
+        }
+    }
+}
 
 .user-tab {
     display: grid;
