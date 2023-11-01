@@ -233,9 +233,20 @@
     }
 
     &.icon {
-        img {
+        border: 1px solid var(--line);
+        color: var(--black);
+        .img-icon {
             width: 22px;
             height: 22px;
+        }
+        .icon {
+            font-size: 22px;
+            &.icon-tw{
+                color: #03A9F4;
+            }
+            &.icon-x {
+                color: var(--black);
+            }
         }
     }
     // &.lh-md {
@@ -295,15 +306,70 @@
     font-size: 14px !important;
 }
 
-.btn-showmore{
+.btn-showmore {
     color: var(--primary);
     display: flex;
     align-items: center;
     gap: 8px;
     font-weight: 700;
     svg {
-        path{
+        path {
             stroke: var(--primary);
         }
+    }
+}
+
+.btn-social {
+    @include flex(center, center);
+    color: $white;
+    &:hover{
+        color: $white;
+    }
+    &.twitter {
+        background: #03a9f4;
+    }
+    &.x-social {
+        background: var(--black);
+    }
+    &.instagram {
+        background: linear-gradient(
+                45deg,
+                #fee411 11.93%,
+                #fedb16 15.62%,
+                #fec125 21.73%,
+                #fe983d 29.55%,
+                #fe5f5e 38.65%,
+                #fe2181 47.46%,
+                #9000dc 82.98%
+            ),
+            #03a9f4;
+    }
+    &.telegram {
+        background: #039be5;
+    }
+    &.line {
+        background: #00c200;
+    }
+
+    &.sm {
+        width: 34px;
+        height: 34px;
+        font-size: 16px;
+    }
+    &.md {
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+    &.lg {
+        width: 42px;
+        height: 42px;
+        font-size: 20px;
+    }
+    &.rounded {
+        border-radius: 10px !important;
+    }
+    &.circle {
+        border-radius: 999px !important;
     }
 }

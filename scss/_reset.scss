@@ -271,7 +271,7 @@ img {
 
 b,
 strong {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 h1 {
@@ -447,10 +447,12 @@ code {
     margin-left: auto;
     margin-right: auto;
 }
-
-.text-large {
-    font-size: 17px;
-    line-height: 24px;
+.font-main {
+    font-family: $font-main-family;
+}
+.text-lg-title {
+    font-size: 16px;
+    line-height: 22.4px;
 }
 .text-medium {
     font-size: 16px;
@@ -459,6 +461,21 @@ code {
 .text-small {
     font-size: 14px;
     line-height: 18px;
+}
+// text-size
+
+
+.text-md-start {
+    font-size: 13px;
+    line-height: 18.2px;
+}
+.text-sm-start {
+    font-size: 12px;
+    line-height: normal;
+}
+// font-size: 
+.fs-16{
+    font-size: 16px;
 }
 //
 .fw-3 {
@@ -694,33 +711,11 @@ code {
 .text-5 {
     color: var(--text-5);
 }
-
-.tf-checkbox {
-    position: relative;
-    border: 1px solid $secondary;
-    border-radius: 5px;
-    background: none;
-    cursor: pointer;
-    outline: 0;
-    width: 16px;
-    height: 16px;
-    -webkit-appearance: none;
-    @include flex(center, center);
-    &::before {
-        content: "\e923";
-        position: absolute;
-        font-family: $fontIcon;
-        font-size: 8px;
-        margin-top: -1px;
-        color: $white;
-    }
-    &:checked {
-        border-color: $primary;
-        &::before {
-            color: $primary;
-        }
-    }
+// opacity
+.opacity-5{
+    opacity: 0.5;
 }
+
 .line-bt {
     border-bottom: 1px solid var(--line) !important;
 }
@@ -860,11 +855,34 @@ code {
     }
 }
 
-// text-size
-.text-xsmall {
-    font-size: 12px;
-    line-height: normal;
-}
+
 .app-content {
     padding: 60px 0px 85px;
+}
+
+.tf-checkbox {
+    position: relative;
+    border: 1px solid $secondary;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    outline: 0;
+    width: 16px;
+    height: 16px;
+    -webkit-appearance: none;
+    @include flex(center, center);
+    &::before {
+        content: "\e923";
+        position: absolute;
+        font-family: $fontIcon;
+        font-size: 8px;
+        margin-top: -1px;
+        color: $white;
+    }
+    &:checked {
+        border-color: $primary;
+        &::before {
+            color: $primary;
+        }
+    }
 }

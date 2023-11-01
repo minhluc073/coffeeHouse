@@ -23,7 +23,7 @@
             display: block;
             // background-color: red;
             &::after {
-                content: "\e96d";
+                content: "\e973";
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -148,7 +148,7 @@
     &::after {
         position: absolute;
         font-family: $fontIcon;
-        content: "\e92c";
+        content: "\e932";
         right: 0;
         color: var(--text-3);
         font-size: 16px;
