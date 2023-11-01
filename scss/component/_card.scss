@@ -2,7 +2,7 @@
 .card {
     padding: 16px;
     border-radius: 16px;
-    box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-box);
     border-color: transparent;
     background-color: var(--white);
     .card-header {
