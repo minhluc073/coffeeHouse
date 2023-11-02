@@ -27,6 +27,7 @@
   --bg-ip: #F7F7F7;
   --shadow:0px 15px 20px 0px rgba(201, 106, 40, 0.44);
   --shadow2: 0px 1px 4px 0px rgba(0, 0, 0, 0.07) inset;
+  --shadow3: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
   --shadow-box:0px 8px 30px 0px rgba(0, 0, 0, 0.06);
   --text: #6F7582;
   --text-2:#C9CBCE;
@@ -832,6 +833,10 @@ code {
   opacity: 0.5;
 }
 
+.line-top {
+  border-top: 1px solid var(--line) !important;
+}
+
 .line-bt {
   border-bottom: 1px solid var(--line) !important;
 }
@@ -1221,18 +1226,18 @@ code {
 .tf-btn.btn-lg {
   font-size: 16px;
   line-height: 21px;
-  padding: 20px 0px;
+  padding: 20px;
 }
 .tf-btn.btn-md {
   font-size: 15px;
   line-height: 21px;
-  padding: 16px 0px;
+  padding: 16px;
   border-radius: 16px;
 }
 .tf-btn.btn-sm {
   font-size: 14px;
   line-height: 21px;
-  padding: 10px 0px;
+  padding: 10px;
   border-radius: 12px;
 }
 .tf-btn.primary {
@@ -1564,6 +1569,116 @@ code {
 }
 .btn-social.circle {
   border-radius: 999px !important;
+}
+
+.dropdown .dropdown-toggle:after {
+  content: none;
+}
+.dropdown .dropdown-menu {
+  padding: 20px;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow3);
+  border-color: transparent;
+}
+.dropdown .dropdown-menu .dropdown-item {
+  padding: 0;
+  color: var(--black);
+  font-weight: 500;
+}
+.dropdown .dropdown-menu .dropdown-item:not(:last-child) {
+  padding-bottom: 10px;
+}
+.dropdown .dropdown-menu .dropdown-divider {
+  margin: 0px 0px 10px;
+  border-color: var(--line);
+}
+.dropdown .dropdown-menu.full {
+  min-width: 100%;
+}
+.dropdown.style-2 .dropdown-menu .dropdown-header {
+  font-size: 16px;
+  font-weight: "Nunito", sans-serif;
+  color: var(--black);
+  font-weight: 700;
+}
+.dropdown.style-2 .dropdown-menu .top {
+  padding-bottom: 10px;
+}
+.dropdown.style-2 .dropdown-menu .top .dropdown-header {
+  padding: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+.dropdown.style-2 .dropdown-menu .top .dropdown-item {
+  padding-top: 10px;
+}
+.dropdown.style-2 .dropdown-menu .bottom .dropdown-header {
+  padding: 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+.dropdown.style-2 .dropdown-menu .bottom .dropdown-item {
+  padding-top: 10px;
+}
+.dropdown.style-3 .dropdown-menu {
+  padding: 10px 0px;
+  border: 0;
+}
+.dropdown.style-3 .dropdown-menu .dropdown-item {
+  padding: 8px 20px;
+}
+.dropdown.style-3 .dropdown-menu .dropdown-item.active {
+  background: var(--rgba-primary);
+}
+.dropdown.style-3 .dropdown-menu .dropdown-item.disable {
+  color: var(--text);
+}
+.dropdown.dropup .dropdown-toggle:after {
+  content: "\e912";
+  font-family: "icomoon";
+  border: 0;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+.dropdown.dropend .dropdown-toggle:after {
+  content: "\e911";
+  font-family: "icomoon";
+  border: 0;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+.dropdown.dropstart .dropdown-toggle::before {
+  content: "\e910";
+  font-family: "icomoon";
+  border: 0;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.min-w-auto {
+  min-width: auto;
+}
+
+.btn-group > .tf-btn:not(:last-child):not(.btn-split) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group > :not(.btn) + .tf-btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn-group > .btn-split:first-child, .btn-group.btn-group > .btn-group.btn-group:not(:last-child) > .tf-btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-group .btn-split {
+  width: auto;
+  padding: 16px 8px;
+  background: var(--primary-bold);
 }
 
 .noUi-horizontal {

@@ -715,7 +715,9 @@ code {
 .opacity-5{
     opacity: 0.5;
 }
-
+.line-top {
+    border-top: 1px solid var(--line) !important;
+}
 .line-bt {
     border-bottom: 1px solid var(--line) !important;
 }

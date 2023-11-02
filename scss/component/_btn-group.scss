@@ -1,0 +1,20 @@
+.btn-group {
+    > .tf-btn:not(:last-child):not(.btn-split) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    > :not(.btn) + .tf-btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    > .btn-split:first-child,
+    &.btn-group > &.btn-group:not(:last-child) > .tf-btn {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .btn-split {
+        width: auto;
+        padding: 16px 8px;
+        background: var(--primary-bold);
+    }
+}
