@@ -907,6 +907,10 @@ code {
   gap: 12px;
 }
 
+.gap-16 {
+  gap: 16px;
+}
+
 .gap-20 {
   gap: 20px;
 }
@@ -1571,16 +1575,17 @@ code {
   border-radius: 999px !important;
 }
 
-.dropdown .dropdown-toggle:after {
-  content: none;
-}
-.dropdown .dropdown-menu {
+.dropdown-menu {
   padding: 20px;
   background: var(--white);
   border-radius: 10px;
   box-shadow: var(--shadow3);
   border-color: transparent;
   min-width: 114px;
+}
+
+.dropdown .dropdown-toggle:after {
+  content: none;
 }
 .dropdown .dropdown-menu .dropdown-item {
   padding: 0;
@@ -2820,6 +2825,29 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 20px;
 }
 
+.modal .modal-dialog {
+  max-width: 100%;
+  margin: 20px;
+}
+.modal .modal-dialog .modal-content {
+  padding: 30px;
+  border-radius: 20px;
+  border: 0;
+  background: var(--white);
+  box-shadow: var(--shadow-box);
+}
+.modal .modal-dialog .modal-content .modal-body {
+  padding: 8px 0px 20px;
+  border-bottom: 1px solid var(--line);
+}
+.modal .modal-dialog .modal-content .modal-footer {
+  padding: 20px 0px 0px;
+  margin: 0;
+}
+.modal.small .modal-dialog {
+  max-width: 260px;
+  margin: 20px auto;
+}
 .modal.action-sheet {
   z-index: 5000;
 }
@@ -2934,6 +2962,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   left: 0;
   bottom: 0;
   top: 0;
+  padding: 0;
 }
 .modal.modalLeft .modal-dialog .modal-content .modal-body {
   overflow: auto;
@@ -2986,10 +3015,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .modal .pwa-content .group-btn .btn-dismiss {
   background: #e6ecec;
-}
-.modal .modal-content {
-  border: none;
-  border-radius: 14px;
 }
 .modal .modal-header {
   padding: 0;

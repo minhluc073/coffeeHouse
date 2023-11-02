@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="images/logo/48.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
 
-    <title>ui components</title>
+    <title>Modal</title>
 </head>
 
 <body>
@@ -31,118 +31,26 @@
         <div class="left">
           <a href="javascript:void(0);" class="icon back-btn"><i class="icon-left-btn"></i></a>
         </div>
-        <h3>Component</h3>
+        <h3>Modal</h3>
        
     </div>
     <div class="app-content">
         <div class="tf-container">
-            <ul>
-              <li><a href="ui-alert.html" class="nav-link-item pt-20 pb-16 line-bt">
-                <i class="icon icon-alert"></i>
-                <span>Alert</span>
-              </a></li>
-              <li><a href="ui-avatar.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-avt"></i>
-                <span>Avatar</span>
-              </a></li>
-              <li><a href="ui-button.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-btn"></i>
-                <span>Button</span>
-              </a></li>
-              <li><a href="ui-radio.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-radio"></i>
-                <span>Radio button</span>
-              </a></li>
-              <li><a href="ui-input.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-input"></i>
-                <span>Input</span>
-              </a></li>
-              <li><a href="ui-badge.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-badge"></i>
-                <span>Badge</span>
-              </a></li>
-              <li><a href="ui-btn-group.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-btn-group"></i>
-                <span>Button group</span>
-              </a></li>
-              <li><a href="ui-card.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-card"></i>
-                <span>Card</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-chart"></i>
-                <span>Charts</span>
-              </a></li>
-              <li><a href="ui-dropdown.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-dropdown"></i>
-                <span>Dropdown</span>
-              </a></li>
-             
-              <li><a href="ui-timeline.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-timeline"></i>
-                <span>Timeline</span>
-              </a></li>
-              <li><a href="ui-list-group.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-listgroup"></i>
-                <span>List group</span>
-              </a></li>
-              <li><a href="ui-modal.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-modal"></i>
-                <span>Modal</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-menubar"></i>
-                <span>Menubar</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-progress"></i>
-                <span>Progressbar</span>
-              </a></li>
-              <li><a href="ui-social.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-social"></i>
-                <span>Social</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-typo"></i>
-                <span>Typography</span>
-              </a></li>
-              <li><a href="ui-toast.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-toast"></i>
-                <span>Toast</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-treeview"></i>
-                <span>Treeview</span>
-              </a></li>
-              <li><a href="ui-switch.html" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-sw"></i>
-                <span>Switch</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-stepper"></i>
-                <span>Stepper</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-spin"></i>
-                <span>Spinner</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-range"></i>
-                <span>Range slider</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-gallery"></i>
-                <span>Light gallery</span>
-              </a></li>
-              <li><a href="" class="nav-link-item pt-16 pb-16 line-bt">
-                <i class="icon icon-divider"></i>
-                <span>Divider</span>
-              </a></li>
-              <li><a href="ui-language.html" class="nav-link-item pt-16">
-                <i class="icon icon-language"></i>
-                <span>Language</span>
-              </a></li>
-            </ul>
+            <div class="card mt-20">
+                <div class="card-header"> 
+                    <h3 class="fw-6">Modal basic</h3>
+                </div>
+                <div class="card-body mt-20">
+                    <button type="button" class="tf-btn btn-md primary" data-bs-target="#modalBasic" data-bs-toggle="modal">Modal Basic</button>
+                    <button type="button" class="mt-16 tf-btn btn-md primary" data-bs-target="#modalLong" data-bs-toggle="modal">Long Content Modal</button>
+                    <button type="button" class="mt-16 tf-btn btn-md primary" data-bs-target="#modalCenter" data-bs-toggle="modal">Modal Centered</button>
+                    <button type="button" class="mt-16 tf-btn btn-md primary" data-bs-target="#modalSmall" data-bs-toggle="modal">Modal Small</button>
+
+
+
+                </div>
+            </div>
+           
         </div>
     </div>
     
@@ -184,19 +92,74 @@
       </ul>
          
     </div>
-    
-    <div class="modal fade modalCenter" id="logout">
+
+
+    <div class="modal fade" id="modalBasic">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content ">
+                <div class="modal-header justify-content-center">
+                    <h3 class="modal-title fw-6">Basic Modal</h3>
+                   
+                </div>
+                <div class="modal-body fw-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et sodales purus.</div>
+                <div class="d-flex gap-16 mt-20">
+                    <button type="button" class="tf-btn btn-lg secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="tf-btn btn-lg primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLong">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content ">
+                <div class="modal-header justify-content-center">
+                    <h3 class="modal-title fw-6">Long content modal</h3>
+                   
+                </div>
+                <div class="modal-body">
+                    <p class="fw-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et sodales purus.</p>
+                    <p class="fw-5 mt-8">
+                        Mauris consectetur, lacus sit amet malesuada convallis, quam erat laoreet turpis, eget dapibus magna erat et turpis. Quisque malesuada nunc justo, laoreet egestas orci commodo ac. Cras finibus metus in nisi pellentesque, at luctus ex consectetur. Nunc hendrerit sollicitudin commodo.
+                    </p>
+                    <p class="fw-5 mt-8">Aliquam libero nulla, faucibus eget maximus sit amet, eleifend condimentum est. Sed eleifend volutpat turpis id congue.</p>
+                </div>
+                <div class="d-flex gap-16 mt-20">
+                    <button type="button" class="tf-btn btn-lg secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="tf-btn btn-lg primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCenter">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="p-16 line-bt">
-                    <h5 class="text-center">Log Out</h5>
-                    <p class="mt-8 text-center text-small fw-4">You will be returned to the login screen.</p>
+            <div class="modal-content ">
+                <div class="modal-header justify-content-center">
+                    <h3 class="modal-title fw-6">Modal Centered</h3>
+                   
                 </div>
-                <div class="grid-2">
-                   <a href="#" class="line-r text-center text-small fw-5 p-10" data-bs-dismiss="modal">Cancel</a>
-                   <a href="sign-in.html" class="text-center text-small fw-5 p-10 text-critical">Log Out</a>
+                <div class="modal-body fw-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et sodales purus.</div>
+                <div class="d-flex gap-16 mt-20">
+                    <button type="button" class="tf-btn btn-lg secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="tf-btn btn-lg primary">Save</button>
                 </div>
-               
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade small" id="modalSmall">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content ">
+                <div class="modal-header justify-content-center">
+                    <h3 class="modal-title fw-6">Small modal</h3>
+                   
+                </div>
+                <div class="modal-body fw-5 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et sodales purus.</div>
+                <div class="d-flex gap-16 mt-20">
+                    <button type="button" class="tf-btn btn-lg secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="tf-btn btn-lg primary">Save</button>
+                </div>
             </div>
         </div>
     </div>

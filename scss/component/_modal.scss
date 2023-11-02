@@ -1,4 +1,30 @@
 .modal {
+    // bootstrap
+    .modal-dialog {
+        max-width: 100%;
+        margin: 20px;
+        .modal-content {
+            padding: 30px;
+            border-radius: 20px;
+            border: 0;
+            background: var(--white);
+            box-shadow: var(--shadow-box);
+            .modal-body{
+                padding: 8px 0px 20px;
+                border-bottom: 1px solid var(--line);
+            }
+            .modal-footer{
+                padding: 20px 0px 0px;
+                margin: 0;
+            }
+        }
+    }
+    &.small{
+        .modal-dialog{
+            max-width: 260px;
+            margin: 20px auto;
+        }  
+    }
     &.action-sheet {
         z-index: 5000;
         .modal-dialog {
@@ -125,6 +151,7 @@
                 left: 0;
                 bottom: 0;
                 top: 0;
+                padding: 0;
                 .modal-body {
                     overflow: auto;
                     padding: 0;
@@ -192,8 +219,6 @@
         }
     }
     .modal-content {
-        border: none;
-        border-radius: 14px;
         // &.center {
         //     border-radius: 16px;
         //     padding: 20px;

@@ -1,3 +1,12 @@
+.dropdown-menu {
+    padding: 20px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow3);
+    border-color: transparent;
+    min-width: 114px;
+}
+
 .dropdown {
     .dropdown-toggle {
         &:after {
@@ -5,13 +14,6 @@
         }
     }
     .dropdown-menu {
-        padding: 20px;
-        background: var(--white);
-        border-radius: 10px;
-        box-shadow: var(--shadow3);
-        border-color: transparent;
-        min-width: 114px;
-
         .dropdown-item {
             padding: 0;
             color: var(--black);
