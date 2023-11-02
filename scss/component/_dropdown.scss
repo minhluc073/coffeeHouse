@@ -10,6 +10,7 @@
         border-radius: 10px;
         box-shadow: var(--shadow3);
         border-color: transparent;
+        min-width: 114px;
 
         .dropdown-item {
             padding: 0;
@@ -109,7 +110,17 @@
             }
         }
     }
+    .btn-dropdown {
+        &:after {
+            content: "\e913";
+            font-family: $fontIcon;
+            border: 0;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0;
+        }
+    }
 }
-.min-w-auto{
+.min-w-auto {
     min-width: auto;
 }
