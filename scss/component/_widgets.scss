@@ -492,4 +492,17 @@
     }
 }
 
+.list-icons{
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        .icon {
+            font-size: 16px;
+        }
+    }
+}
+
+
+
 

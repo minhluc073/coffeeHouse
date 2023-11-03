@@ -309,7 +309,7 @@ h5,
 h6 {
     font-family: $font-title-family;
     color: var(--black);
-    font-weight: 500;
+    font-weight: 600;
     a {
         // color: $primary;
         &:hover {
@@ -430,10 +430,17 @@ input[type="color"] {
     -o-box-shadow: none;
     box-shadow: none;
 }
-
+ dl dt{
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 700;
+ }
 code {
     color: var(--primary-btn);
 }
+
+
+
 .tf-container {
     max-width: 1024px;
     margin-left: auto;
@@ -447,6 +454,11 @@ code {
     margin-left: auto;
     margin-right: auto;
 }
+.list-style {
+    list-style: disc;
+    padding-left: 20px;
+}
+// typography
 .font-main {
     font-family: $font-main-family;
 }
@@ -462,8 +474,13 @@ code {
     font-size: 14px;
     line-height: 18px;
 }
+p,
+.text-justify {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+}
 // text-size
-
 
 .text-md-start {
     font-size: 13px;
@@ -471,10 +488,11 @@ code {
 }
 .text-sm-start {
     font-size: 12px;
-    line-height: normal;
+    line-height: 16.8px;
 }
-// font-size: 
-.fs-16{
+
+// font-size:
+.fs-16 {
     font-size: 16px;
 }
 //
@@ -484,14 +502,18 @@ code {
 .fw-4 {
     font-weight: 400;
 }
+.fw-normal,
 .fw-5 {
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 .fw-6 {
     font-weight: 600;
 }
 .fw-7 {
     font-weight: 700;
+}
+.fw-italic {
+    font-style: italic;
 }
 // spacing
 //  margin
@@ -663,7 +685,7 @@ code {
     background-color: var(--disable) !important;
 }
 .bg-surface {
-    background-color: $surface;
+    background-color: var(--surface);
 }
 .bg-secondary {
     background-color: $line !important;
@@ -696,6 +718,9 @@ code {
 .text-dark {
     color: var(--dark) !important;
 }
+.text-muted {
+    color: var(--text-4) !important;
+}
 .text-1 {
     color: var(--text);
 }
@@ -705,14 +730,12 @@ code {
 .text-3 {
     color: var(--text-3);
 }
-.text-4 {
-    color: var(--text-4);
-}
+
 .text-5 {
     color: var(--text-5);
 }
 // opacity
-.opacity-5{
+.opacity-5 {
     opacity: 0.5;
 }
 .line-top {
@@ -773,7 +796,7 @@ code {
 .gap-12 {
     gap: 12px;
 }
-.gap-16{
+.gap-16 {
     gap: 16px;
 }
 .gap-20 {
@@ -859,7 +882,6 @@ code {
         top: 10px;
     }
 }
-
 
 .app-content {
     padding: 60px 0px 85px;

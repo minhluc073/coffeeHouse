@@ -1,0 +1,119 @@
+// .footer {
+//     background: $white;
+//     &.fixed {
+//         position: fixed;
+//         bottom: 0;
+//         width: 100%;
+//     }
+// }
+
+.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: $white;
+}
+.menubar-footer {
+    padding: 17px 20px 18px;
+
+    .inner-bar {
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        max-width: 1024px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        li {
+            padding: 0;
+            width: 20%;
+            a {
+                color: var(--text);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 8px;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: normal;
+                .icon {
+                    font-size: 24px;
+                    color: var(--black);
+                }
+            }
+            &.active {
+                a {
+                    color: var(--primary-btn);
+                    font-weight: 700;
+                    .icon {
+                        color: var(--primary-btn);
+                    }
+                }
+            }
+        }
+        .action-home {
+            margin-top: -30px;
+            a {
+                @include flex(center, center);
+                border-radius: 9999px;
+                width: 46px;
+                height: 46px;
+                background-color: var(--primary-btn);
+                box-shadow: var(--shadow);
+                margin: 0 auto;
+                .icon-home {
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &.style-1 {
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    &.style-2 {
+        padding: 14px 19px 19px;
+        border-radius: 16px;
+        li {
+            width: 25%;
+        }
+    }
+    &.line {
+        li {
+            &.active {
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -18px;
+                    left: 50%;
+                    width: 56px;
+                    height: 4px;
+                    background: var(--primary-btn);
+                    border-radius: 20px 20px 0px 0px;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+    &.style-3 {
+        padding: 18px 19px;
+        border-radius: 16px;
+        li {
+            width: 25%;
+        }
+    }
+    &.style-4 {
+        padding: 18px 19px;
+        border-radius: 16px;
+        li {
+            width: 20%;
+        }
+    }
+}
