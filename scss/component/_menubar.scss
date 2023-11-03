@@ -54,7 +54,7 @@
             }
         }
         .action-home {
-            margin-top: -30px;
+            margin-top: -40px;
             a {
                 @include flex(center, center);
                 border-radius: 9999px;
@@ -63,7 +63,7 @@
                 background-color: var(--primary-btn);
                 box-shadow: var(--shadow);
                 margin: 0 auto;
-                .icon-home {
+                i{
                     font-size: 18px;
                     color: #fff;
                 }
@@ -115,5 +115,10 @@
         li {
             width: 20%;
         }
+    }
+    &.style-5 {
+        padding: 18px 19px;
+        border-radius: 16px;
+
     }
 }
