@@ -86,3 +86,30 @@
         margin-top: 2px;
     }
 }
+
+.tf-checkbox {
+    position: relative;
+    border: 1px solid var(--line-2);
+    border-radius: 6px;
+    background: none;
+    cursor: pointer;
+    outline: 0;
+    width: 22px;
+    height: 22px;
+    -webkit-appearance: none;
+    @include flex(center, center);
+    &::before {
+        content: "\e973";
+        position: absolute;
+        font-family: $fontIcon;
+        font-size: 10px;
+        margin-top: -1px;
+        color: $white;
+    }
+    &:checked {
+        border-color: $primary;
+        &::before {
+            color: $primary;
+        }
+    }
+}

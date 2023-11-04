@@ -52,6 +52,7 @@ $rgba-dark: rgba(27, 50, 95, 0.10);
     --primary-btn:#C96A28;
     --secondary: #F2F2F2;
     --success: #1E7F11;
+    --success2: #54B24C;
     --danger: #E10000;
     --warning: #FF8A00;
     --info: #A70267;
@@ -88,7 +89,7 @@ $rgba-dark: rgba(27, 50, 95, 0.10);
     --line-rgba: rgba(255,255,255,0.1);
     //backdrop
     --backdrop: #000000;
-
+    --bg-progress:#F0F0F1;
 
     // rgba colors
     --rgba-primary: rgba(135, 59, 10, 0.10);
@@ -98,6 +99,8 @@ $rgba-dark: rgba(27, 50, 95, 0.10);
     --rgba-info: rgba(167, 2, 103, 0.10);
     --rgba-dark: rgba(27, 50, 95, 0.10);
 
+    // liner garden colors
+    --liner-primary: linear-gradient(270deg, #E17E3E 0%, #873B0A 100%);
 
 }
 

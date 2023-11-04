@@ -6,6 +6,9 @@
     @include flex(center, center);
     gap: 10px;
     width: 100%;
+    &.inline {
+        width: auto;
+    }
     // sizes
     &.btn-lg {
         font-size: 16px;
@@ -241,8 +244,8 @@
         }
         .icon {
             font-size: 22px;
-            &.icon-tw{
-                color: #03A9F4;
+            &.icon-tw {
+                color: #03a9f4;
             }
             &.icon-x {
                 color: var(--black);
@@ -322,7 +325,7 @@
 .btn-social {
     @include flex(center, center);
     color: $white;
-    &:hover{
+    &:hover {
         color: $white;
     }
     &.twitter {
@@ -371,5 +374,22 @@
     }
     &.circle {
         border-radius: 999px !important;
+    }
+}
+
+.tf-loading {
+    width: auto;
+    display: inline-flex;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    color: var(--text-5);
+    .spinner-circle{
+       .spinner-child{
+        &::before{
+            background-color: var(--text-5);
+        }
+       } 
     }
 }
