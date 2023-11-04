@@ -22,12 +22,12 @@
   ------------------------------------------------------------------------------------- */
   var showPass = function () {
     $(".show-pass").on("click", function () {
-        $(this).toggleClass("active");
-        if ($(".password-field").attr("type") == "password") {
-          $(".password-field").attr("type", "text");
-        } else if ($(".password-field").attr("type") == "text") {
-          $(".password-field").attr("type", "password");
-        }
+      $(this).toggleClass("active");
+      if ($(".password-field").attr("type") == "password") {
+        $(".password-field").attr("type", "text");
+      } else if ($(".password-field").attr("type") == "text") {
+        $(".password-field").attr("type", "password");
+      }
     });
 
     $(".show-pass2").on("click", function () {
@@ -304,6 +304,14 @@
       });
     }
   };
+
+  /* touch spin
+  ----------------------------------------------------------------------------------------- */
+  var touchSpin = function () {
+    if ($(".stepper").length > 0) {
+      $(".stepper").TouchSpin();
+    }
+  };
   /* preloader 
   ------------------------------------------------------------------------------------- */
   var preloader = function () {
@@ -374,6 +382,7 @@
     activeSuggest();
     selectImages();
     loadmore();
+    touchSpin();
     preloader();
     themeSetting();
     setThemePanel();

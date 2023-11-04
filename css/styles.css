@@ -2621,6 +2621,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   gap: 20px;
   align-items: center;
 }
+.fieldset-sw label {
+  cursor: pointer;
+}
 
 .sw-disabled {
   opacity: 0.5;
@@ -3397,6 +3400,72 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .timeline-status .timeline-item.process::after {
   background: var(--primary);
   border-color: var(--primary);
+}
+
+.tf-stepper {
+  width: 164px;
+  text-align: center;
+}
+.tf-stepper label {
+  margin-bottom: 14px;
+}
+.tf-stepper .bootstrap-touchspin {
+  align-items: center;
+  gap: 10px;
+}
+.tf-stepper .bootstrap-touchspin .btn {
+  border-radius: 46px;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  text-align: center;
+  font-size: 22px;
+  color: var(--black);
+  font-weight: 500;
+  background-color: transparent;
+  border-color: var(--line);
+}
+.tf-stepper .bootstrap-touchspin .btn:focus {
+  box-shadow: unset;
+  border-color: transparent;
+}
+.tf-stepper .stepper {
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px;
+}
+.tf-stepper .stepper:focus {
+  border-color: transparent !important;
+}
+.tf-stepper.round-1 .bootstrap-touchspin .btn {
+  border-radius: 14px;
+}
+.tf-stepper.primary .bootstrap-touchspin .btn {
+  border-color: transparent;
+  background-color: var(--primary);
+  color: #fff;
+}
+.tf-stepper.success .bootstrap-touchspin .btn {
+  border-color: transparent;
+  background-color: var(--success);
+  color: #fff;
+}
+.tf-stepper.danger .bootstrap-touchspin .btn {
+  border-color: transparent;
+  background-color: var(--danger);
+  color: #fff;
+}
+.tf-stepper.info .bootstrap-touchspin .btn {
+  border-color: transparent;
+  background-color: var(--info);
+  color: #fff;
+}
+.tf-stepper.dark .bootstrap-touchspin .btn {
+  border-color: transparent;
+  background-color: var(--dark);
+  color: #fff;
 }
 
 .listview-item {

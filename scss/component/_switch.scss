@@ -126,6 +126,9 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    label {
+        cursor: pointer;
+    }
 }
 .sw-disabled {
     opacity: 0.5;
