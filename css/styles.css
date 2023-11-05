@@ -628,6 +628,10 @@ p,
   margin-top: 40px;
 }
 
+.mt-45 {
+  margin-top: 45px;
+}
+
 .mt-60 {
   margin-top: 60px;
 }
@@ -713,7 +717,7 @@ p,
 }
 
 .pb-30 {
-  padding-bottom: 30px;
+  padding-bottom: 30px !important;
 }
 
 .pb-40 {
@@ -3832,6 +3836,132 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .spinner-grow.disabled {
   background-color: var(--disable);
+}
+
+.tf-divider {
+  position: relative;
+  width: 100%;
+  border-color: var(--primary);
+  border-width: 2px 0 0 0;
+  border-style: solid;
+  z-index: 1;
+}
+.tf-divider span {
+  top: -14px;
+}
+.tf-divider .icon {
+  width: 25px;
+  height: 25px;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.tf-divider.success {
+  border-color: var(--success);
+}
+.tf-divider.success .icon,
+.tf-divider.success .text {
+  background-color: var(--success);
+}
+.tf-divider.warning {
+  border-color: var(--warning);
+}
+.tf-divider.warning .icon,
+.tf-divider.warning .text {
+  background-color: var(--warning);
+}
+.tf-divider.danger {
+  border-color: var(--danger);
+}
+.tf-divider.danger .icon,
+.tf-divider.danger .text {
+  background-color: var(--danger);
+}
+.tf-divider.info {
+  border-color: var(--info);
+}
+.tf-divider.info .icon,
+.tf-divider.info .text {
+  background-color: var(--info);
+}
+.tf-divider.light {
+  border-color: var(--light);
+}
+.tf-divider.light .icon,
+.tf-divider.light .text {
+  background-color: var(--light);
+}
+.tf-divider.dark {
+  border-color: var(--dark);
+}
+.tf-divider.dark .icon,
+.tf-divider.dark .text {
+  background-color: var(--dark);
+}
+.tf-divider.disable {
+  border-color: var(--disable);
+}
+.tf-divider.disable .icon,
+.tf-divider.disable .text {
+  background-color: var(--disable);
+}
+.tf-divider.left span {
+  position: absolute;
+  left: 0;
+}
+.tf-divider.left-1 span {
+  position: absolute;
+  left: 20%;
+}
+.tf-divider.left-2 span {
+  position: absolute;
+  left: 30%;
+}
+.tf-divider.left-3 span {
+  position: absolute;
+  left: 10%;
+}
+.tf-divider.right span {
+  position: absolute;
+  right: 5%;
+}
+.tf-divider.right-1 span {
+  position: absolute;
+  right: 35%;
+}
+.tf-divider.right-2 span {
+  position: absolute;
+  right: 30%;
+}
+.tf-divider .text {
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: var(--white);
+  top: -15px;
+}
+.tf-divider.transparent .text {
+  background-color: var(--white);
+  color: var(--primary);
+}
+.tf-divider.transparent.success .text {
+  color: var(--success);
+}
+.tf-divider.transparent.warning .text {
+  color: var(--warning);
+}
+.tf-divider.b-width {
+  border-width: 1px 0 0 0;
+}
+.tf-divider.dashed {
+  border-style: dashed;
+}
+.tf-divider.dotted {
+  border-style: dotted;
 }
 
 .listview-item {
