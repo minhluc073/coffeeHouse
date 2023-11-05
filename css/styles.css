@@ -716,8 +716,12 @@ p,
   padding-bottom: 30px;
 }
 
+.pb-40 {
+  padding-bottom: 40px !important;
+}
+
 .pb-60 {
-  padding-bottom: 60px;
+  padding-bottom: 60px !important;
 }
 
 .pb-72 {
@@ -1786,7 +1790,7 @@ p,
 }
 
 html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
-  right: -4px;
+  right: -8px;
 }
 
 .form-control {
