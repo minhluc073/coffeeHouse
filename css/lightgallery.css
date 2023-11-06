@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'lg';
-    src: url("../fonts/lg.woff2?io9a6k") format("woff2"), url("../fonts/lg.ttf?io9a6k") format("truetype"), url("../fonts/lg.woff?io9a6k") format("woff"), url("../fonts/lg.svg?io9a6k#lg") format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+  font-family: 'lg';
+  src: url("../fonts/lg.woff2?io9a6k") format("woff2"), url("../fonts/lg.ttf?io9a6k") format("truetype"), url("../fonts/lg.woff?io9a6k") format("woff"), url("../fonts/lg.svg?io9a6k#lg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
 .lg-icon {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -52,8 +52,8 @@
   color: #fff;
 }
 
-.lg-single-item .lg-next,
-.lg-single-item .lg-prev {
+.lg-single-item .lg-next, .lg-single-item
+.lg-prev {
   display: none;
 }
 
@@ -77,11 +77,9 @@
   0% {
     left: 0;
   }
-
   50% {
     left: -30px;
   }
-
   100% {
     left: 0;
   }
@@ -91,11 +89,9 @@
   0% {
     left: 0;
   }
-
   50% {
     left: -30px;
   }
-
   100% {
     left: 0;
   }
@@ -105,11 +101,9 @@
   0% {
     left: 0;
   }
-
   50% {
     left: -30px;
   }
-
   100% {
     left: 0;
   }
@@ -119,11 +113,9 @@
   0% {
     left: 0;
   }
-
   50% {
     left: -30px;
   }
-
   100% {
     left: 0;
   }
@@ -133,11 +125,9 @@
   0% {
     left: 0;
   }
-
   50% {
     left: 30px;
   }
-
   100% {
     left: 0;
   }
@@ -147,11 +137,9 @@
   0% {
     left: 0;
   }
-
   50% {
     left: 30px;
   }
-
   100% {
     left: 0;
   }
@@ -161,11 +149,9 @@
   0% {
     left: 0;
   }
-
   50% {
     left: 30px;
   }
-
   100% {
     left: 0;
   }
@@ -175,11 +161,9 @@
   0% {
     left: 0;
   }
-
   50% {
     left: 30px;
   }
-
   100% {
     left: 0;
   }
@@ -462,18 +446,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   opacity: 1;
 }
 
-.lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-prev-slide,
-.lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-next-slide,
-.lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-current {
+.lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-prev-slide, .lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-next-slide, .lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-current {
   -webkit-transition-duration: inherit !important;
   transition-duration: inherit !important;
   -webkit-transition-timing-function: inherit !important;
   transition-timing-function: inherit !important;
 }
 
-.lg-outer.lg-css3.lg-dragging .lg-item.lg-prev-slide,
-.lg-outer.lg-css3.lg-dragging .lg-item.lg-next-slide,
-.lg-outer.lg-css3.lg-dragging .lg-item.lg-current {
+.lg-outer.lg-css3.lg-dragging .lg-item.lg-prev-slide, .lg-outer.lg-css3.lg-dragging .lg-item.lg-next-slide, .lg-outer.lg-css3.lg-dragging .lg-item.lg-current {
   -webkit-transition-duration: 0s !important;
   transition-duration: 0s !important;
   opacity: 1;
@@ -648,9 +628,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   opacity: 1;
 }
 
-.lg-css3.lg-fade .lg-item.lg-prev-slide,
-.lg-css3.lg-fade .lg-item.lg-next-slide,
-.lg-css3.lg-fade .lg-item.lg-current {
+.lg-css3.lg-fade .lg-item.lg-prev-slide, .lg-css3.lg-fade .lg-item.lg-next-slide, .lg-css3.lg-fade .lg-item.lg-current {
   -webkit-transition: opacity 0.1s ease 0s;
   -moz-transition: opacity 0.1s ease 0s;
   -o-transition: opacity 0.1s ease 0s;
@@ -691,9 +669,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   opacity: 1;
 }
 
-.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide,
-.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide,
-.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   -webkit-transition: -webkit-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
   -moz-transition: -moz-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
   -o-transition: -o-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;

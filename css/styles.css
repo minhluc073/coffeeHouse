@@ -905,7 +905,6 @@ p,
 .grid-3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1px;
 }
 
 .grid-4 {
@@ -3562,6 +3561,23 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: #fff;
 }
 
+.lightgallery-box {
+  border-radius: 10px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.jstree-default li,
+.jstree-default a {
+  font-weight: 500;
+}
+.jstree-default .jstree-clicked,
+.jstree-default .jstree-wholerow-clicked {
+  border-radius: 0;
+  box-shadow: unset;
+  background: none;
+}
+
 .spinner-circle {
   width: 40px;
   height: 40px;
@@ -4446,13 +4462,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     transform: scale3d(1, 1, 1);
   }
 }
-.lg-show-in .lg-toolbar,
-.lg-show-in .lg-prev,
-.lg-show-in .lg-next,
-.lg-show-in .lg-pager-outer {
-  opacity: 0;
-}
-
 .loadmore-item .fl-item {
   display: none;
 }

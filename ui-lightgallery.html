@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- Icons -->
     <link rel="stylesheet" href="fonts/font-icons.css">
-    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/lightgallery.css" />
+    <!-- lightgallery plugins -->
+    <link rel="stylesheet" type="text/css" href="css/lg-zoom.css" />
+    <link rel="stylesheet" type="text/css" href="css/lg-thumbnail.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/48.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
 
-    <title>rang sliders</title>
+    <title>Light Gallery</title>
 </head>
 
 <body>
@@ -30,89 +34,115 @@
         <div class="left">
           <a href="javascript:void(0);" class="icon back-btn"><i class="icon-left-btn"></i></a>
         </div>
-        <h3>Rang Sliders</h3>
+        <h3>Light Gallery</h3>
        
     </div>
     <div class="app-content">
         <div class="tf-container">
             <div class="card mt-20">
-                <div class="card-header pb-20 line-bt"> 
-                    <h3 class="fw-6">Basic Slider</h3>    
+                <div class="card-header"> 
+                    <h3 class="fw-6">Light Gallery 3 column</h3>    
                 </div>
                 <div class="card-body mt-20">
-                    <div id="basic-slider"></div>
-                </div>
-            </div>
-            <div class="card mt-20">
-                <div class="card-header pb-20 line-bt"> 
-                    <h3 class="fw-6">Slider Tooltip</h3>    
-                </div>
-                <div class="card-body mt-60 slider-tooltip-default">
-                    <div id="slider-tooltip"></div>
-                </div>
-            </div>
-            <div class="card mt-20">
-                <div class="card-header pb-20 line-bt"> 
-                    <h3 class="fw-6">Slider Behaviour (Snap)</h3>    
-                </div>
-                <div class="card-body mt-20">
-                    <div id="basic-slider-one"></div>
-                </div>
-            </div>
-            <div class="card mt-20">
-                <div class="card-header pb-20 line-bt"> 
-                    <h3 class="fw-6">Disabling A Slider</h3>    
-                </div>
-                <div class="card-body mt-20">
-                    <div id="slider-disable"></div>
-                    <label class="d-inline-flex align-items-center gap-10 mt-20 fw-5">
-                        <input class="tf-checkbox" type="checkbox" id="checkbox-slider">
-                        Disable slider
-                    </label>
-                </div>
-            </div>
-            <div class="card mt-20">
-                <div class="card-header pb-20 line-bt"> 
-                    <h3 class="fw-6">Changing the slider by key press</h3>    
-                </div>
-                <div class="card-body mt-60 slider-tooltip-default">
-                    <div id="keypress-two-val"></div>
-                    <div class="input-stroke mt-20">
-                        <input type="text" id="ip-val-lower" class="form-control fw-normal">
+                    <div class="grid-3 gap-10" id="lightgallery3">
+                        <a class="lightgallery-box" href="images/coffee/coffee1.jpg">
+                            <img src="images/coffee/coffee1.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee2.jpg">
+                            <img src="images/coffee/coffee2.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee3.jpg">
+                            <img src="images/coffee/coffee3.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee4.jpg">
+                            <img src="images/coffee/coffee4.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee5.jpg">
+                            <img src="images/coffee/coffee5.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee6.jpg">
+                            <img src="images/coffee/coffee6.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee7.jpg">
+                            <img src="images/coffee/coffee7.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee8.jpg">
+                            <img src="images/coffee/coffee8.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee9.jpg">
+                            <img src="images/coffee/coffee9.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee10.jpg">
+                            <img src="images/coffee/coffee10.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee11.jpg">
+                            <img src="images/coffee/coffee11.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee12.jpg">
+                            <img src="images/coffee/coffee12.jpg" alt="image">
+                        </a>
                     </div>
-                    <div class="input-stroke mt-10">
-                        <input type="text" id="ip-val-upper" class="form-control fw-normal">
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="card mt-20 pb-60">
-                <div class="card-header pb-20 line-bt"> 
-                    <h3 class="fw-6">Soft Limits</h3>    
-                </div>
-                <div class="card-body mt-20">
-                    <div id="limit-val"></div>
-                
-                </div>
-            </div>
-            <div class="card mt-20 pb-60">
-                <div class="card-header pb-20 line-bt"> 
-                    <h3 class="fw-6">Moving the slider by clicking pips</h3>    
-                </div>
-                <div class="card-body mt-20">
-                    <div id="pips-val"></div>
-                
                 </div>
             </div>
             <div class="card mt-20">
-                <div class="card-header pb-20 line-bt"> 
-                    <h3 class="fw-6">Slider Direction</h3>    
+                <div class="card-header"> 
+                    <h3 class="fw-6">Light Gallery 3 column</h3>    
                 </div>
                 <div class="card-body mt-20">
-                    <div id="slider-dir"></div>
-                    <div class="mt-20 field-dir fw-normal"></div>
+                    <div class="grid-2 gap-10" id="lightgallery2">
+                        <a class="lightgallery-box" href="images/coffee/coffee13.jpg">
+                            <img src="images/coffee/coffee13.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee14.jpg">
+                            <img src="images/coffee/coffee14.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee15.jpg">
+                            <img src="images/coffee/coffee15.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee16.jpg">
+                            <img src="images/coffee/coffee16.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee17.jpg">
+                            <img src="images/coffee/coffee17.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee18.jpg">
+                            <img src="images/coffee/coffee18.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee19.jpg">
+                            <img src="images/coffee/coffee19.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box" href="images/coffee/coffee20.jpg">
+                            <img src="images/coffee/coffee20.jpg" alt="image">
+                        </a>
+                      
+                    </div>
                 </div>
             </div>
+            <div class="card mt-20">
+                <div class="card-header"> 
+                    <h3 class="fw-6">Light Gallery 3 column</h3>    
+                </div>
+                <div class="card-body">
+                    <div class="mt-20" id="lightgallery">
+                        <a class="lightgallery-box" href="images/coffee/coffee13.jpg">
+                            <img src="images/coffee/coffee13.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box mt-10" href="images/coffee/coffee14.jpg">
+                            <img src="images/coffee/coffee14.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box mt-10" href="images/coffee/coffee15.jpg">
+                            <img src="images/coffee/coffee15.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box mt-10" href="images/coffee/coffee16.jpg">
+                            <img src="images/coffee/coffee16.jpg" alt="image">
+                        </a>
+                        <a class="lightgallery-box mt-10" href="images/coffee/coffee17.jpg">
+                            <img src="images/coffee/coffee17.jpg" alt="image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+           
         </div>
     </div>
     
@@ -157,8 +187,9 @@
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/nouislider.min.js"></script>
-    <script type="text/javascript" src="js/rangle-slider.js"></script>
+    <script type="text/javascript" src="js//lightgallery.umd.js"></script>
+    <script type="text/javascript" src="js//lg-thumbnail.umd.js"></script>
+    <script type="text/javascript" src="js/lg-zoom.umd.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
     <script>

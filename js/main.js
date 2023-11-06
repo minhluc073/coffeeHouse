@@ -99,70 +99,6 @@
     }
   };
 
-  /* range slider one
-  ------------------------------------------------------------------------------------- */
-  var rangeOne = function () {
-    if ($("#range-one-val").length > 0) {
-      var directionSlider = document.getElementById("range-one-val");
-      noUiSlider.create(directionSlider, {
-        start: 20,
-        behaviour: "snap",
-        connect: [true, false],
-        range: {
-          min: 0,
-          max: 50,
-        },
-        format: {
-          from: function (value) {
-            return parseInt(value);
-          },
-          to: function (value) {
-            return parseInt(value);
-          },
-        },
-      });
-
-      var directionField = document.getElementById("field-range");
-      directionSlider.noUiSlider.on("update", function (values, handle) {
-        directionField.innerHTML = values[handle] + "km";
-      });
-    }
-  };
-  /* range slider two
-  ------------------------------------------------------------------------------------- */
-  var rangeTwo = function () {
-    if ($("#range-two-val").length > 0) {
-      var skipSlider = document.getElementById("range-two-val");
-      var skipValues = [
-        document.getElementById("skip-value-lower"),
-        document.getElementById("skip-value-upper"),
-      ];
-
-      noUiSlider.create(skipSlider, {
-        start: [0, 20],
-        connect: true,
-        behaviour: "drag",
-        step: 1,
-        range: {
-          min: 0,
-          max: 80,
-        },
-        format: {
-          from: function (value) {
-            return parseInt(value);
-          },
-          to: function (value) {
-            return parseInt(value);
-          },
-        },
-      });
-
-      skipSlider.noUiSlider.on("update", function (values, handle) {
-        skipValues[handle].innerHTML = "$" + values[handle];
-      });
-    }
-  };
-
   /* clear Item 
   ------------------------------------------------------------------------------------- */
   var clearItem = function () {
@@ -239,6 +175,11 @@
     }
     if ($("#lightgallery2").length > 0) {
       lightGallery(document.getElementById("lightgallery2"), {
+        plugins: [lgZoom, lgThumbnail],
+      });
+    }
+    if ($("#lightgallery3").length > 0) {
+      lightGallery(document.getElementById("lightgallery3"), {
         plugins: [lgZoom, lgThumbnail],
       });
     }
@@ -365,11 +306,22 @@
     });
   };
 
+  var treeView = function () {
+    if ($("#treeview1").length > 0) {
+      $("#treeview1").jstree({
+        plugins: ["dnd", "types"],
+      });
+    }
+    if ($("#treeview2").length > 0) {
+      $("#treeview2").jstree({
+        plugins: ["dnd", "wholerow", "checkbox", "types"],
+      });
+    }
+  };
+
   $(function () {
     showPass();
     otpInput();
-    rangeOne();
-    rangeTwo();
     clearItem();
     backPage();
     clearText();
@@ -383,6 +335,7 @@
     selectImages();
     loadmore();
     touchSpin();
+    treeView();
     preloader();
     themeSetting();
     setThemePanel();
