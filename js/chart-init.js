@@ -64,13 +64,14 @@
           width: 380,
           type: "donut",
         },
+        stroke: {
+          width: 0,
+        },
         dataLabels: {
           enabled: false,
         },
-        fill: {
-          opacity: 1,
-        },
-        labels: ["Team A", "Team B", "Team C", "Team D"],
+
+        labels: ["Item1", "Item2", "Item3", "Item4"],
         responsive: [
           {
             breakpoint: 480,
@@ -87,6 +88,87 @@
       };
 
       var chart = new ApexCharts(document.querySelector("#pie-chart"), options);
+      chart.render();
+    };
+
+    var barChart1 = function () {
+      var options = {
+        series: [
+          {
+            name: "Item1",
+            data: [15, 30, 50, 35, 10, 50, 30],
+            color: "#E17E3E",
+          },
+          {
+            name: "Item2",
+            data: [20, 45, 70, 60, 15, 70, 45],
+            color: "#873B0A",
+          },
+        ],
+        chart: {
+          type: "bar",
+          height: 270,
+          toolbar: {
+            show: false,
+          }
+        },
+
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          show: true,
+          width: 1,
+          colors: ["#fff"],
+        },
+        tooltip: {
+          shared: true,
+          intersect: false,
+        },
+        xaxis: {
+          categories: ["Mon", "Tue", "Web", "Thu", "Fri", "Sat", "Sun"],
+        },
+      };
+
+      var chart = new ApexCharts(document.querySelector("#bar-chart"), options);
+      chart.render();
+    };
+
+    var areaChart1 = function () {
+      var options = {
+        series: [
+          {
+            name: "series1",
+            data: [50, 55, 48, 57, 55, 60],
+            color: "#E17E3E",
+          },
+        ],
+        chart: {
+          height: 220,
+          type: "area",
+          toolbar: {
+            show: false,
+          },
+          sparkline: {
+            enabled: false,
+          },
+        },
+
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          curve: "smooth",
+        },
+        xaxis: {
+          categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        },
+      };
+
+      var chart = new ApexCharts(
+        document.querySelector("#area-chart"),
+        options
+      );
       chart.render();
     };
 
