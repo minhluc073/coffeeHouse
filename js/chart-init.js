@@ -55,7 +55,7 @@
       );
       chart.render();
     };
-    var pieChart1 = function () {
+    var donutChart2 = function () {
       var options = {
         series: [44, 55, 13, 43],
         colors: ["#E38B52", "#FFCB8D", "#26ADE4", "#68EE76"],
@@ -87,7 +87,7 @@
         ],
       };
 
-      var chart = new ApexCharts(document.querySelector("#pie-chart"), options);
+      var chart = new ApexCharts(document.querySelector("#donut-chart2"), options);
       chart.render();
     };
 
@@ -178,7 +178,7 @@
 
       load: function () {
         donutChart1();
-        pieChart1();
+        donutChart2();
         barChart1();
         areaChart1();
       },
