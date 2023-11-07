@@ -1,8 +1,5 @@
 // setting color
 .modal-themes-color {
-    padding: 30px;
-    border-radius: 12px 12px 0px 0px;
-    pointer-events: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px 25px;
@@ -23,7 +20,7 @@
             display: block;
             // background-color: red;
             &::after {
-                content: "\e973";
+                content: "\e976";
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -148,7 +145,7 @@
     &::after {
         position: absolute;
         font-family: $fontIcon;
-        content: "\e932";
+        content: "\e935";
         right: 0;
         color: var(--text-3);
         font-size: 16px;

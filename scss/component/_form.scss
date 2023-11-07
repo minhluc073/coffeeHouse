@@ -123,6 +123,8 @@
             padding-right: 10px;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
             border: 0;
             &:focus {
                 outline: 0 !important;
@@ -147,9 +149,26 @@
         transition: unset;
         padding-left: 0;
         border: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
     &:focus-within {
         border-color: var(--primary);
+    }
+}
+
+// input style 2
+.input-style-2 {
+    position: relative;
+    label {
+        position: absolute;
+        top: -10px;
+        background-color: var(--white);
+        padding: 0px 10px;
+        left: 14px;
+    }
+    &:focus-within {
+        color: var(--primary);
     }
 }
 
@@ -300,11 +319,3 @@
         }
     }
 }
-
-// switch check
-
-
-//  radio button 
-
-
-

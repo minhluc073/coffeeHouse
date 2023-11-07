@@ -20,7 +20,13 @@
             bottom: 0;
             right: 0;
             border: 2px solid #fff;
-            background: #0C9100;
+            background: #0c9100;
+        }
+    }
+    &.border-5 {
+        img {
+            border: 5px solid var(--white);
+            border-radius: 50%;
         }
     }
 }
@@ -28,25 +34,26 @@
     width: 40px;
     min-width: 40px;
     height: 40px;
-    border-radius: 50%;
 }
 .avt-52 {
     width: 52px;
     min-width: 52px;
     height: 52px;
-    border-radius: 50%;
 }
 .avt-60 {
     width: 60px;
     min-width: 60px;
     height: 60px;
-    border-radius: 50%;
 }
 .avt-70 {
     width: 70px;
     min-width: 70px;
     height: 70px;
-    border-radius: 50%;
+}
+.avt-126 {
+    width: 126px;
+    min-width: 126px;
+    height: 126px;
 }
 
 .list-stacked {

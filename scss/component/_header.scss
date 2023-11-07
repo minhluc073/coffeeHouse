@@ -1,7 +1,7 @@
 .header {
     @include flex(center, center);
     gap: 20px;
-    padding: 10px  20px;
+    padding: 10px 20px;
     position: relative;
     min-height: 60px;
     .icon {
@@ -9,33 +9,56 @@
         width: 40px;
         font-size: 20px;
         border-radius: 12px;
-        border:  1px solid var(--line);
-        @include flex(center,center);
+        border: 1px solid var(--line);
+        @include flex(center, center);
     }
- 
-    .left{
+
+    .left {
         position: absolute;
         left: 20px;
         top: 10px;
-        .icon{
+        .icon {
             font-size: 14px;
         }
     }
-    .right{
+    .right {
         position: absolute;
         right: 20px;
         top: 10px;
-        .icon{
+        .icon {
             font-size: 22px;
             color: var(--text-4);
         }
     }
-    &.bg-surface{
-        .icon{
+    &.bg-surface {
+        .icon {
             background-color: var(--white);
         }
     }
-   
+    &.absolute {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: 1024px;
+        margin: 0 auto;
+        background: transparent;
+        .left,
+        .right {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(2px);
+            border-radius: 12px;
+
+            .icon {
+                border-color: transparent;
+                color: $white;
+            }
+        }
+        h3 {
+            color: $white;
+        }
+    }
 }
 .header-style1 {
     display: flex;

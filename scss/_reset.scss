@@ -277,28 +277,39 @@ strong {
 h1 {
     font-size: $h1-fs;
     line-height: $h1-lh;
+    font-family: $font-title-family;
+
 }
 
 h2 {
     font-size: $h2-fs;
     line-height: $h2-lh;
+    font-family: $font-title-family;
+
 }
 
 h3 {
     font-size: $h3-fs;
     line-height: $h3-lh;
+    font-family: $font-title-family;
+
 }
 h4 {
     font-size: $h4-fs;
     line-height: $h4-lh;
+    font-family: $font-main-family;
+
 }
 h5 {
     font-size: $h5-fs;
     line-height: $h5-lh;
+    font-family: $font-main-family;
+
 }
 h6 {
     font-size: $h6-fs;
     line-height: $h6-lh;
+    font-family: $font-title-family;
 }
 
 h1,
@@ -307,7 +318,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-title-family;
     color: var(--black);
     font-weight: 600;
     a {
@@ -495,6 +505,15 @@ p,
 .fs-16 {
     font-size: 16px;
 }
+.fs-18{
+    font-size: 18px;
+}
+.fs-20 {
+    font-size: 20px;
+}
+.fs-22{
+    font-size: 22px;
+}
 //
 .fw-3 {
     font-weight: 300;
@@ -538,6 +557,9 @@ p,
 .mt-12 {
     margin-top: 12px;
 }
+.mt-14 {
+    margin-top: 14px;
+}
 .mt-16 {
     margin-top: 16px;
 }
@@ -555,6 +577,9 @@ p,
 }
 .mt-30 {
     margin-top: 30px;
+}
+.mt-35{
+    margin-top: 35px;
 }
 .mt-40 {
     margin-top: 40px;
@@ -606,6 +631,9 @@ p,
 .pt-12 {
     padding-top: 12px;
 }
+.pt-14{
+    padding-top: 14px;
+}
 .pt-16 {
     padding-top: 16px !important;
 }
@@ -617,6 +645,9 @@ p,
 }
 .pb-12 {
     padding-bottom: 12px !important;
+}
+.pb-14 {
+    padding-bottom: 14px;
 }
 .pb-20 {
     padding-bottom: 20px !important;
@@ -798,6 +829,9 @@ p,
 .gap-12 {
     gap: 12px;
 }
+.gap-14{
+    gap: 14px;
+}
 .gap-16 {
     gap: 16px;
 }
@@ -887,6 +921,12 @@ p,
 
 .app-content {
     padding: 60px 0px 90px;
+    &.style-1{
+        padding-top: 0;
+    }
+    &.style-2 {
+        padding-bottom: 165px;
+    }
 }
 
 

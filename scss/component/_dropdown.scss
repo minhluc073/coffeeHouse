@@ -79,7 +79,7 @@
     &.dropup {
         .dropdown-toggle {
             &:after {
-                content: "\e912";
+                content: "\e915";
                 font-family: $fontIcon;
                 border: 0;
                 font-size: 16px;
@@ -91,7 +91,7 @@
     &.dropend {
         .dropdown-toggle {
             &:after {
-                content: "\e911";
+                content: "\e913";
                 font-family: $fontIcon;
                 border: 0;
                 font-size: 16px;
@@ -103,7 +103,7 @@
     &.dropstart {
         .dropdown-toggle {
             &::before {
-                content: "\e910";
+                content: "\e912";
                 font-family: $fontIcon;
                 border: 0;
                 font-size: 16px;
@@ -114,13 +114,23 @@
     }
     .btn-dropdown {
         &:after {
-            content: "\e913";
+            content: "\e916";
             font-family: $fontIcon;
             border: 0;
             font-size: 16px;
             font-weight: 400;
             margin: 0;
         }
+    }
+}
+.btn-dropdown {
+    &:after {
+        content: "\e916";
+        font-family: $fontIcon;
+        border: 0;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
     }
 }
 .min-w-auto {

@@ -1,3 +1,16 @@
+.list-view {
+    display: flex;
+    justify-content: space-between;
+    .content {
+        flex-grow: 1;
+    }
+    > .icon {
+        font-size: 22px;
+        color: var(--text-4);
+        flex-shrink: 0;
+    }
+}
+
 .listview-item {
     font-size: 16px;
     font-weight: 400;
@@ -492,7 +505,7 @@
     }
 }
 
-.list-icons{
+.list-icons {
     .item {
         display: flex;
         align-items: center;
@@ -503,6 +516,6 @@
     }
 }
 
-
-
-
+.accordion-collapse {
+    transition: height 0.7s ease-in-out;
+}

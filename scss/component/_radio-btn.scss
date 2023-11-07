@@ -99,7 +99,7 @@
     -webkit-appearance: none;
     @include flex(center, center);
     &::before {
-        content: "\e973";
+        content: "\e976";
         position: absolute;
         font-family: $fontIcon;
         font-size: 10px;

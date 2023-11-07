@@ -385,11 +385,23 @@
     font-weight: 600;
     line-height: 21px;
     color: var(--text-5);
-    .spinner-circle{
-       .spinner-child{
-        &::before{
-            background-color: var(--text-5);
+    .spinner-circle {
+        .spinner-child {
+            &::before {
+                background-color: var(--text-5);
+            }
         }
-       } 
     }
+}
+
+.btn-fixed {
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    bottom: 54px;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background: var(--white);
 }
