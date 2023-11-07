@@ -1669,6 +1669,7 @@ p,
   padding-top: 10px;
   padding-bottom: 30px;
   background: var(--white);
+  z-index: 100;
 }
 
 .dropdown-menu {
@@ -2042,6 +2043,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: var(--white);
   padding: 0px 10px;
   left: 14px;
+  z-index: 10;
 }
 .input-style-2:focus-within {
   color: var(--primary);
