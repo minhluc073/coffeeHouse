@@ -1257,32 +1257,28 @@ p,
   border-color: transparent;
 }
 
-.user-tab {
+.profile-tabs {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
-.user-tab .nav-link {
-  padding: 0;
-  padding-bottom: 10px;
-  text-align: center;
-  border-bottom: 2px solid rgba(88, 88, 88, 0.3019607843);
+.profile-tabs .nav-item .nav-link {
+  color: var(--black);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22.4px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
   align-items: center;
-  gap: 4px;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-  color: rgba(88, 88, 88, 0.3019607843);
-  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
 }
-.user-tab .nav-link.active {
-  border-bottom: 2px solid #131317;
-  color: #131317;
+.profile-tabs .nav-item .nav-link.active {
+  border-bottom-color: var(--primary-btn);
+  color: var(--primary-btn);
 }
-.user-tab .nav-link.active svg path {
-  fill: #131317;
-  fill-opacity: 1;
+.profile-tabs .nav-item .nav-link.active svg path {
+  fill: var(--primary-btn);
 }
 
 .tf-btn {
@@ -1578,15 +1574,18 @@ p,
 }
 
 .btn-add {
-  width: 20px;
-  height: 20px;
-  border-radius: 100px;
-  border: 1px solid #873B0A;
-  color: #873B0A;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: var(--primary);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px !important;
+  font-size: 20px;
+}
+.btn-add:hover {
+  color: var(--white);
 }
 
 .btn-showmore {
@@ -1679,6 +1678,19 @@ p,
   box-shadow: var(--shadow3);
   border-color: transparent;
   min-width: 114px;
+  z-index: 1010;
+}
+.dropdown-menu .dropdown-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.dropdown-menu .dropdown-item .icon {
+  color: var(--text-4);
+  font-size: 20px;
+}
+.dropdown-menu .dropdown-item:active {
+  background-color: var(--white);
 }
 
 .dropdown .dropdown-toggle:after {
@@ -2586,6 +2598,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   width: 40px;
   min-width: 40px;
   height: 40px;
+  border-radius: 50%;
 }
 
 .avt-52 {
@@ -4119,6 +4132,19 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: var(--text-4);
   flex-shrink: 0;
 }
+.list-view .dropdown .dropdown-toggle.show {
+  color: var(--primary-btn);
+}
+.list-view .dropdown .dropdown-menu {
+  min-width: auto;
+}
+.list-view .dropdown .dropdown-menu .dropdown-item {
+  font-weight: 700;
+}
+.list-view .dropdown .dropdown-menu .dropdown-item:not(:last-child) {
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
 
 .listview-item {
   font-size: 16px;
@@ -4328,6 +4354,20 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .box-bookmark.active svg {
   fill: #873B0A;
+}
+
+.tf-img-box {
+  border-radius: 20px;
+  height: 188px;
+  overflow: hidden;
+}
+
+.box-newfeed p span {
+  color: #005eea;
+}
+.box-newfeed:not(:last-child) {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
 }
 
 .lr-wrap {
@@ -5049,18 +5089,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: #fff;
 }
 
-.heart-press.active svg {
-  fill: #eb5a5a;
-}
-.heart-press.active svg path {
-  stroke: #eb5a5a;
-}
-
-.bookmark-press.active svg {
-  fill: #873B0A;
-}
-.bookmark-press.active svg path {
-  stroke: #873B0A;
+.press-toggle.active svg path {
+  fill: #DE0000;
+  stroke: #DE0000;
 }
 
 .banner-wrapper {
@@ -5082,6 +5113,34 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .box-profile .content .icon-location {
   font-size: 12px;
   color: var(--text-4);
+}
+
+.box-number {
+  position: relative;
+  padding-bottom: 27px;
+}
+.box-number li:not(:last-child) {
+  border-right: 1px solid var(--line);
+}
+.box-number .item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  color: var(--text);
+  font-weight: 500;
+}
+.box-number .item span {
+  color: var(--black);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.box-number .btn-add {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
 }
 
 .box-latest-review .box-img {

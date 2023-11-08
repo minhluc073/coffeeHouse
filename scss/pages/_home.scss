@@ -94,23 +94,24 @@
     border-radius: 20px 20px 0px 0px;
     background-color: $white;
 }
-.heart-press {
+.press-toggle {
     &.active {
         svg {
-            fill: #eb5a5a;
             path {
-                stroke: #eb5a5a;
+                fill: #DE0000;
+
+                stroke: #DE0000;
             }
         }
     }
 }
-.bookmark-press {
-    &.active {
-        svg {
-            fill: $primary;
-            path {
-                stroke: $primary;
-            }
-        }
-    }
-}
+// .default-press {
+//     &.active {
+//         svg {
+//             path {
+//                 fill: var(--primary);
+//                 stroke: var(--primary);
+//             }
+//         }
+//     }
+// }

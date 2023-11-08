@@ -18,48 +18,43 @@
     border-bottom: 0;
 }
 .nav-item {
-    .nav-link{
+    .nav-link {
         color: var(--primary-btn);
         font-weight: 700;
-        &.active{
+        &.active {
             background: var(--white);
             color: var(--black);
             border-color: var(--line);
-            border-bottom-color: transparent ;
+            border-bottom-color: transparent;
         }
-        &.disabled{
+        &.disabled {
             color: var(--text-4);
         }
-        &:hover{
+        &:hover {
             border-color: transparent;
         }
     }
 }
-
-.user-tab {
+.profile-tabs {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    .nav-link {
-        padding: 0;
-        padding-bottom: 10px;
-        text-align: center;
-        border-bottom: 2px solid #5858584d;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 4px;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 18px;
-        color: #5858584d;
-        cursor: pointer;
-        &.active {
-            border-bottom: 2px solid $onSurface;
-            color: $onSurface;
-            svg {
-                path {
-                    fill: $onSurface;
-                    fill-opacity: 1;
+    grid-template-columns: repeat(3, 1fr);
+    .nav-item {
+        .nav-link {
+            color: var(--black);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22.4px;
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--line);
+            &.active {
+                border-bottom-color: var(--primary-btn);
+                color: var(--primary-btn);
+                svg path{
+                    fill: var(--primary-btn);
                 }
             }
         }

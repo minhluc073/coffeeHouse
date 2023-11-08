@@ -118,13 +118,7 @@
     });
   };
 
-  /* active photo
-  ------------------------------------------------------------------------------------- */
-  var activePhoto = function () {
-    $(".edit-photo").on("click", function () {
-      $(this).toggleClass("active");
-    });
-  };
+
   /* back Page
   ------------------------------------------------------------------------------------- */
   var backPage = function () {
@@ -135,13 +129,6 @@
     });
   };
 
-  /* press toggles
-  ------------------------------------------------------------------------------------- */
-  var pressToggle = function () {
-    $(".press-toggle").on("click", function () {
-      $(this).toggleClass("active");
-    });
-  };
   /* clear Text
   ------------------------------------------------------------------------------------- */
   var clearText = function () {
@@ -216,6 +203,10 @@
   /* active Suggestions
   ------------------------------------------------------------------------------------- */
   var activeSuggest = function () {
+    $(".press-toggle").on("click", function () {
+      $(this).toggleClass("active");
+    });
+
     $(".active-suggest, .lo-select").click(function () {
       $(".active-suggest.active, .lo-select.active").removeClass("active");
       $(this).toggleClass("active");
@@ -329,8 +320,6 @@
     lightGalleryBox();
     cusSelect();
     dlBlock();
-    pressToggle();
-    activePhoto();
     activeSuggest();
     selectImages();
     loadmore();
