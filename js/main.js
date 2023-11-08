@@ -152,13 +152,15 @@
 
       var domMessage =
         '<div class="bubble bubble-me">' +
+        '<div class="content">' +
         "<p>" +
         messValue +
         "</p>" +
         '<span class="time">' +
         realTime +
-        "</span>";
-      ("</div>");
+        "</span>" +
+        "</div>" +
+        "</div>";
 
       if (messValue.length > 0) {
         var appendMess = $(".chat-area").append(domMessage);

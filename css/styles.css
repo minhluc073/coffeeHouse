@@ -5224,18 +5224,16 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   position: relative;
 }
 .message-box input {
-  border-radius: 89px;
-  padding: 12px;
+  border-radius: 14px;
+  padding: 12px 12px 12px 14px;
   padding-right: 50px;
-  border: none;
-}
-.message-box input:focus {
-  border: none;
+  border: 1px solid var(--line);
+  color: var(--text-5);
 }
 .message-box .btn-message {
   position: absolute;
   right: 12px;
-  top: 9px;
+  top: 12px;
 }
 
 .bubble {
@@ -5278,6 +5276,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   justify-content: flex-end;
   margin-left: 80px;
 }
+.bubble.bubble-me .content .time {
+  text-align: end;
+  display: block;
+}
 
 .status-icon {
   width: 10px;
@@ -5290,6 +5292,24 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .status-icon.offline {
   background-color: #eb5a5a;
+}
+
+.fixed-chat {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.fixed-chat .inner {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.fixed-chat .inner .message-box {
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
