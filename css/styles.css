@@ -31,6 +31,7 @@
   --shadow2: 0px 1px 4px 0px rgba(0, 0, 0, 0.07) inset;
   --shadow3: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
   --shadow-box:0px 8px 30px 0px rgba(0, 0, 0, 0.06);
+  --text-gray: #F3F3F3;
   --text: #6F7582;
   --text-2:#C9CBCE;
   --text-3: #343434;
@@ -48,6 +49,7 @@
   --rgba-warning: rgba(255, 138, 0, 0.10);
   --rgba-info: rgba(167, 2, 103, 0.10);
   --rgba-dark: rgba(27, 50, 95, 0.10);
+  --rgba-disable: rgba(135, 59, 10, 0.10);
   --liner-primary: linear-gradient(270deg, #E17E3E 0%, #873B0A 100%);
 }
 
@@ -285,7 +287,7 @@ input::-moz-focus-inner {
 body {
   font-family: "Nunito", sans-serif;
   font-size: 14px;
-  line-height: 19.6px;
+  line-height: 140%;
   font-weight: 400;
   background-color: #fff;
   color: var(--black);
@@ -296,7 +298,7 @@ body {
 a {
   text-decoration: none;
   outline: none;
-  color: #131317;
+  color: var(--black);
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -307,7 +309,7 @@ a {
 a:hover, a:focus, a.active {
   text-decoration: none;
   outline: none;
-  color: #131317;
+  color: var(--black);
 }
 
 ul,
@@ -787,6 +789,10 @@ p,
 
 .pt-50 {
   padding-top: 50px;
+}
+
+.pt-60 {
+  padding-top: 60px;
 }
 
 .pt-65 {
@@ -1587,6 +1593,30 @@ p,
 .btn-add:hover {
   color: var(--white);
 }
+.btn-add.style-1 {
+  background-color: var(--rgba-disable);
+  color: var(--primary);
+}
+
+.btn-accept {
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 140%;
+  background-color: var(--primary);
+  padding: 6px 16px;
+  color: var(--white);
+}
+.btn-accept.style-1 {
+  background-color: var(--white);
+  border: 1px solid var(--line);
+  font-weight: 400;
+  color: var(--black);
+}
+.btn-accept.style-2 {
+  background-color: var(--rgba-disable);
+  color: var(--primary);
+}
 
 .btn-showmore {
   color: var(--primary);
@@ -1700,6 +1730,7 @@ p,
   padding: 0;
   color: var(--black);
   font-weight: 500;
+  font-size: 14px;
 }
 .dropdown .dropdown-menu .dropdown-item:not(:last-child) {
   padding-bottom: 10px;
@@ -2165,14 +2196,16 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .search-box .icon-search {
   position: absolute;
-  font-size: 24px;
-  color: #873B0A;
-  top: 11px;
-  right: 12px;
+  font-size: 22px;
+  color: var(--text-4);
+  top: 18px;
+  right: 20px;
 }
 .search-box .search-field {
-  padding: 12px;
+  padding: 20px;
   padding-right: 45px;
+  border-radius: 20px;
+  border: 1px solid var(--line);
 }
 .search-box.st2 .search-field {
   padding: 12px;
@@ -4183,6 +4216,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-weight: 500;
 }
 
+.wd-list-item:not(:last-child) {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
 .media {
   position: relative;
 }
@@ -4653,10 +4692,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .list-icons .item .icon {
   font-size: 16px;
-}
-
-.accordion-collapse {
-  transition: height 0.7s ease-in-out;
 }
 
 [data-theme-color=theme-primary] {
@@ -5203,39 +5238,45 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   top: 9px;
 }
 
-.bubble-you {
+.bubble {
   display: flex;
+}
+.bubble p {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  color: var(--white);
+  border-radius: 14px 14px 0px 14px;
+  background-color: var(--primary);
+  margin-bottom: 6px;
+}
+.bubble .time {
+  color: var(--text-5);
+  font-size: 12px;
+  line-height: 120%;
+}
+.bubble.bubble-you {
   gap: 8px;
-  align-items: center;
-  margin: 20px 0px;
-}
-.bubble-you img {
-  width: 32px;
-  height: 32px;
-}
-.bubble-you p {
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 22px;
-  color: #131317;
-  border-radius: 18px;
-  padding: 7px 10px;
-  background-color: #f5f5f5;
-}
-
-.bubble-me {
-  text-align: end;
+  align-items: flex-end;
   margin-bottom: 8px;
+  margin-right: 50px;
 }
-.bubble-me p {
-  color: #131317;
-  border-radius: 18px;
-  padding: 7px 10px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 22px;
-  background-color: #e5e5e5;
-  display: inline-block;
+.bubble.bubble-you img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+.bubble.bubble-you p {
+  border-radius: 14px 14px 14px 0px;
+  color: var(--black);
+  background-color: var(--text-gray);
+}
+.bubble.bubble-me {
+  margin-bottom: 8px;
+  justify-content: flex-end;
+  margin-left: 80px;
 }
 
 .status-icon {

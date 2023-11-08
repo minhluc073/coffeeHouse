@@ -271,14 +271,16 @@
     width: 100%;
     .icon-search {
         position: absolute;
-        font-size: 24px;
-        color: $primary;
-        top: 11px;
-        right: 12px;
+        font-size: 22px;
+        color: var(--text-4);
+        top: 18px;
+        right: 20px;
     }
     .search-field {
-        padding: 12px;
+        padding: 20px;
         padding-right: 45px;
+        border-radius: 20px;
+        border: 1px solid var(--line);
     }
     &.st2 {
         .search-field {

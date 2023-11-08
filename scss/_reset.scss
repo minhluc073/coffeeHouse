@@ -247,7 +247,7 @@ body {
 a {
     text-decoration: none;
     outline: none;
-    color: $onSurface;
+    color: var(--black);
     cursor: pointer;
     @include transition3;
     &:hover,
@@ -255,7 +255,8 @@ a {
     &.active {
         text-decoration: none;
         outline: none;
-        color: $onSurface;
+        color: var(--black);
+
     }
 }
 
@@ -687,6 +688,9 @@ p,
 }
 .pt-50 {
     padding-top: 50px;
+}
+.pt-60{
+    padding-top: 60px;
 }
 .pt-65 {
     padding-top: 65px;

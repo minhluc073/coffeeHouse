@@ -99,16 +99,16 @@
     }
   };
 
-  /* clear Item 
+  /* delete Item 
   ------------------------------------------------------------------------------------- */
-  var clearItem = function () {
-    $(".list-favorite").each(function () {
-      var el = this.querySelector(".del-item");
-      el.addEventListener("click", function (e) {
-        el.closest(".list-favorite").style.display = "none";
+  var delItem = function () {
+    if ($("div").hasClass("wd-list-item")) {
+      $(".del-item").on("click", function () {
+        this.closest(".wd-list-item").remove();
       });
-    });
+    }
   };
+
   /* block delete 
   ------------------------------------------------------------------------------------- */
   var dlBlock = function () {
@@ -117,7 +117,6 @@
       $(this).find(".del-item").toggleClass("show-del");
     });
   };
-
 
   /* back Page
   ------------------------------------------------------------------------------------- */
@@ -142,8 +141,25 @@
     $(".btn-message").on("click", function () {
       var ipMessage = $(".ip-message");
       var messValue = ipMessage.val();
+      var currentTime = new Date();
+      var hours = currentTime.getHours() >= 12 ? "PM" : "AM";
+      var realTime =
+        (currentTime.getHours() % 12) +
+        ":" +
+        currentTime.getMinutes() +
+        " " +
+        hours;
+
       var domMessage =
-        '<div class="bubble-me">' + "<p>" + messValue + "</p>" + "</div>";
+        '<div class="bubble bubble-me">' +
+        "<p>" +
+        messValue +
+        "</p>" +
+        '<span class="time">' +
+        realTime +
+        "</span>";
+      ("</div>");
+
       if (messValue.length > 0) {
         var appendMess = $(".chat-area").append(domMessage);
       }
@@ -313,7 +329,7 @@
   $(function () {
     showPass();
     otpInput();
-    clearItem();
+    delItem();
     backPage();
     clearText();
     handleMessage();

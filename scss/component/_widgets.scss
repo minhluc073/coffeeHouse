@@ -68,6 +68,14 @@
         }
     }
 }
+
+.wd-list-item {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid var(--line);
+    }
+}
 .media {
     position: relative;
     img {
@@ -548,6 +556,6 @@
     }
 }
 
-.accordion-collapse {
-    transition: height 0.7s ease-in-out;
-}
+// .accordion-collapse {
+//     transition: height 0.7s ease-in-out;
+// }

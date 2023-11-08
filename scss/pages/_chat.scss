@@ -15,39 +15,47 @@
         top: 9px;
     }
 }
-.bubble-you {
+.bubble {
     display: flex;
-    gap: 8px;
-    align-items: center;
-    margin: 20px 0px;
-    img {
-        width: 32px;
-        height: 32px;
-    }
     p {
+        padding: 14px;
         font-size: 16px;
-        font-weight: 300;
-        line-height: 22px;
-        color: $onSurface;
-        border-radius: 18px;
-        padding: 7px 10px;
-        background-color: $surface;
+        font-weight: 500;
+        line-height: 140%;
+        color: var(--white);
+        border-radius: 14px 14px 0px 14px;
+        background-color: var(--primary);
+        margin-bottom: 6px;
+    }
+    .time {
+        color: var(--text-5);
+        font-size: 12px;
+        line-height: 120%;
+    }
+    &.bubble-you {
+        gap: 8px;
+        align-items: flex-end;
+        margin-bottom: 8px;
+        margin-right: 50px;
+        img {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            margin-bottom: 24px;
+        }
+        p {
+            border-radius: 14px 14px 14px 0px;
+            color: var(--black);
+            background-color: var(--text-gray);
+        }
+    }
+    &.bubble-me {
+        margin-bottom: 8px;
+        justify-content: flex-end;
+        margin-left: 80px;
     }
 }
-.bubble-me {
-    text-align: end;
-    margin-bottom: 8px;
-    p {
-        color: $onSurface;
-        border-radius: 18px;
-        padding: 7px 10px;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 22px;
-        background-color: $line;
-        display: inline-block;
-    }
-}
+
 .status-icon {
     width: 10px;
     height: 10px;

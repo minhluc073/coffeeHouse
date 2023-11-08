@@ -1,6 +1,6 @@
 //settings
 $font-main-size: 14px;
-$font-main-line: 19.6px;
+$font-main-line: 140%;
 $font-main-family: "Nunito", sans-serif;
 $font-title-family: "Montserrat", sans-serif;
 $font-btn-family: "Poppins", sans-serif;
@@ -76,7 +76,7 @@ $rgba-dark: rgba(27, 50, 95, 0.10);
     --shadow2: 0px 1px 4px 0px rgba(0, 0, 0, 0.07) inset;
     --shadow3: 0px 4px 16px 0px rgba(0, 0, 0, 0.08);
     --shadow-box:0px 8px 30px 0px rgba(0, 0, 0, 0.06);
-
+    --text-gray: #F3F3F3;
     --text: #6F7582;
     --text-2:#C9CBCE;
     --text-3: #343434;
@@ -98,6 +98,9 @@ $rgba-dark: rgba(27, 50, 95, 0.10);
     --rgba-warning: rgba(255, 138, 0, 0.10);
     --rgba-info: rgba(167, 2, 103, 0.10);
     --rgba-dark: rgba(27, 50, 95, 0.10);
+    --rgba-disable: rgba(135, 59, 10, 0.10);
+
+
 
     // liner garden colors
     --liner-primary: linear-gradient(270deg, #E17E3E 0%, #873B0A 100%);

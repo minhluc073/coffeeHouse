@@ -307,8 +307,31 @@
     color: var(--white);
     @include flex(center, center);
     font-size: 20px;
-    &:hover{
+    &:hover {
         color: var(--white);
+    }
+    &.style-1{
+        background-color: var(--rgba-disable);
+        color: var(--primary);
+    }
+}
+.btn-accept {
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 140%;
+    background-color: var(--primary);
+    padding: 6px 16px;
+    color: var(--white);
+    &.style-1{
+        background-color: var(--white);
+        border: 1px solid var(--line);
+        font-weight: 400;
+        color: var(--black);
+    }
+    &.style-2 {
+        background-color: var(--rgba-disable);
+        color: var(--primary);
     }
 }
 
