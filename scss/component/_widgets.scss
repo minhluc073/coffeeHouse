@@ -79,7 +79,7 @@
 .wd-list-cf {
     display: flex;
     gap: 12px;
-    .tf-img-box{
+    .tf-img-box {
         flex-shrink: 0;
         width: 130px;
         height: 140px;
@@ -193,8 +193,8 @@
     box-shadow: none;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 171px;
-    border-radius: 8px;
+    height: 188px;
+    border-radius: 20px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -484,11 +484,6 @@
     }
 }
 .list-cmt {
-    .img-box {
-        width: 36px;
-        height: 36px;
-        border-radius: 36px;
-    }
     .content {
         .icon-heart {
             font-size: 16px;
@@ -598,8 +593,8 @@
 //     transition: height 0.7s ease-in-out;
 // }
 .accordion-item {
-    .wd-list-item{
-        &:first-child{
+    .wd-list-item {
+        &:first-child {
             margin-top: 14px;
             padding-top: 16px;
             border-top: 1px solid var(--line);

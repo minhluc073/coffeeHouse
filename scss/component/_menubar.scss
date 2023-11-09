@@ -50,6 +50,9 @@
                     .icon {
                         color: var(--primary-btn);
                     }
+                    svg path {
+                        fill: var(--primary-btn);
+                    }
                 }
             }
         }

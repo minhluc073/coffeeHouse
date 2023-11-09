@@ -748,6 +748,10 @@ p,
   padding-left: 20px;
 }
 
+.pl-40 {
+  padding-left: 40px;
+}
+
 .pb-16 {
   padding-bottom: 16px !important;
 }
@@ -2306,6 +2310,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .menubar-footer .inner-bar li.active a .icon {
   color: var(--primary-btn);
+}
+.menubar-footer .inner-bar li.active a svg path {
+  fill: var(--primary-btn);
 }
 .menubar-footer .inner-bar .action-home {
   margin-top: -40px;
@@ -4328,8 +4335,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   box-shadow: none;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 171px;
-  border-radius: 8px;
+  height: 188px;
+  border-radius: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -4628,11 +4635,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   justify-content: center;
 }
 
-.list-cmt .img-box {
-  width: 36px;
-  height: 36px;
-  border-radius: 36px;
-}
 .list-cmt .content .icon-heart {
   font-size: 16px;
 }
