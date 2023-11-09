@@ -76,6 +76,39 @@
         border-bottom: 1px solid var(--line);
     }
 }
+.wd-list-cf {
+    display: flex;
+    gap: 12px;
+    .tf-img-box{
+        flex-shrink: 0;
+        width: 130px;
+        height: 140px;
+    }
+    .title {
+        padding-right: 40px;
+    }
+}
+
+.timeline-cf {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    line-height: 16.8px;
+    font-weight: 500;
+    .icon {
+        font-size: 12px;
+        color: var(--text-4);
+    }
+    .open {
+        color: #0c9100;
+    }
+}
+.rating-cf {
+    @include flex(center, space-between);
+    gap: 8px;
+}
+
 .media {
     position: relative;
     img {
@@ -124,12 +157,10 @@
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: $primary;
+    background-color: var(--primary);
     display: inline-block;
-    margin: 0 4px;
     &.secondary {
-        background-color: $secondary;
-        margin: 0;
+        background-color: var(--dot);
     }
 }
 .list-star {
@@ -328,7 +359,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: left;
-    gap: 4px;
+    gap: 2px;
 }
 
 .wd-rating-check:not(:checked) > input {
@@ -344,8 +375,8 @@
 
 .wd-rating-check:not(:checked) > label:before {
     font-family: "icomoon";
-    content: "\e924";
-    font-size: 26px;
+    content: "\e937";
+    font-size: 21px;
 }
 
 .wd-rating-check > input:checked ~ label {
@@ -406,17 +437,24 @@
     }
 }
 .item-rate {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 140%;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+
     &.st2 {
         border-radius: 4px;
         background: rgba(250, 190, 60, 0.12);
         padding: 4px;
-        display: inline-flex;
-        align-items: center;
-        gap: 4px;
+
         color: $onSurface;
-        .icon-star {
-            color: $warning;
-        }
+    }
+    .icon {
+        color: #ffc700;
+        font-size: 12px;
     }
 }
 .edit-photo {
@@ -559,3 +597,12 @@
 // .accordion-collapse {
 //     transition: height 0.7s ease-in-out;
 // }
+.accordion-item {
+    .wd-list-item{
+        &:first-child{
+            margin-top: 14px;
+            padding-top: 16px;
+            border-top: 1px solid var(--line);
+        }
+    }
+}

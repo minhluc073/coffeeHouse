@@ -314,6 +314,12 @@
         background-color: var(--rgba-disable);
         color: var(--primary);
     }
+    &.style-2{
+        background-color: var(--white);
+        border: 1px solid var(--line);
+        color: var(--text-4);
+        font-size: 16px;
+    }
 }
 .btn-accept {
     border-radius: 20px;

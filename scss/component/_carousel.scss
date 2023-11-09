@@ -37,43 +37,7 @@
 .swiper-wrapper-r {
     margin-right: -20px;
 }
-.categories-item {
-    padding: 7px 12px;
-    border-radius: 1000px;
-    border: 1px solid $line;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    color: $secondary;
-    display: inline-flex;
-    align-items: center;
-    svg {
-        margin-right: 4px;
-    }
-    &.st2 {
-        font-size: 12px;
-        line-height: 16px;
-        padding: 8px 12px;
-    }
-    &.time-st.active,
-    &.active {
-        background-color: $primary;
-        color: $white;
-        border-color: $primary;
-    }
-}
-.cate-item {
-    padding: 7px 16px;
-    background-color: $surface;
-    display: inline-flex;
-    align-items: center;
-    color: $onSurface;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    border-radius: 100px;
-    gap: 8px;
-}
+
 .favourite-swiper {
     .swiper-slide {
         width: auto;

@@ -40,32 +40,7 @@
         }
     }
 }
-.box-cate-review {
-    display: flex;
-    column-gap: 12px;
-    row-gap: 8px;
-    flex-wrap: wrap;
-    li {
-        padding: 7px 16px;
-    }
-}
-.cate-review-item {
-    padding: 7px 16px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    background-color: $surface;
-    border-radius: 100px;
-    a {
-        color: $secondary;
-    }
-    &.active {
-        background-color: $primary;
-        a {
-            color: $white;
-        }
-    }
-}
+
 .box-upload {
     display: flex;
     gap: 8px;
@@ -94,24 +69,88 @@
     border-radius: 20px 20px 0px 0px;
     background-color: $white;
 }
-.press-toggle {
+.categories-item {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    display: inline-flex;
+    align-items: center;
+
+    &.time-st.active,
+    &.active {
+        background-color: var(--primary);
+        color: $white;
+        border-color: var(--primary);
+    }
+}
+.cate-item {
+    padding: 7px 16px;
+    background-color: $surface;
+    display: inline-flex;
+    align-items: center;
+    color: $onSurface;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    border-radius: 100px;
+    gap: 8px;
+}
+
+.heart-press {
     &.active {
         svg {
             path {
-                fill: #DE0000;
+                fill: #de0000;
 
-                stroke: #DE0000;
+                stroke: #de0000;
             }
         }
     }
 }
-// .default-press {
-//     &.active {
-//         svg {
-//             path {
-//                 fill: var(--primary);
-//                 stroke: var(--primary);
-//             }
-//         }
-//     }
-// }
+.default-press {
+    &.active {
+        svg {
+            path {
+                fill: var(--primary-btn);
+                stroke: var(--primary-btn);
+            }
+        }
+    }
+}
+
+.box-add-photo {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    img {
+        width: 77px;
+        height: 70px;
+        border-radius: 14px;
+    }
+    .input-upload {
+        .upload-file {
+            width: 77px;
+            height: 70px;
+            &::before {
+                content: "\e958";
+                font-family: $fontIcon;
+                margin-left: 0;
+                font-size: 24px;
+                color: var(--text-4);
+            }
+        }
+    }
+}
+
+.box-rating {
+    @include flex(center, center);
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    padding: 10px 16px;
+    gap: 10px;
+    span {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 140%;
+    }
+}

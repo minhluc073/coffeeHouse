@@ -8,7 +8,7 @@
     background: var(--white);
     &:focus {
         box-shadow: unset;
-        border-color: var(--primary) !important;
+        border-color: var(--primary-btn) !important;
     }
 }
 
@@ -140,8 +140,17 @@
             height: 22px;
             border-radius: 50%;
         }
-        .dropdown-item.active {
-            background: var(--primary);
+        .dropdown-menu {
+            li {
+                &:not(:last-child) {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+        .dropdown-item {
+            &.active {
+                background: transparent;
+            }
         }
     }
 
@@ -153,7 +162,7 @@
         border-bottom-left-radius: 0;
     }
     &:focus-within {
-        border-color: var(--primary);
+        border-color: var(--primary-btn);
     }
 }
 
@@ -169,7 +178,7 @@
         z-index: 10;
     }
     &:focus-within {
-        color: var(--primary);
+        color: var(--primary-btn);
     }
 }
 
@@ -206,17 +215,18 @@
 }
 
 .form-select {
-    padding: 12px;
-    background-color: $surface;
-    border: 1px solid $white;
-    border-radius: 8px;
+    font-family: $font-main-family;
+    color: var(--black);
     font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    color: $secondary;
+    line-height: 19.6px;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: var(--secondary);
+    background-position: right 20px center;
+    
     &:focus {
-        border-color: $white;
         box-shadow: unset;
+        border-color: var(--primary-btn) !important;
     }
 }
 
