@@ -1,3 +1,25 @@
+.banner-top {
+    height: 320px;
+    background-color: var(--primary-bold);
+    margin-bottom: -10em;
+    .search-box {
+        .search-field {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: transparent;
+            backdrop-filter: blur(2px);
+            color: $white;
+            &::placeholder{
+                color: rgba(255, 255, 255, 0.4);
+            }
+        }
+        .icon-left,
+        .icon-right {
+            color: $white;
+            z-index: 1;
+        }
+    }
+}
+
 .wd-dir-store {
     &.details {
         .item-rate {
@@ -38,6 +60,17 @@
                 }
             }
         }
+    }
+}
+
+.box-categories {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-right: -20px;
+    padding-right: 18px;
+    .categories-item {
+        white-space: nowrap;
     }
 }
 

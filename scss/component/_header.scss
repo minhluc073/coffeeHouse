@@ -60,22 +60,23 @@
         }
     }
 }
-.header-style1 {
-    display: flex;
-    // gap: 16px;
-    padding: 8px 20px;
-    padding-left: 15px;
-    .icon {
-        height: 28px;
-        width: 36px;
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-        position: absolute;
-    }
-    h3 {
-        flex-grow: 1;
-        text-align: center;
+.header-style2 {
+    padding: 20px;
+    .inner {
+        @include flex(center, space-between);
+        gap: 10px;
+        .content {
+            flex-grow: 1;
+        }
+        .right {
+            width: 48px;
+            height: 48px;
+            @include flex(center,center);
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            color: var(--text-4);
+            font-size: 22px;
+        }
     }
 }
 .fixed-top {

@@ -26,25 +26,28 @@ if ($(".favourite-swiper").length > 0) {
   });
 }
 
-if ($(".cate-swiper").length > 0) {
-  var spacing = $(".cate-swiper").data("space-between");
-  var swiper4 = new Swiper(".cate-swiper", {
+if ($(".tf-swiper").length > 0) {
+  var spacing = $(".tf-swiper").data("space-between");
+  var preview = $(".tf-swiper").data("preview");
+  var tablet = $(".tf-swiper").data("tablet");
+  var desktop = $(".tf-swiper").data("desktop");
+  var swiper4 = new Swiper(".tf-swiper", {
     speed: 1500,
-    slidesPerView: "auto",
+    slidesPerView: preview,
     loop: false,
     spaceBetween: spacing,
     observer: true,
     observeParents: true,
+
+    breakpoints: {
+      1024: {
+        slidesPerView: desktop,
+      },
+      500: {
+        slidesPerView: tablet,
+      },
+    },
   });
 }
 
-if ($(".store-swiper").length > 0) {
-  var swiper4 = new Swiper(".store-swiper", {
-    speed: 1500,
-    slidesPerView: 0.85,
-    loop: false,
-    spaceBetween: 20,
-    observer: true,
-    observeParents: true,
-  });
-}
+

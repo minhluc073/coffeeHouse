@@ -1,95 +1,110 @@
-.wrap-swiper {
-    .btn-slider {
-        flex-shrink: 0;
-        margin-right: 8px;
-    }
-}
+// .wrap-swiper {
+//     .btn-slider {
+//         flex-shrink: 0;
+//         margin-right: 8px;
+//     }
+// }
 
-.cate-swiper {
-    margin-left: unset;
-    margin-right: unset;
-    .swiper-slide {
-        width: auto;
+// .cate-swiper {
+//     margin-left: unset;
+//     margin-right: unset;
+//     .swiper-slide {
+//         width: auto;
 
-        &.active {
-            .categories-item {
-                color: $white;
-                background-color: $primary;
-                border-color: $primary;
-                svg path {
-                    stroke: $white;
-                }
-            }
+//         &.active {
+//             .categories-item {
+//                 color: $white;
+//                 background-color: $primary;
+//                 border-color: $primary;
+//                 svg path {
+//                     stroke: $white;
+//                 }
+//             }
+//         }
+//     }
+
+//     .swiper-slide-active {
+//         .cate-item {
+//             color: $white;
+//             background-color: $primary;
+//             border-color: $primary;
+//             svg path {
+//                 fill: $white;
+//             }
+//         }
+//     }
+// }
+
+// .favourite-swiper {
+//     .swiper-slide {
+//         width: auto;
+//     }
+//     .wd-dir-store {
+//         img {
+//             width: 242px;
+//             height: 100px;
+//         }
+//     }
+// }
+// .banner-store-sw {
+//     .left {
+//         img {
+//             width: 157px;
+//             height: 156px;
+//             border-radius: 10px;
+//         }
+//     }
+//     .group-img {
+//         a {
+//             display: block;
+//             &:first-child {
+//                 margin-bottom: 4px;
+//             }
+//         }
+//         img {
+//             width: 98px;
+//             height: 76px;
+//             border-radius: 10px;
+//         }
+//     }
+//     .right {
+//         img {
+//             width: 157px;
+//             height: 156px;
+//             border-radius: 10px;
+//         }
+//     }
+// }
+// .dots-tes {
+//     position: unset;
+//     .swiper-pagination-bullet {
+//         width: 4px;
+//         height: 4px;
+//         background-color: #b9b9bf;
+//         opacity: 0.5;
+//     }
+//     .swiper-pagination-bullet-active {
+//         background-color: $primary;
+//         opacity: 1;
+//         width: 28px;
+//         border-radius: 30px;
+//     }
+// }
+.tf-swiper {
+    &.auto {
+        .swiper-slide {
+            width: auto;
         }
     }
-
-    .swiper-slide-active {
-        .cate-item {
-            color: $white;
-            background-color: $primary;
-            border-color: $primary;
-            svg path {
-                fill: $white;
-            }
-        }
-    }
 }
-.swiper-wrapper-r {
+.img-banner-slider {
+    width: 275px;
+    height: 275px;
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.swiper-wrapper-lr {
     margin-right: -20px;
-}
-
-.favourite-swiper {
-    .swiper-slide {
-        width: auto;
-    }
-    .wd-dir-store {
-        img {
-            width: 242px;
-            height: 100px;
-        }
-    }
-}
-.banner-store-sw {
-    .left {
-        img {
-            width: 157px;
-            height: 156px;
-            border-radius: 10px;
-        }
-    }
-    .group-img {
-        a {
-            display: block;
-            &:first-child {
-                margin-bottom: 4px;
-            }
-        }
-        img {
-            width: 98px;
-            height: 76px;
-            border-radius: 10px;
-        }
-    }
-    .right {
-        img {
-            width: 157px;
-            height: 156px;
-            border-radius: 10px;
-        }
-    }
-}
-.dots-tes {
-    position: unset;
-    .swiper-pagination-bullet {
-        width: 4px;
-        height: 4px;
-        background-color: #b9b9bf;
-        opacity: 0.5;
-    }
-    .swiper-pagination-bullet-active {
-        background-color: $primary;
-        opacity: 1;
-        width: 28px;
-        border-radius: 30px;
-    }
+    padding-right: 18px;
 }

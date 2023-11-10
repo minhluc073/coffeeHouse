@@ -279,18 +279,32 @@
 .search-box {
     position: relative;
     width: 100%;
-    .icon-search {
+    .icon-right {
         position: absolute;
         font-size: 22px;
         color: var(--text-4);
-        top: 18px;
+        top: 19px;
         right: 20px;
+    }
+    .icon-left {
+        position: absolute;
+        font-size: 22px;
+        color: var(--text-4);
+        top: 19px;
+        left: 20px;
     }
     .search-field {
         padding: 20px;
-        padding-right: 45px;
+        padding-right: 50px;
+        padding-left: 50px;
         border-radius: 20px;
         border: 1px solid var(--line);
+    }
+    &.style-2{
+        .search-field {
+            padding-left: 20px;
+
+        }
     }
     &.st2 {
         .search-field {
