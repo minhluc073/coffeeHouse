@@ -3157,25 +3157,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .modal.full .modal-dialog {
   margin: 0;
 }
-.modal.full .modal-newfeed {
-  border-radius: 12px 12px 0px 0px;
-  background: #fff;
-  pointer-events: auto;
-}
-.modal.full .modal-newfeed .icon-cancel {
-  font-size: 20px;
-  color: #131317;
-}
-.modal.full .modal-newfeed .heading {
-  padding: 20px;
-  border-bottom: 1px solid #e5e5e5;
-}
-.modal.full .modal-newfeed .bottom {
-  padding: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
 .modal.modalRight .modal-dialog {
   transform: translate(100%, 0) !important;
   min-width: 100%;
@@ -3192,6 +3173,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   right: 0;
   bottom: 0;
   top: 0;
+  padding: 0;
 }
 .modal.modalRight .modal-dialog .modal-content .modal-body {
   overflow: auto;
@@ -4342,41 +4324,39 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
+  padding: 15px;
 }
 .banner-store .box-rate {
-  height: 74px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 77.08%);
-  padding: 13px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .banner-store .box-rate .item-rate {
-  border-radius: 4px;
-  background: rgba(250, 190, 60, 0.3);
-  padding: 4px;
+  border-radius: 44px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  padding: 4px 6px;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
+  color: var(--white);
 }
-.banner-store .box-rate .item-rate .icon-star {
+.banner-store .btn-add {
+  border-radius: 1000px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
   font-size: 16px;
-  color: #fabe3c;
 }
-.banner-store .box-rate span {
-  font-size: 11px;
-  color: #fff;
-  line-height: 13px;
-}
-.banner-store .box-rate.st2 {
-  padding: 12px 15px;
-}
-.banner-store .box-heart {
+.banner-store::after {
   position: absolute;
-  top: 15px;
-  right: 15px;
-}
-.banner-store .box-bookmark {
-  position: absolute;
-  bottom: 12px;
-  right: 15px;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(135, 59, 10, 0) 47.91%, #2e1200 100%);
 }
 
 .box-heart {
@@ -4397,22 +4377,6 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .box-heart.active svg path {
   stroke: #eb5a5a;
-}
-
-.box-bookmark {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-.box-bookmark.st2 {
-  border: 1px solid #e5e5e5;
-}
-.box-bookmark.active svg {
-  fill: #873B0A;
 }
 
 .tf-img-box {
@@ -5128,8 +5092,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding: 6px 16px;
   border-radius: 20px;
   border: 1px solid var(--line);
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 .categories-item.time-st.active, .categories-item.active {
   background-color: var(--primary);
@@ -5154,10 +5119,16 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   fill: #de0000;
   stroke: #de0000;
 }
+.heart-press.active i {
+  color: #de0000;
+}
 
 .default-press.active svg path {
   fill: var(--primary-btn);
   stroke: var(--primary-btn);
+}
+.default-press.active i {
+  color: var(--primary);
 }
 
 .box-add-photo {

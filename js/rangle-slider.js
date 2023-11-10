@@ -202,16 +202,17 @@
     }
   };
 
-  var rangeOne = function () {
-    if ($("#range-one-val").length > 0) {
-      var directionSlider = document.getElementById("range-one-val");
-      noUiSlider.create(directionSlider, {
-        start: 20,
+  var rangeDistance = function () {
+    if ($("#slider-distance").length > 0) {
+      var distanceSlider = document.getElementById("slider-distance");
+      
+      noUiSlider.create(distanceSlider, {
+        start: 5,
         behaviour: "snap",
         connect: [true, false],
         range: {
           min: 0,
-          max: 50,
+          max: 10,
         },
         format: {
           from: function (value) {
@@ -223,29 +224,24 @@
         },
       });
 
-      var directionField = document.getElementById("field-range");
-      directionSlider.noUiSlider.on("update", function (values, handle) {
-        directionField.innerHTML = values[handle] + "km";
+      var distanceField = document.getElementById("distance-val");
+      distanceSlider.noUiSlider.on("update", function (values, handle) {
+        distanceField.innerHTML = values[handle] + "km";
       });
     }
   };
 
-  var rangeTwo = function () {
-    if ($("#range-two-val").length > 0) {
-      var skipSlider = document.getElementById("range-two-val");
-      var skipValues = [
-        document.getElementById("skip-value-lower"),
-        document.getElementById("skip-value-upper"),
-      ];
-
-      noUiSlider.create(skipSlider, {
-        start: [0, 20],
-        connect: true,
-        behaviour: "drag",
-        step: 1,
+  var rangePrice = function () {
+    if ($("#slider-distance").length > 0) {
+      var priceSlider = document.getElementById("slider-price");
+      
+      noUiSlider.create(priceSlider, {
+        start: 250,
+        behaviour: "snap",
+        connect: [true, false],
         range: {
           min: 0,
-          max: 80,
+          max: 500,
         },
         format: {
           from: function (value) {
@@ -257,11 +253,13 @@
         },
       });
 
-      skipSlider.noUiSlider.on("update", function (values, handle) {
-        skipValues[handle].innerHTML = "$" + values[handle];
+      var priceField = document.getElementById("price-val");
+      priceSlider.noUiSlider.on("update", function (values, handle) {
+        priceField.innerHTML = "$" + values[handle];
       });
     }
   };
+ 
 
   $(function () {
     rangeSliderOne();
@@ -272,5 +270,7 @@
     rangeSoftLimit();
     rangePips();
     rangeDirection();
+    rangeDistance();
+    rangePrice();
   });
 })(jQuery);

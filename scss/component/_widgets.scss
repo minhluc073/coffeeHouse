@@ -200,40 +200,40 @@
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
+    padding: 15px;
     .box-rate {
-        height: 74px;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 77.08%);
-        padding: 13px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // height: 74px;
         .item-rate {
-            border-radius: 4px;
-            background: rgba(250, 190, 60, 0.3);
-            padding: 4px;
+            border-radius: 44px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(2px);
+            padding: 4px 6px;
             display: inline-flex;
             align-items: center;
-            gap: 4px;
-            .icon-star {
-                font-size: 16px;
-                color: $warning;
-            }
-        }
-        span {
-            font-size: 11px;
-            color: $white;
-            line-height: 13px;
-        }
-        &.st2 {
-            padding: 12px 15px;
+            gap: 2px;
+            color: var(--white);
         }
     }
-    .box-heart {
-        position: absolute;
-        top: 15px;
-        right: 15px;
+ 
+    .btn-add {
+        border-radius: 1000px;
+        background: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(2px);
+        font-size: 16px;
     }
-    .box-bookmark {
+    &::after {
         position: absolute;
-        bottom: 12px;
-        right: 15px;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(135, 59, 10, 0) 47.91%, #2e1200 100%);
     }
 }
 .box-heart {
@@ -255,21 +255,7 @@
         }
     }
 }
-.box-bookmark {
-    width: 40px;
-    height: 40px;
-    background-color: $white;
-    @include flex(center, center);
-    border-radius: 50%;
-    &.st2 {
-        border: 1px solid $line;
-    }
-    &.active {
-        svg {
-            fill: $primary;
-        }
-    }
-}
+
 .tf-img-box {
     border-radius: 20px;
     height: 188px;

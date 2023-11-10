@@ -81,25 +81,7 @@
         .modal-dialog {
             margin: 0;
         }
-        .modal-newfeed {
-            border-radius: 12px 12px 0px 0px;
-            background: $white;
-            pointer-events: auto;
-            .icon-cancel {
-                font-size: 20px;
-                color: $onSurface;
-            }
-            .heading {
-                padding: 20px;
-                border-bottom: 1px solid $line;
-            }
-            .bottom {
-                padding: 20px;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 8px;
-            }
-        }
+       
     }
     &.modalRight {
         .modal-dialog {
@@ -117,6 +99,7 @@
                 right: 0;
                 bottom: 0;
                 top: 0;
+                padding: 0;
                 .modal-body {
                     overflow: auto;
                     padding: 0;

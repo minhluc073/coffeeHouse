@@ -73,8 +73,7 @@
     padding: 6px 16px;
     border-radius: 20px;
     border: 1px solid var(--line);
-    display: inline-flex;
-    align-items: center;
+    @include flex(center, center);
 
     &.time-st.active,
     &.active {
@@ -105,6 +104,9 @@
                 stroke: #de0000;
             }
         }
+        i {
+            color: #de0000;
+        }
     }
 }
 .default-press {
@@ -114,6 +116,9 @@
                 fill: var(--primary-btn);
                 stroke: var(--primary-btn);
             }
+        }
+        i {
+            color: var(--primary);
         }
     }
 }

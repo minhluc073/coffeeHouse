@@ -109,14 +109,7 @@
     }
   };
 
-  /* block delete 
-  ------------------------------------------------------------------------------------- */
-  var dlBlock = function () {
-    $(".list-favorite").on("click", function (event) {
-      $(this).toggleClass("mr-lf");
-      $(this).find(".del-item").toggleClass("show-del");
-    });
-  };
+
 
   /* back Page
   ------------------------------------------------------------------------------------- */
@@ -225,18 +218,13 @@
       $(this).toggleClass("active");
     });
 
-    $(".active-suggest, .lo-select").click(function () {
-      $(".active-suggest.active, .lo-select.active").removeClass("active");
+    $(".active-suggest").click(function () {
+      $(".active-suggest.active").removeClass("active");
       $(this).toggleClass("active");
     });
 
-    $(".rate-suggest").click(function () {
-      $(".rate-suggest.active").removeClass("active");
-      $(this).toggleClass("active");
-    });
-
-    $(".time-select, .time-st").click(function () {
-      $(".time-select.active, .time-st.active").removeClass("active");
+    $(".active-suggest2").click(function () {
+      $(".active-suggest2.active").removeClass("active");
       $(this).toggleClass("active");
     });
   };
@@ -336,8 +324,6 @@
     clearText();
     handleMessage();
     lightGalleryBox();
-    cusSelect();
-    dlBlock();
     activeSuggest();
     selectImages();
     loadmore();
