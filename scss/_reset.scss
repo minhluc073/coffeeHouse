@@ -741,6 +741,9 @@ p,
 .text-primary {
     color: var(--primary) !important;
 }
+.text-primary2{
+    color: var(--primary-btn);
+}
 .text-onSurface {
     color: $onSurface !important;
 }
@@ -858,8 +861,8 @@ p,
     margin-left: -20px;
     margin-right: -20px;
 }
-.radius-4 {
-    border-radius: 4px;
+.radius-14 {
+    border-radius: 14px;
 }
 .mh-full {
     min-height: 100vh;

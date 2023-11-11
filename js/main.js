@@ -109,8 +109,6 @@
     }
   };
 
-
-
   /* back Page
   ------------------------------------------------------------------------------------- */
   var backPage = function () {
@@ -260,47 +258,59 @@
     }, 500);
   };
 
-  function setCookie(cname, cvalue, exhours) {
-    var d = new Date();
-    d.setTime(d.getTime() + 30 * 60 * 1000); /* 30 Minutes */
-    var expires = "expires=" + d.toString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
-
   /*
   ------------------------------------------------------------------------------------- */
-  var themeSetting = function () {
-    // var theme = getUrlParameter("color-theme");
-
-    var isCookieSet = true;
+  var themeSettingColor = function () {
     $('input[name="theme_color"]').on("click", function () {
       $("body").attr("data-theme-color", this.value);
-      if (isCookieSet) {
-        // setCookie("themeColor_value", this.value);
-        sessionStorage.setItem("themeColor", this.value);
-      }
+      localStorage.setItem("themeColor", this.value);
     });
   };
 
-  var setThemePanel = function () {
-    jQuery.each(themeOption, function (index, themeOptionItem) {
-      themeOptionItemValue = getCookie(themeOptionItem + "_value");
+  var toggleTheme = function () {
+    $("body").toggleClass(localStorage.toggled);
+    var toggle = $(".toggle-theme");
 
-      /* Only For Tanam Package Kit */
-      if (!isCookieSet && themeOptionItem == "themeColor") {
-        return true;
-      }
-      /* Only For Tanam Package Kit END */
-
-      if (themeOptionItemValue != "" && themeOptionItemValue != 1) {
-        if (themeOptionItem == "themeColor") {
-          body.attr("data-theme-color", themeOptionItemValue);
-        } else if (themeOptionItem == "themeVersion") {
-          body.addClass(themeOptionItemValue);
-          jQuery(".theme-btn").addClass("active");
-        }
+    toggle.on("click", function () {
+      if (localStorage.toggled != "dark-theme") {
+        $("body").toggleClass("dark-theme", true);
+        localStorage.toggled = "dark-theme";
+        $(".theme-dark-icon").show();
+        $(".theme-light-icon").hide();
+        toggle.prop("checked", true);
+      } else {
+        $("body").toggleClass("dark-theme", false);
+        localStorage.toggled = "";
+        $(".theme-dark-icon").hide();
+        $(".theme-light-icon").show();
+        toggle.prop("checked", false);
       }
     });
+    // if ($("body").hasClass("dark-theme")) {
+    //   toggle.prop("checked", true);
+    // } else {
+    //   toggle.prop("checked", false);
+    // }
+  };
+
+  var setToggleTheme = function () {
+    var theme = localStorage.toggled;
+    if (theme) {
+      $(".theme-dark-icon").show();
+      $(".theme-light-icon").hide();
+    } else {
+      $(".theme-dark-icon").hide();
+      $(".theme-light-icon").show();
+    }
+  };
+
+  var setLocalColor = function () {
+    var themeColor = localStorage.getItem("themeColor");
+    if (themeColor) {
+      $("body").attr("data-theme-color", themeColor);
+    } else {
+      $("body").attr("data-theme-color", "theme-primary");
+    }
   };
 
   var treeView = function () {
@@ -330,7 +340,9 @@
     touchSpin();
     treeView();
     preloader();
-    themeSetting();
-    setThemePanel();
+    setLocalColor();
+    themeSettingColor();
+    toggleTheme();
+    setToggleTheme();
   });
 })(jQuery);

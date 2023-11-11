@@ -340,19 +340,15 @@
         color: var(--primary);
     }
 }
-
-.btn-showmore {
-    color: var(--primary);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: 700;
-    svg {
-        path {
-            stroke: var(--primary);
-        }
-    }
+.btn-checkin{
+    width: 60px;
+    height: 60px;
+    @include flex(center,center);
+    border-radius: 20px;
+    border: 1px solid var(--line);
 }
+
+
 
 .btn-social {
     @include flex(center, center);

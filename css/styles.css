@@ -860,6 +860,10 @@ p,
   color: var(--primary) !important;
 }
 
+.text-primary2 {
+  color: var(--primary-btn);
+}
+
 .text-onSurface {
   color: #131317 !important;
 }
@@ -1010,8 +1014,8 @@ p,
   margin-right: -20px;
 }
 
-.radius-4 {
-  border-radius: 4px;
+.radius-14 {
+  border-radius: 14px;
 }
 
 .mh-full {
@@ -1647,15 +1651,14 @@ p,
   color: var(--primary);
 }
 
-.btn-showmore {
-  color: var(--primary);
+.btn-checkin {
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-weight: 700;
-}
-.btn-showmore svg path {
-  stroke: var(--primary);
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid var(--line);
 }
 
 .btn-social {
@@ -4275,19 +4278,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .list-star li {
   font-size: 16px;
-  color: #e5e5e5;
+  color: var(--text-4);
 }
 .list-star li:not(:last-child) {
-  color: #fabe3c;
+  color: #ffc700;
 }
-.list-star.st2 {
-  gap: 4px;
-}
-.list-star.st2 li {
-  color: #f5f5f5;
-}
-.list-star.st2 li:not(:last-child) {
-  color: #fabe3c;
+.list-star.style-2 li {
+  font-size: 14px;
 }
 
 .list-star-full {
@@ -4310,6 +4307,14 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   justify-content: flex-end;
   position: relative;
   padding: 15px;
+}
+.banner-store.style-2 {
+  height: 148px;
+}
+.banner-store.style-2 .btn-add {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 .banner-store .box-rate {
   position: relative;
@@ -4368,6 +4373,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-radius: 20px;
   height: 188px;
   overflow: hidden;
+}
+.tf-img-box.style-2 {
+  border-radius: 14px;
+  height: 70px;
 }
 
 .box-newfeed p span {
@@ -4731,6 +4740,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 [data-theme-color=theme-dark] {
   --primary: #031634;
   --primary-bold: #031634;
+}
+
+.dark-theme {
+  --white: #1b0a00;
 }
 
 .modal-themes-color {
@@ -5147,6 +5160,23 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: var(--primary);
 }
 
+.action-like {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #8e8e93;
+}
+.action-like.active {
+  color: var(--primary-btn);
+}
+.action-like.active svg path {
+  fill: var(--primary-btn);
+  stroke: var(--primary-btn);
+}
+
 .box-add-photo {
   display: flex;
   gap: 8px;
@@ -5182,6 +5212,60 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 18px;
   font-weight: 700;
   line-height: 140%;
+}
+
+.box-star-review {
+  display: flex;
+}
+.box-star-review .content-left {
+  padding-right: 20px;
+  border-right: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box-star-review .content-left .top h1 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: #d83a3a;
+  display: inline-block;
+  margin-right: 10px;
+}
+.box-star-review .content-left .top span {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  color: var(--text-5);
+  opacity: 0.4;
+}
+.box-star-review .content-right {
+  padding-left: 20px;
+  flex-grow: 1;
+}
+.box-star-review .content-right .line-progress {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.box-star-review .content-right .line-progress span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 140%;
+}
+.box-star-review .content-right .line-progress span i {
+  color: #ffc700;
+  font-size: 12px;
+}
+.box-star-review .content-right .line-progress .progress {
+  flex-grow: 1;
+  height: 8px;
+}
+.box-star-review .content-right .line-progress .progress .progress-bar {
+  background-color: var(--primary-btn);
 }
 
 .banner-wrapper {
