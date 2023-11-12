@@ -92,3 +92,5 @@ for (const feature of geojson.features) {
     )
     .addTo(map);
 }
+
+document.addEventListener("DOMContentLoaded", () => map.resize());

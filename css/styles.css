@@ -1108,6 +1108,10 @@ p,
   padding-top: 80px;
 }
 
+#map-direction .mapboxgl-control-container {
+  display: none;
+}
+
 .header {
   display: flex;
   align-items: center;

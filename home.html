@@ -13,14 +13,16 @@
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/mapbox.css">
+    
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/48.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
 
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <!-- <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script> -->
 
     <title>manage location</title>
 </head>
@@ -123,7 +125,10 @@
                 </div>
             </div>
         </div>
-        <div id="map"></div>
+        <div class="name">
+            <div id="map-direction" style='width: 100%; min-height: 300px;'></div>
+
+        </div>
         <div class="banner-fixed">
             <div class="tf-container">
                 <div class="wd-dir-store pt-20 pb-20">
@@ -503,7 +508,10 @@
     <script type="text/javascript" src="js/carousel.js"></script>
     <script type="text/javascript" src="js/nouislider.min.js"></script>
     <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/mapbox.js"></script>
+    <script type="text/javascript" src="js/mapbox-plugin-directions.js"></script>
+
+    <script type="text/javascript" src="js/map-direction.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
    
