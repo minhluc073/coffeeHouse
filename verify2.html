@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="images/logo/48.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
 
-    <title>forgot pass</title>
+    <title>verify</title>
 </head>
 
 <body>
@@ -27,20 +27,26 @@
         </div>
       </div>
     <!-- /preload -->
-    <div class="forgot-area">
+    <div class="signin-area pb-30">
         <div class="tf-container">
-            <h2 class="mt-30">Forgot Password?</h2>
-                <p class="mt-16 fw-4">At least 8 characters, with uppercase & lowercase letters.</p>
-            <form class="mt-40" action="reset-pass.html">
-                <fieldset class="input-icon">
-                    <span class="icon icon-mess"></span>
-                    <input type="text" placeholder="Enter your email address" class="form-control">
-                </fieldset>
-                <div class="btn-fixed style-2">
-                    <button class="tf-btn btn-lg primary">Reset password</button>
+            <h2 class="mt-30">Verify phone number</h2>
+                <p class="mt-16 fw-4">We have sent code to your number <br>
+                    <span class="text-primary fw-bold">(+00) 000 000 000</span> </p>
+                <form class="mt-40">
+                    
+                    <div class="digit-group">
+                        <input class="form-control" required type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" value="7">
+                        <input class="form-control" required type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" value="4">
+                        <input class="form-control" required type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3">
+                        <input class="form-control" required type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4">
+    
+                    </div>
+                    <div class="btn-fixed style-2">
+                        <a href="home.html" class="tf-btn btn-lg primary">Send code</a>
+                        <a href="#" class="mt-16 tf-btn btn-lg secondary">Resend code</a>
 
-                </div>
-            </form>
+                    </div>    
+                </form>
             
             
         </div>

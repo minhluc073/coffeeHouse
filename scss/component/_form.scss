@@ -213,7 +213,29 @@
         }
     }
 }
+.box-forgot {
+    .forgot {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        gap: 10px;
 
+        .forgot-link {
+            font-weight: 700;
+            color: var(--primary-btn);
+        }
+        .show-pass {
+            position: unset;
+        }
+    }
+    .form-control {
+        padding-right: 110px;
+    }
+    .form-control:valid ~ .forgot {
+        display: flex;
+    }
+}
 .form-select {
     font-family: $font-main-family;
     color: var(--black);
@@ -223,7 +245,7 @@
     border-radius: 20px;
     border-color: var(--secondary);
     background-position: right 20px center;
-    
+
     &:focus {
         box-shadow: unset;
         border-color: var(--primary-btn) !important;
@@ -255,23 +277,29 @@
 
 .digit-group {
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    // gap: 10px;
+    // grid-template-columns: repeat(4,1fr);
+    // gap: 20px;
     input {
-        width: 20%;
-        border-radius: 0;
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 28px;
-        border-bottom: 1px solid $line;
-        padding: 12px 0px;
+        width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        font-family: $font-title-family;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 140%;
+        border-bottom: 1px solid transparent;
         text-align: center;
-        background: $white;
+        background: var(--line);
         &:valid {
-            border-bottom-color: $onSurface;
+            color: $white;
+            background-color: var(--primary);
+            border-color: var(--primary);
         }
         &:focus {
-            border-color: transparent;
-            border-bottom-color: $onSurface;
+            border-color: var(--primary);
+            color: var(--primary);
         }
     }
 }
@@ -300,10 +328,9 @@
         border-radius: 20px;
         border: 1px solid var(--line);
     }
-    &.style-2{
+    &.style-2 {
         .search-field {
             padding-left: 20px;
-
         }
     }
     &.st2 {

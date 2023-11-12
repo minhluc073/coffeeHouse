@@ -27,39 +27,42 @@
         </div>
       </div>
     <!-- /preload -->
-    <div class="signin-area">
-        <div class="box-image mt-12">
-            <img src="images/background/bg-signin.png" alt="image">
-        </div>
+    <div class="signin-area pb-30">
         <div class="tf-container">
-            <form class="mb-18">
-                <h2>Sign In</h2>
-                <fieldset class="mt-20">
-                    <label class="mb-8">Email/Phone Numbers:</label>
-                    <input type="text" placeholder="Email Address">
+            <h2 class="mt-30">Welcome Back to
+                Coffee Time</h2>
+                <p class="mt-16 fw-4">Hello there, sign in to continue!</p>
+            <form class="mt-40" action="home.html">
+                <fieldset class="input-icon">
+                    <span class="icon icon-mess"></span>
+                    <input type="text" placeholder="Enter your email address" class="form-control">
                 </fieldset>
-                <fieldset class="mt-20">
-                    <label class="mb-8">Password:</label>
-                    <div class="box-auth-pass">
-                        <input type="password" required class="password-field" placeholder="Your Password">
-                        <span class="show-pass">
-                            <i class="icon-eye-show"></i>
-                            <i class="icon-eye-hide"></i>
-                        </span>
+                <fieldset class="mt-26 input-icon box-forgot">
+                    <div class="box-view-hide">
+                        <span class="icon icon-lock"></span>
+                        <input type="password" required placeholder="Enter your password" class="form-control password-field">
+                        <div class="forgot">
+                            <a href="forgot-pass.html" class="forgot-link">Forgot?</a>
+                            <span class="show-pass">
+                                <i class="icon-pass icon-view"></i>
+                                <i class="icon-pass icon-hide"></i>
+                            </span>
+                        </div>
+                        
                     </div>
                 </fieldset>
-                <div class="d-flex justify-content-between align-items-center mt-16">
-                    <fieldset class="group-cb">
-                        <input type="checkbox" class="tf-checkbox" id="ip-check"> 
-                        <label for="ip-check">Remember me</label>
-                    </fieldset>
-                    <a href="forgot-pass.html" class="text-primary">Forgot password?</a>
-                </div>
-                <a href="home-location.html" class="tf-btn primary mt-16">Login</a>
-                <span class="auth-line">Or</span>
-                <a href="home-location.html" class="tf-btn secondary"><img src="images/logo/google.png" alt="image" class="icon-google">Login with Google</a>
-                <p class="noti-signin mt-16">Not a member? <a href="sign-up.html">Sign up</a></p>
+                <button class="mt-26 tf-btn btn-lg primary">Login</button>
             </form>
+            <p class="mt-30 text-center fw-4">Or continue with social account</p>
+            <a href="home.html" class="mt-30 tf-btn btn-lg icon">
+                <img class="img-icon" src="images/logo/google.png" alt="img">
+                Sign in with Google
+            </a>
+            <a href="home.html" class="mt-30 tf-btn btn-lg icon">
+                <img class="img-icon" src="images/logo/fb.png" alt="img">
+                Sign in with Facebook
+            </a>
+            <p class="mt-70 text-center">Dont’s have an account? <a href="sign-up.html" class="text-primary2 fw-bold">Sign up</a></p>
         </div>
     </div>
 

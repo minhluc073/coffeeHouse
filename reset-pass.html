@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="images/logo/48.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
 
-    <title>sign up</title>
+    <title>reset pass</title>
 </head>
 
 <body>
@@ -27,27 +27,14 @@
         </div>
       </div>
     <!-- /preload -->
-    <div class="signin-area pb-30">
+    <div class="forgot-area">
         <div class="tf-container">
-            <h2 class="mt-30">Welcome Back to
-                Coffee Time</h2>
-                <p class="mt-16 fw-4">Hello there, sign in to continue!</p>
-            <form class="mt-40" action="verify.html">
-                <fieldset class="input-icon">
-                    <span class="icon icon-mess"></span>
-                    <input type="text" placeholder="Enter your email address" class="form-control">
-                </fieldset>
-                <fieldset class="mt-26 input-icon drop-select">
-                    <div class="inner-group-ip">
-                        <select class="image-select">
-                            <option data-thumbnail="images/flags/germany.png"></option>
-                            <option data-thumbnail="images/flags/usa.png"></option>
-                            <option data-thumbnail="images/flags/vn.png"></option>
-                        </select>
-                    </div>
-                    <input type="number" placeholder="Enter your phone number" class="form-control">
-                </fieldset>
-                <fieldset class="mt-26 input-icon">
+            <h2 class="mt-30">Reset your password</h2>
+                <p class="mt-16 fw-4">At least 8 characters, with uppercase & lowercase letters.</p>
+            <form class="mt-40" action="home.html">
+                <fieldset class="input-icon input-style-2">
+                    <label>Password</label>
+
                     <div class="box-view-hide">
                         <span class="icon icon-lock"></span>
                         <input type="password" required placeholder="Enter your password" class="form-control password-field">
@@ -58,21 +45,26 @@
                         
                     </div>
                 </fieldset>
-                <button class="mt-26 tf-btn btn-lg primary">Sign Up</button>
+                <fieldset class="mt-26 input-icon input-style-2">
+                    <label>Confirm Password</label>
+
+                    <div class="box-view-hide">
+                        <span class="icon icon-lock"></span>
+                        <input type="password" required placeholder="Enter your password" class="form-control password-field2">
+                            <span class="show-pass2">
+                                <i class="icon-pass icon-view"></i>
+                                <i class="icon-pass icon-hide"></i>
+                            </span>
+                        
+                    </div>
+                </fieldset>
+                <div class="btn-fixed style-2">
+                    <button class="tf-btn btn-lg primary">Update password</button>
+
+                </div>
             </form>
-            <p class="mt-30 text-center fw-4">Or continue with social account</p>
-            <div class="mt-30 grid-2 gap-16">
-                <a href="#" class="tf-btn btn-lg icon">
-                    <img class="img-icon" src="images/logo/google.png" alt="img">
-                    Google
-                </a>
-                <a href="#" class="tf-btn btn-lg icon">
-                    <img class="img-icon" src="images/logo/fb.png" alt="img">
-                    Facebook
-                </a>
-            </div>
             
-            <p class="mt-70 text-center">Dont’s have an account? <a href="sign-in.html" class="text-primary2 fw-bold">Sign in</a></p>
+            
         </div>
     </div>
 
