@@ -1,3 +1,12 @@
 .dark-theme {
     --white: #1b0a00;
+    --black: #fff;
+
+    --line: #393737;
+    --bg-ip: #393737;
+
+    // css dark theme
+    .card {
+        border-color: var(--line);
+    }
 }

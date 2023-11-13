@@ -87,6 +87,11 @@
     .swiper-pagination-bullet-active {
         opacity: 1;
     }
+    &.style-2 {
+        .swiper-pagination-bullet{
+            background-color: $white;
+        }
+    }
 }
 .swiper {
     &.auto {

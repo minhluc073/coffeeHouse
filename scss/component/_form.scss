@@ -7,8 +7,13 @@
     border-color: transparent;
     background: var(--white);
     &:focus {
+        color: var(--black);
         box-shadow: unset;
         border-color: var(--primary-btn) !important;
+        background-color: var(--white);
+    }
+    &::placeholder {
+        color: var(--text);
     }
 }
 
@@ -18,7 +23,7 @@
         padding: 20px;
         padding-left: 50px;
         border-radius: 20px;
-        border-color: var(--secondary);
+        border-color: var(--line);
     }
     .icon {
         position: absolute;
@@ -45,7 +50,7 @@
     .form-control {
         padding: 16px;
         border-radius: 12px;
-        border-color: var(--secondary);
+        border-color: var(--line);
     }
 }
 .input-fill {
@@ -63,7 +68,7 @@
         border-top: 0;
         border-left: 0;
         border-right: 0;
-        border-color: var(--secondary);
+        border-color: var(--line);
     }
 }
 
@@ -113,7 +118,7 @@
 .drop-select {
     display: flex;
     position: relative;
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--line);
     border-radius: 20px;
     .bootstrap-select {
         width: auto !important;
@@ -179,6 +184,9 @@
     }
     &:focus-within {
         color: var(--primary-btn);
+        label {
+            color: var(--primary-btn);
+        }
     }
 }
 
@@ -243,7 +251,7 @@
     line-height: 19.6px;
     padding: 20px;
     border-radius: 20px;
-    border-color: var(--secondary);
+    border-color: var(--line);
     background-position: right 20px center;
 
     &:focus {
@@ -278,9 +286,7 @@
 .digit-group {
     display: flex;
     justify-content: space-between;
-    // gap: 10px;
-    // grid-template-columns: repeat(4,1fr);
-    // gap: 20px;
+
     input {
         width: 60px;
         height: 60px;
@@ -299,7 +305,6 @@
         }
         &:focus {
             border-color: var(--primary);
-            color: var(--primary);
         }
     }
 }

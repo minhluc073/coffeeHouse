@@ -536,6 +536,7 @@
 
 .preload-logo {
     position: absolute;
+    // background-image: url("../images/logo/logo-banner.png");
     top: 50%;
     left: 50%;
     width: 100px;
@@ -545,7 +546,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: $primary;
+    background-color: $primary;
     background-repeat: no-repeat;
     background-position: center center;
     animation: preload 1s linear infinite alternate;

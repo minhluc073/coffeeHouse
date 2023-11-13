@@ -39,12 +39,12 @@
     }
     &.secondary {
         background: var(--white);
-        border: 1px solid var(--secondary);
+        border: 1px solid var(--line);
         color: var(--primary);
         &:hover {
             color: $white;
             background: var(--primary);
-            border-color: var(--secondary);
+            border-color: var(--primary);
         }
     }
     &.success {
@@ -437,5 +437,10 @@
     &.style-2{
         bottom: 0;
         padding-bottom: 20px;
+    }
+    &.style-3 {
+        bottom: 0;
+        padding-bottom: 20px;
+        background: transparent;
     }
 }

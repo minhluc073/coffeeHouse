@@ -1,36 +1,65 @@
-.cf-onboarding {
-    .boarding-box {
-        .img-box {
-            max-width: 375px;
-            height: 340px;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-        .tf-content {
-            h2 {
-                padding: 0 60px;
-            }
-            p {
-                padding: 0 53px;
-            }
-        }
+.bg-boarding {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-boarding {
+    width: 195px;
+    height: 145px;
+}
+.logo-boarding {
+    width: 196px;
+    height: 195px;
+    margin: 20px auto 100px;
+}
+.title-boarding-box {
+    text-align: center;
+    padding: 0px 43px;
+    h1 {
+        color: $white;
+    }
+    p {
+        color: #f4e8dd;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 400;
     }
 }
+
+.section-boarding-title {
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+
 .modal-noti-app {
-    .top {
-        padding: 16px 16px 24px;
-    }
-    .bottom {
-        li {
-            padding: 11px;
-            a {
-                font-size: 16px;
-                font-weight: 300;
-                line-height: 22px;
-                color: $primary;
+    .modal-dialog {
+        &.modal-dialog-centered {
+            margin: 0 auto;
+            max-width: 335px;
+        }
+        .modal-content {
+            padding: 0;
+            .top {
+                padding: 30px 30px 16px;
+                h4 {
+                    font-family: $font-title-family;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 140%;
+                }
+            }
+            .bottom {
+                li {
+                    padding: 16px;
+                    a {
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        color: var(--primary);
+                    }
+                }
             }
         }
     }

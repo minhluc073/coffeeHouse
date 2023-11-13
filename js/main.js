@@ -280,11 +280,6 @@
         toggle.prop("checked", false);
       }
     });
-    // if ($("body").hasClass("dark-theme")) {
-    //   toggle.prop("checked", true);
-    // } else {
-    //   toggle.prop("checked", false);
-    // }
   };
 
   var setToggleTheme = function () {
