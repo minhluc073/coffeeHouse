@@ -1,12 +1,22 @@
 .dark-theme {
     --white: #1b0a00;
     --black: #fff;
-
+    --secondary: #393737;
     --line: #393737;
     --bg-ip: #393737;
-
+    --light: #393737;
+    --bg-progress: #393737;
+    --text-3: #fff;
+    --text-gray: #393737;
+    --linner-1: linear-gradient(180deg, rgba(135, 59, 10, 0) 47.91%, #afaaa8 100%);
+    
     // css dark theme
     .card {
         border-color: var(--line);
+    }
+    .menubar-footer {
+        .setting-icon {
+            fill: $white;
+        }
     }
 }

@@ -35,10 +35,16 @@
                 line-height: 42px;
                 font-weight: 700;
             }
+            span{
+                color: var(--black);
+            }
         }
         .timeline-content {
             padding-left: 16px;
             border-left: 1px solid var(--line);
+            p{
+                color: var(--black);
+            }
 
             .img-box {
                 min-width: 169px;
@@ -89,6 +95,7 @@
             background: var(--white);
             padding: 16px;
             border-radius: 0px 0px 12px 12px;
+            color: var(--black);
         }
         &::after {
             top: 20%;
@@ -109,7 +116,7 @@
                 background: var(--primary);
                 p,
                 h4 {
-                    color: var(--white);
+                    color: $white;
                 }
             }
             &::before {
@@ -121,7 +128,7 @@
                 background: var(--success);
                 p,
                 h4 {
-                    color: var(--white);
+                    color: $white;
                 }
             }
             &::before,
@@ -134,7 +141,8 @@
                 background: var(--danger);
                 p,
                 h4 {
-                    color: var(--white);
+                    color: $white;
+
                 }
             }
             &::before,
@@ -147,7 +155,8 @@
                 background: var(--warning);
                 p,
                 h4 {
-                    color: var(--white);
+                    color: $white;
+
                 }
             }
             &::before,
@@ -158,6 +167,11 @@
         &.light {
             .timeline-header {
                 background: var(--light);
+                p,
+                h4 {
+                    color: var(--black);
+
+                }
             }
             &::before,
             &::after {
@@ -169,7 +183,8 @@
                 background: var(--dark);
                 p,
                 h4 {
-                    color: var(--white);
+                    color: $white;
+
                 }
             }
             &::before,
@@ -182,7 +197,8 @@
                 background: var(--disable);
                 p,
                 h4 {
-                    color: var(--white);
+                    color: $white;
+
                 }
             }
             &::before,
@@ -298,7 +314,7 @@
                 background: var(--primary);
                 @include flex(center, center);
                 border-radius: 98px;
-                color: var(--white);
+                color: $white;
                 font-size: 20px;
             }
         }

@@ -11,7 +11,7 @@
     .icon {
         width: 25px;
         height: 25px;
-        color: var(--white);
+        color: $white;
         background-color: var(--primary);
         border-radius: 50%;
         @include flex(center, center);
@@ -114,7 +114,7 @@
         padding: 5px 10px;
         border-radius: 8px;
         background-color: var(--primary);
-        color: var(--white);
+        color: $white;
         top: -15px;
     }
     &.transparent {

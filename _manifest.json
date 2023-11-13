@@ -5,7 +5,7 @@
     "start_url": ".",
     "display": "standalone",
     "background_color": "white",
-    "theme_color": "#2DC28D",
+    "theme_color": "#873B0A",
     "description": "Coffee house app",
     "icons": [
       {

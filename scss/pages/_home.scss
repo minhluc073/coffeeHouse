@@ -18,8 +18,15 @@
             z-index: 1;
         }
     }
+    h2{
+        color: $white;
+    }
 }
-
+.tf-title-banner{
+    h3, a{
+        color: $white;
+    }
+}
 .wd-dir-store {
     &.details {
         .item-rate {

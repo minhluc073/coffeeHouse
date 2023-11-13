@@ -22,7 +22,7 @@
     &.primary {
         background: var(--primary);
         border-color: var(--primary);
-        color: var(--white);
+        color: $white;
     }
     &.secondary {
         border-color: var(--secondary);

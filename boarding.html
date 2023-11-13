@@ -21,7 +21,7 @@
     <title>onboarding</title>
 </head>
 
-<body class="bg-boarding" style="background-image: url(images/background//bg2.jpg);">
+<body class="bg-boarding" style="background-image: url(images/background//bg1.jpg);">
     <!-- preloade -->
     <div class="preload preload-container">
         <div class="preload-logo">
@@ -35,48 +35,54 @@
             <a href="sign-in.html" class="d-block text-end text-small fw-4">Skip</a>
         </div>
     </div> -->
-    <div class="section-boarding-title">
-    
-        <div class="mt-24 swiper tf-swiper-2" data-space-between="16" data-preview="1" data-tablet="1" data-desktop="1">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="title-boarding-box">
-                        <h1>Enable <br> your location</h1>
-                        <p class="mt-12">Discover the best Coffee from local spots near you</p>
-
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="title-boarding-box">
-                        <h1>Welcome to Coffee location</h1>
-                        <p class="mt-12">Discover the best Coffee from local spots near you</p>
-                    </div>
-                </div>
-                
-                <div class="swiper-slide">
-                    <div class="title-boarding-box">
-                        <h1>Enable <br> your location</h1>
-                        <p class="mt-12">Discover the best Coffee from local spots near you</p>
-
-                    </div>
+    <div class="app-content style-1">
+        <div class="img-boarding">
+            <img src="images/background/img1.jpg" alt="img">
+        </div>
+        
+        <div class="logo-boarding">
+            <img src="images/logo/logo-banner.png" alt="img">
+        </div>
+       <div class="mt-24 swiper tf-swiper-2" data-space-between="16" data-preview="1" data-tablet="1" data-desktop="1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="title-boarding-box">
+                    <h1>Welcome to Coffee location</h1>
+                    <p class="mt-12">Discover the best Coffee from local spots near you</p>
                 </div>
             </div>
-            <div class="mt-20 swiper-pagination dots-tes style-2"></div>
+            <div class="swiper-slide">
+                <div class="title-boarding-box">
+                    <h1>Enable <br> your location</h1>
+                    <p class="mt-12">Discover the best Coffee from local spots near you</p>
+
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title-boarding-box">
+                    <h1>Welcome to Coffee location</h1>
+                    <p class="mt-12">Discover the best Coffee from local spots near you</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="mt-20 swiper-pagination dots-tes style-2"></div>
+
 
         </div>
-
+        
     </div>
-  
+    
     <div class="btn-fixed style-3">
-        <a href="#notiBoarding" class="tf-btn btn-lg primary" data-bs-toggle="modal">Enable Your Location</a>
+        <a href="sign-in.html" class="tf-btn btn-lg primary">Discover Great Coffee</a>
 
     </div>
 
-    <div class="modal fade modalCenter modal-noti-app" id="notiBoarding">
+    <div class="modal fade modalCenter" id="modalIndex">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+            <div class="modal-content modal-noti-app">
                 <div class="top">
-                    <h4 class="text-center">Allow "Coffee App" to use your location?</h4>
+                    <h6 class="text-center text-medium">Allow "Coffee App" to use your location?</h6>
                     <p class="mt-6 text-center">To find a coffee shop quickly, the Coffee app collects location data from the time you open the app until a trip ends. This improves pickups, support, and more</p>
                     
                 </div>
@@ -84,8 +90,8 @@
                     <img src="images/banner-coffee/banner-map.jpg" alt="img">
                 </div>
                 <ul class="bottom">
-                    <li class="line-bt text-center"><a href="sign-in.html">Allow Once</a> </li>
-                    <li class="line-bt text-center"><a href="sign-in.html">Allow While Using App</a> </li>
+                    <li class="line-bt text-center" data-bs-dismiss="modal"><a href="sign-in.html">Allow Once</a> </li>
+                    <li class="line-bt text-center"><a href="boarding.html">Allow While Using App</a> </li>
                     <li class="text-center" data-bs-dismiss="modal"><a href="sign-in.html">Never</a> </li>
                 </ul>
                

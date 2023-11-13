@@ -267,7 +267,9 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(180deg, rgba(135, 59, 10, 0) 47.91%, #2e1200 100%);
+        background: var(--linner-1);
+
+        
     }
 }
 .box-heart {

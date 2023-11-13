@@ -1,75 +1,85 @@
 // primary
-[data-theme-color="theme-primary"]{
-    --primary: #873B0A;
-    --primary-bold: #5B2400;
-    --primary-btn:#C96A28;
+[data-theme-color="theme-primary"] {
+    --primary: #873b0a;
+    --primary-bold: #5b2400;
+    --primary-btn: #c96a28;
 }
-// green 
-[data-theme-color="theme-green"]{
+// green
+[data-theme-color="theme-green"] {
     --primary: #143d33;
     --primary-bold: #143d33;
-
-    --primary-btn:#325e53;
+    --primary-btn: #325e53;
+    --shadow: 0px 15px 20px 0px rgba(50, 94, 83, 0.44);
 }
- // green 02
-[data-theme-color="theme-green-2"]{
+// green 02
+[data-theme-color="theme-green-2"] {
     --primary: #c7f464;
     --primary-bold: #c7f464;
-
+    --primary-btn: #c7f464;
+    --shadow: 0px 15px 20px 0px rgba(198, 245, 97, 0.44);
 }
- // orange 
-[data-theme-color="theme-orange"]{
+// orange
+[data-theme-color="theme-orange"] {
     --primary: #ff9c2e;
     --primary-bold: #ff9c2e;
-
+    --primary-btn: #ff9c2e;
+    --shadow: 0px 15px 20px 0px rgba(255, 156, 46, 0.44);
 }
- // orange  02
-[data-theme-color="theme-orange-2"]{
+// orange  02
+[data-theme-color="theme-orange-2"] {
     --primary: #fa6900;
     --primary-bold: #fa6900;
-
+    --primary-btn: #fa6900;
+    --shadow: 0px 15px 20px 0px rgba(250, 104, 0, 0.44);
 }
- // orange  03
-[data-theme-color="theme-orange-3"]{
+// orange  03
+[data-theme-color="theme-orange-3"] {
     --primary: #f9cdad;
     --primary-bold: #f9cdad;
-
+    --primary-btn: #f9cdad;
+    --shadow: 0px 15px 20px 0px rgba(250, 205, 173, 0.44);
 }
 
- // pink
- [data-theme-color="theme-pink"]{
+// pink
+[data-theme-color="theme-pink"] {
     --primary: #fe4365;
     --primary-bold: #fe4365;
-
+    --primary-btn: #fe4365;
+    --shadow: 0px 15px 20px 0px rgba(255, 66, 101, 0.44);
 }
- // orange  04
-[data-theme-color="theme-purple"]{
+// orange  04
+[data-theme-color="theme-purple"] {
     --primary: #542437;
     --primary-bold: #542437;
-
+    --primary-btn: #542437;
+    --shadow: 0px 15px 20px 0px rgba(86, 37, 55, 0.44);
 }
 
 // blue
-[data-theme-color="theme-blue"]{
+[data-theme-color="theme-blue"] {
     --primary: #69d2e7;
     --primary-bold: #69d2e7;
-
+    --primary-btn: #69d2e7;
+    --shadow: 0px 15px 20px 0px rgba(106, 210, 231, 0.44);
 }
 // blue 02
-[data-theme-color="theme-blue-2"]{
+[data-theme-color="theme-blue-2"] {
     --primary: #a7dbd8;
     --primary-bold: #a7dbd8;
-
+    --primary-btn: #a7dbd8;
+    --shadow: 0px 15px 20px 0px rgba(106, 210, 231, 0.44);
 }
 //blue 03
-[data-theme-color="theme-blue-3"]{
+[data-theme-color="theme-blue-3"] {
     --primary: #a7dbd8;
     --primary-bold: #a7dbd8;
-
+    --primary-btn: #a7dbd8;
+    --shadow: 0px 15px 20px 0px rgba(106, 210, 231, 0.44);
 }
 //blue 03
-[data-theme-color="theme-dark"]{
+[data-theme-color="theme-dark"] {
     --primary: #031634;
     --primary-bold: #031634;
-
+    --primary-btn: #031634;
+    --shadow: 0px 15px 20px 0px rgba(3, 22, 53, 0.44);
 }

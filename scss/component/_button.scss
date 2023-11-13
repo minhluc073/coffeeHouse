@@ -307,7 +307,7 @@
     height: 40px;
     border-radius: 40px;
     background-color: var(--primary);
-    color: var(--white);
+    color: $white;
     @include flex(center, center);
     font-size: 20px;
     &:hover {
@@ -361,7 +361,7 @@
         background: #03a9f4;
     }
     &.x-social {
-        background: var(--black);
+        background: $black;
     }
     &.instagram {
         background: linear-gradient(
