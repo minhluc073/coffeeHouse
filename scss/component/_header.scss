@@ -117,6 +117,10 @@
             }
         }
     }
+    &.relative {
+        position: relative;
+        z-index: 10;
+    }
 }
 .header-setting {
     padding: 20px 16px;

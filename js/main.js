@@ -180,13 +180,7 @@
       });
     }
   };
-  /* custom select 
-  ------------------------------------------------------------------------------------- */
-  var cusSelect = function () {
-    if ($(".cus-select, .lo-select, .time-select").length > 0) {
-      $(".cus-select, .lo-select, .time-select").niceSelect();
-    }
-  };
+
 
   /* image select
   ------------------------------------------------------------------------------------- */

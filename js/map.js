@@ -3,8 +3,8 @@ mapboxgl.accessToken =
 const map = new mapboxgl.Map({
   container: "map", // container ID
   style: "mapbox://styles/mapbox/streets-v12", // style URL
-  center: [-74.249923, 40.67096], // starting position [lng, lat]
-  zoom: 15.3,
+  center: [-73.991811, 40.70302], // starting position [lng, lat]
+  zoom: 14,
 });
 
 const geojson = {
@@ -14,63 +14,12 @@ const geojson = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [-74.251468, 40.67254],
+        coordinates: [-73.992111, 40.703751],
       },
       properties: {
-        title: "An Coffee",
+        title: "New York Cafe",
         rate: "4.8",
-        imgSrc: "../images/banner-coffee/cf-store1.jpg",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-74.248564, 40.673232],
-      },
-      properties: {
-        title: "An Coffee",
-        rate: "4.7",
-
-        imgSrc: "../images/banner-coffee/cf-store5.jpg",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-74.250455, 40.673137],
-      },
-      properties: {
-        title: "An Coffee",
-        rate: "4.7",
-
-        imgSrc: "../images/banner-coffee/cf-store3.jpg",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-74.251675, 40.674093],
-      },
-      properties: {
-        title: "An Coffee",
-        rate: "4.7",
-        imgSrc: "../images/banner-coffee/cf-store2.jpg",
-      },
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-74.249574, 40.671783],
-      },
-      properties: {
-        title: "Coffee Lab",
-        rate: "4.8",
-
-        imgSrc: "../images/banner-coffee/cf-store5.jpg",
+        imgSrc: "../images/banner-coffee/banner7.jpg",
       },
     },
   ],
@@ -87,7 +36,7 @@ for (const feature of geojson.features) {
     .setPopup(
       new mapboxgl.Popup({ offset: 25 }) // add popups
         .setHTML(
-          `<img src="${feature.properties.imgSrc}" alt='image' class="img-cf" /><div><p>${feature.properties.title}</p><span><i class="icon-star"></i>${feature.properties.rate}</span></div>`
+          `<img src="${feature.properties.imgSrc}" alt='image' class="img-cf" /><div><p>${feature.properties.title}</p><span><i class="icon-rate"></i>${feature.properties.rate}</span></div>`
         )
     )
     .addTo(map);

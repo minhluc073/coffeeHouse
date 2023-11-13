@@ -95,24 +95,34 @@
         }
     }
 }
-.banner-fixed {
-    position: fixed;
-    bottom: 70px;
-    width: 100%;
+.wrap-banner {
+    padding-top: 20px;
     border-radius: 20px 20px 0px 0px;
-    background-color: $white;
+    background-color: var(--white);
+    margin-top: -20px;
+    position: relative;
 }
 .categories-item {
     padding: 6px 16px;
     border-radius: 20px;
     border: 1px solid var(--line);
     @include flex(center, center);
-
+    gap: 6px;
+    svg path{
+       fill :var(--text-4)
+    }
+    &.style-2 {
+        background: var(--white);
+        box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+    }
     &.time-st.active,
     &.active {
         background-color: var(--primary);
         color: $white;
         border-color: var(--primary);
+        svg path{
+            fill :$white;
+         }
     }
 }
 .cate-item {

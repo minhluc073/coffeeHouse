@@ -4,8 +4,8 @@ const map = new mapboxgl.Map({
   container: "map-direction",
   // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
   style: "mapbox://styles/mapbox/streets-v12",
-  center: [-79.4512, 43.6568],
-  zoom: 15.3,
+  center: [-73.987516, 40.696564],
+  zoom: 13,
 });
 
 map.addControl(

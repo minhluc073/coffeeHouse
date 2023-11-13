@@ -866,71 +866,10 @@ p,
     transform: rotate(90deg);
 }
 
-#map {
-    position: absolute;
-    top: 105px;
-    bottom: 0;
-    width: 100%;
-    .marker {
-        background-image: url("../images/logo/location.png");
-        background-size: cover;
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        &:last-child {
-            background-image: url("../images/logo/cf-lo.png");
-            width: 32px;
-            height: 32px;
-        }
-    }
-    .mapboxgl-ctrl-bottom-left,
-    .mapboxgl-ctrl-bottom-right {
-        display: none;
-    }
-    .mapboxgl-popup-content {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        padding: 8px;
-        border-radius: 10px;
-        .img-cf {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-        }
-        .mapboxgl-popup-close-button {
-            position: unset;
-            width: auto;
-            color: $onSurface;
-            font-size: 20px;
-            padding: 0;
-            margin-top: -20px;
-            margin-left: 4px;
-            font-weight: 300;
-            background-color: $white;
-        }
-        p {
-            color: $onSurface;
-        }
-        span {
-            display: flex;
-            align-items: center;
-            gap: 2px;
-            color: $onSurface;
-            font-weight: 600;
-            i {
-                color: $warning;
-            }
-        }
-    }
-    .mapboxgl-popup-tip {
-        border-width: 5px;
-    }
-    .mapboxgl-popup {
-        top: 10px;
-    }
-}
 
+.lr-radius-20 {
+    border-radius: 20px 20px 0px 0px;
+}
 .app-content {
     padding: 60px 0px 90px;
     &.style-1 {
@@ -942,9 +881,7 @@ p,
     &.style-3 {
         padding-top: 80px;
     }
-}
-#map-direction {
-    .mapboxgl-control-container {
-        display: none;
+    &.style-4 {
+        padding-top: 16rem;
     }
 }
