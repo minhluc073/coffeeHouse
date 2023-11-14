@@ -19,7 +19,7 @@ const geojson = {
       properties: {
         title: "New York Cafe",
         rate: "4.8",
-        imgSrc: "../images/banner-coffee/banner7.jpg",
+        imgSrc: "images/banner-coffee/banner7.jpg",
       },
     },
   ],

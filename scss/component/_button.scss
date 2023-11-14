@@ -282,17 +282,15 @@
     display: inline-block;
     @include flex(center, center);
 }
-// .btn-showmore {
-//     font-size: 12px;
-//     font-weight: 500;
-//     line-height: 16px;
-//     color: $primary;
-//     text-decoration: underline;
-//     &:focus,
-//     &:hover {
-//         color: $primary;
-//     }
-// }
+.btn-showmore {
+    color: var(--primary-btn);
+    display: inline-flex;
+    font-weight: 700;
+    gap: 8px;
+    svg path {
+        stroke: var(--primary-btn);
+    }
+}
 .btn-find {
     width: 16px;
     height: 16px;
@@ -425,16 +423,16 @@
 
 .btn-fixed {
     position: fixed;
-    left: 20px;
-    right: 20px;
+    left: 0px;
+    right: 0px;
     bottom: 54px;
+    z-index: 100;
+    background: var(--white);
+    padding: 10px 20px 30px;
+    border-radius: 20px;
     max-width: 1024px;
     margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    background: var(--white);
-    z-index: 100;
-    &.style-2{
+    &.style-2 {
         bottom: 0;
         padding-bottom: 20px;
     }
