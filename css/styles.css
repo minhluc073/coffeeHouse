@@ -4925,15 +4925,24 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   position: relative;
   width: 100%;
   height: 100%;
-  background: var(--primary);
+  background: #fff;
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   z-index: 99999999999;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+}
+.preload-container .spinner-circle {
+  width: 60px;
+  height: 60px;
+}
+.preload-container .spinner-circle .spinner-child::before {
+  background-color: var(--primary);
 }
 
 .preload-logo {

@@ -27,11 +27,17 @@
   <body>
     <!-- preloade -->
     <div class="preload preload-container">
-      <div
-        class="preload-logo">
-      <img src="images/logo/logo-banner.png" alt="img">
-
-      </div>
+      <div class="spinner-circle spinner-line">
+        <span class="spinner-circle1 spinner-child"></span>
+        <span class="spinner-circle2 spinner-child"></span>
+        <span class="spinner-circle3 spinner-child"></span>
+        <span class="spinner-circle4 spinner-child"></span>
+        <span class="spinner-circle5 spinner-child"></span>
+        <span class="spinner-circle6 spinner-child"></span>
+        <span class="spinner-circle7 spinner-child"></span>
+        <span class="spinner-circle8 spinner-child"></span>
+        <span class="spinner-circle9 spinner-child"></span>
+    </div>
     </div>
     <!-- /preload -->
     <div class="header absolute">
@@ -185,7 +191,7 @@
                 <p class="mt-10">Café is a beverage prepared from the roasted seeds of the coffee plant, <span>Coffea #coffee #tea</span></p>
                 <ul class="mt-14 d-flex justify-content-between">
                   <li>
-                    <a href="javascript:void(0);" class="d-flex gap-8 align-items-center fw-normal press-toggle default-press">
+                    <a href="#comment" data-bs-toggle="modal" class="d-flex gap-8 align-items-center fw-normal press-toggle">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M10 16.875C14.1417 16.875 17.5 13.7967 17.5 10C17.5 6.20333 14.1417 3.125 10 3.125C5.85833 3.125 2.5 6.20333 2.5 10C2.5 11.7533 3.21583 13.3525 4.39417 14.5667C4.75417 14.9392 5.01083 15.4333 4.8825 15.9342C4.74198 16.4818 4.47898 16.9904 4.11333 17.4217C4.40595 17.4742 4.7027 17.5004 5 17.5C6.06833 17.5 7.05833 17.165 7.87083 16.5942C8.54583 16.7775 9.26083 16.875 10 16.875Z" stroke="#D3D5DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
@@ -246,7 +252,7 @@
                 <p class="mt-10">Café is a beverage prepared from the roasted seeds of the coffee plant, <span>Coffea #coffee #tea</span></p>
                 <ul class="mt-14 d-flex justify-content-between">
                   <li>
-                    <a href="javascript:void(0);" class="d-flex gap-8 align-items-center fw-normal press-toggle default-press">
+                    <a href="#comment" data-bs-toggle="modal" class="d-flex gap-8 align-items-center fw-normal press-toggle">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                         <path d="M10 16.875C14.1417 16.875 17.5 13.7967 17.5 10C17.5 6.20333 14.1417 3.125 10 3.125C5.85833 3.125 2.5 6.20333 2.5 10C2.5 11.7533 3.21583 13.3525 4.39417 14.5667C4.75417 14.9392 5.01083 15.4333 4.8825 15.9342C4.74198 16.4818 4.47898 16.9904 4.11333 17.4217C4.40595 17.4742 4.7027 17.5004 5 17.5C6.06833 17.5 7.05833 17.165 7.87083 16.5942C8.54583 16.7775 9.26083 16.875 10 16.875Z" stroke="#D3D5DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
@@ -428,6 +434,119 @@
           </a>
         </li>
       </ul>
+    </div>
+
+
+    
+    <div class="modal fade modalRight" id="comment">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="header fixed-top bg-white">
+                <div class="left" data-bs-dismiss="modal">
+                  <a href="javascript:void(0);" class="icon"><i class="icon-left-btn"></i></a>
+                </div>
+                <h3>Comment</h3>
+              </div> 
+              <div class="modal-filter app-content">
+                  <div class="tf-container">
+                    <ul class="mt-24">
+                      <li class="list-cmt d-flex gap-14 line-bt pb-20">
+                          <div class="avatar avt-40">
+                              <img src="images/avt/avt29.jpg" alt="img">
+  
+                          </div>
+                          <div class="content">
+                              <h5 class="fw-bold">Jacob Jones</h5>
+                              <span class="text-md-start text-5">3 days ago</span>
+                              <p class="mt-10">The space is very nice and cozy. Cappuccino is great!! Must try!!!!😍😍😍</p>
+                              <ul class="mt-8 d-flex gap-10">
+                                  <li class="text-sm-start fw-bold">Like</li>
+                                  <li class="text-sm-start fw-bold">Reply</li>
+                                  <li class="text-sm-start fw-bold">Share</li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="list-cmt d-flex gap-14 pt-20">
+                          <div class="avatar avt-40">
+                              <img src="images/avt/avt30.jpg" alt="img">
+                          </div>
+                          <div class="content line-bt pb-20">
+                              <h5 class="fw-bold">Jacob Jones</h5>
+                              <span class="text-md-start text-5">3 days ago</span>
+                              <p class="mt-10">You shoud try some cookie!</p>
+                              <ul class="mt-8 d-flex gap-10">
+                                  <li class="text-sm-start fw-bold">Like</li>
+                                  <li class="text-sm-start fw-bold">Reply</li>
+                                  <li class="text-sm-start fw-bold">Share</li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="list-cmt d-flex gap-14 pt-20 pb-20 pl-40 line-bt">
+                          <div class="avatar avt-40">
+                              <img src="images/avt/avt31.jpg" alt="img">
+                          </div>
+                          <div class="content">
+                              <h5 class="fw-bold">Jacob Jones</h5>
+                              <span class="text-md-start text-5">3 days ago</span>
+                              <p class="mt-10">Diam consequat pulvinar nibh.</p>
+                              <ul class="mt-8 d-flex gap-10">
+                                  <li class="text-sm-start fw-bold">Like</li>
+                                  <li class="text-sm-start fw-bold">Reply</li>
+                                  <li class="text-sm-start fw-bold">Share</li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li class="list-cmt d-flex gap-14 pt-20">
+                        <div class="avatar avt-40">
+                            <img src="images/avt/avt10.jpg" alt="img">
+                        </div>
+                        <div class="content line-bt pb-20">
+                            <h5 class="fw-bold">Ralph Edwards</h5>
+                            <span class="text-md-start text-5">5 days ago</span>
+                            <p class="mt-10">The space is very nice and cozy. Cappuccino is great!! Must try!!!! 😍😍😍</p>
+                            <ul class="mt-8 d-flex gap-10">
+                                <li class="text-sm-start fw-bold">Like</li>
+                                <li class="text-sm-start fw-bold">Reply</li>
+                                <li class="text-sm-start fw-bold">Share</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="list-cmt d-flex gap-14 pt-20">
+                      <div class="avatar avt-40">
+                          <img src="images/avt/avt11.jpg" alt="img">
+                      </div>
+                      <div class="content line-bt pb-20">
+                          <h5 class="fw-bold">Arlene McCoy</h5>
+                          <span class="text-md-start text-5">2 days ago</span>
+                          <p class="mt-10">You shoud try some cookie!</p>
+                          <ul class="mt-8 d-flex gap-10">
+                              <li class="text-sm-start fw-bold">Like</li>
+                              <li class="text-sm-start fw-bold">Reply</li>
+                              <li class="text-sm-start fw-bold">Share</li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="list-cmt d-flex gap-14 pt-20">
+                    <div class="avatar avt-40">
+                        <img src="images/avt/avt12.jpg" alt="img">
+                    </div>
+                    <div class="content line-bt pb-20">
+                        <h5 class="fw-bold">Cody Fisher</h5>
+                        <span class="text-md-start text-5">3 days ago</span>
+                        <p class="mt-10">You shoud try some cookie!</p>
+                        <ul class="mt-8 d-flex gap-10">
+                            <li class="text-sm-start fw-bold">Like</li>
+                            <li class="text-sm-start fw-bold">Reply</li>
+                            <li class="text-sm-start fw-bold">Share</li>
+                        </ul>
+                    </div>
+                </li>
+                  </ul>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
     </div>
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>

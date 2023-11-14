@@ -523,15 +523,25 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background: var(--primary);
+    background: $white;
     position: fixed;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     z-index: 99999999999;
-    display: block;
+    // display: block;
+    @include flex(center, center);
     overflow: hidden;
+    .spinner-circle {
+        width: 60px;
+        height: 60px;
+        .spinner-child {
+            &::before {
+                background-color: var(--primary);
+            }
+        }
+    }
 }
 
 .preload-logo {
