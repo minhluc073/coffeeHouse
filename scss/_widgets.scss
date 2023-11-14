@@ -645,11 +645,15 @@
         gap: 4px;
         padding: 8px;
         border-radius: 10px;
+        background-color: var(--white);
         .img-cf {
             width: 40px;
             height: 40px;
             border-radius: 10px;
         }
+        // p,span{
+        //     color: $black;
+        // }
         .mapboxgl-popup-close-button {
             position: unset;
             width: auto;
