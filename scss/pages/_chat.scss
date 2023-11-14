@@ -12,6 +12,9 @@
         position: absolute;
         right: 12px;
         top: 12px;
+        svg path {
+            fill: var(--primary);
+        }
     }
 }
 .bubble {

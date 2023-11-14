@@ -18,12 +18,13 @@
             z-index: 1;
         }
     }
-    h2{
+    h2 {
         color: $white;
     }
 }
-.tf-title-banner{
-    h3, a{
+.tf-title-banner {
+    h3,
+    a {
         color: $white;
     }
 }
@@ -108,6 +109,13 @@
     background-color: var(--white);
     margin-top: -20px;
     position: relative;
+    // &.fixed {
+    //     position: fixed;
+    //     left: 0;
+    //     width: 100%;
+    //     bottom: 50px;
+    //     padding-bottom: 35px;
+    // }
 }
 .categories-item {
     padding: 6px 16px;
@@ -115,8 +123,8 @@
     border: 1px solid var(--line);
     @include flex(center, center);
     gap: 6px;
-    svg path{
-       fill :var(--text-4)
+    svg path {
+        fill: var(--text-4);
     }
     &.style-2 {
         background: var(--white);
@@ -127,9 +135,9 @@
         background-color: var(--primary);
         color: $white;
         border-color: var(--primary);
-        svg path{
-            fill :$white;
-         }
+        svg path {
+            fill: $white;
+        }
     }
 }
 .cate-item {

@@ -3,25 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
 
     <!-- font -->
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- Icons -->
     <link rel="stylesheet" href="fonts/font-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet"type="text/css" href="css/nouislider.min.css"/>
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/mapbox.css">
-    
-
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/favicon.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/favicon.png" />
 
-    <title>home</title>
+    <title>home 3</title>
 </head>
 
 <body>
@@ -69,60 +67,137 @@
         </div>
     </div>
 
-    <div class="app-content style-3">
+    <div class="app-content">
         <div class="tf-container">
-            <div class="search-box">
-                <a href="javascript:void(0);" class="icon-left icon-search"></a>
-                <input type="text" class="search-field" value="Nguyen">
-                <a href="#filter" data-bs-toggle="modal" class="icon-right icon-filter2"></a>
+            <div class="d-flex align-items-center justify-content-between gap-10">
+                <a href="profile.html" class="avatar avt-40">
+                    <img src="images/avt/avt1.jpg" alt="img">
+                </a>
+                <a href="profile.html" class="content flex-grow-1">
+                    <p class="text-1">Good morning</p>
+                    <h6 class="fw-7">Cameron Williamson</h6>
+                </a>
+                <a href="#" class="btn-search"><i class="icon-search"></i></a>
             </div>
-            <ul class="mt-10 box-categories">
-                <li>
-                    <a href="near-me.html" class="categories-item active-suggest">Near Me</a>
-                </li>
-                <li>
-                    <a href="#" class="categories-item active-suggest">Open Cafes</a>
-                </li>
-                <li>
-                    <a href="#" class="categories-item active-suggest">Rating Star</a>
-                </li>
-                <li>
-                    <a href="#" class="categories-item active-suggest">Rating Star</a>
-                </li>
-            </ul>
-        </div>
-        <!-- <div id="map-direction" class="mt-20 lr-radius-20" style='width: 100%; min-height: 272px;'></div> -->
-        <div id="map" class="map mt-20 lr-radius-20"></div>
-        <div class="wrap-banner">
-            <div class="tf-container">
-                <div class="wd-box-cf">
-                    <div class="banner-store" style="background-image: url(images/banner-coffee/banner5.jpg);">
-                        <div class="box-rate">
-                          <div class="inner-title">
-                            <div class="rating-cf">
-                              <a class="item-rate">
-                                  <i class="icon icon-rate"></i> 
-                                  4.7
-                              </a>
-                              <span class="flex-grow-1 text-sm-start fw-bold text-white">(1.2k Rating)</span>
-                             
-                            </div>
-                            <h5 class="mt-4"><a href="coffee-details.html" class="fw-bold text-white">Cophehangen Coffee Lab</a></h5>
-                          </div>
-                          <a href="#" class="btn-add"><i class="icon-bookmark2"></i></a>
-                        </div>
+            <div class="mt-20 swiper tf-swiper auto swiper-wrapper-lr" data-space-between="16" data-preview="auto">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="img-banner-slider">
+                            <img src="images/banner-coffee/banner7.jpg" alt="img">
+                        </a>
                     </div>
-                    <ul class="mt-16">
-                      <li class="timeline-cf"><i class="icon icon-location"></i>0.6 miles - 1501 S Mullen St. #991, Airway...</li>
-                      <li class="mt-4 timeline-cf"><i class="icon icon-oclock"></i> <span class="open">Opened</span><span class="dot-icon secondary"></span>Close at 22:00 PM </li>
-                    </ul>
+                    <div class="swiper-slide">
+                        <a href="#" class="img-banner-slider">
+                            <img src="images/banner-coffee/banner8.jpg" alt="img">
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
+            <div class="mt-26 tf-title d-flex justify-content-between align-items-center">
+                <h3>Near by shop</h3> 
+                <a href="#" class="d-flex align-items-center">View all <i class="icon-right-sm"></i></a>
+            </div>
+            <ul class="mt-24">
+                <li class="mt-20 wd-list-cf">
+                    <div class="tf-img-box">
+                        <img src="images/coffee/coffee23.jpg" alt="img">
+                    </div>
+                    <div class="content">
+                        <div class="rating-cf">
+                            <a class="item-rate">
+                                <i class="icon icon-rate"></i> 
+                                4.7
+                            </a>
+                            <span class="flex-grow-1 text-sm-start fw-bold">(1.2k Rating)</span>
+                            <span class="press-toggle default-press">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 20" fill="none">
+                                  <path d="M14.9948 2.76814C15.9115 2.8748 16.584 3.66564 16.584 4.58897V17.4998L10.334 14.3748L4.08398 17.4998V4.58897C4.08398 3.66564 4.75565 2.8748 5.67315 2.76814C8.76998 2.40867 11.898 2.40867 14.9948 2.76814Z" stroke="#D3D5DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <h5 class="mt-6 title"><a href="coffee-details.html" class="fw-bold">Cophehangen Coffee Lab</a></h5>
+                        <ul class="bottom mt-16">
+                            <li class="timeline-cf"><i class="icon icon-location"></i>0.6 miles - 1501 S Mullen St...</li>
+                            <li class="mt-4 timeline-cf"><i class="icon icon-oclock"></i> <span class="open">Opened</span><span class="dot-icon secondary"></span>Close at 22:00 PM </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mt-24 wd-list-cf">
+                    <div class="tf-img-box">
+                        <img src="images/coffee/coffee24.jpg" alt="img">
+                    </div>
+                    <div class="content">
+                        <div class="rating-cf">
+                            <a class="item-rate">
+                                <i class="icon icon-rate"></i> 
+                                4.7
+                            </a>
+                            <span class="flex-grow-1 text-sm-start fw-bold">(1.2k Rating)</span>
+                            <span class="press-toggle default-press">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 20" fill="none">
+                                  <path d="M14.9948 2.76814C15.9115 2.8748 16.584 3.66564 16.584 4.58897V17.4998L10.334 14.3748L4.08398 17.4998V4.58897C4.08398 3.66564 4.75565 2.8748 5.67315 2.76814C8.76998 2.40867 11.898 2.40867 14.9948 2.76814Z" stroke="#D3D5DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <h5 class="mt-6 title"><a href="coffee-details.html" class="fw-bold">Cophehangen Coffee Lab</a></h5>
+                        <ul class="bottom mt-16">
+                            <li class="timeline-cf"><i class="icon icon-location"></i>0.6 miles - 1501 S Mullen St...</li>
+                            <li class="mt-4 timeline-cf"><i class="icon icon-oclock"></i> <span class="open">Opened</span><span class="dot-icon secondary"></span>Close at 22:00 PM </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mt-20 wd-list-cf">
+                    <div class="tf-img-box">
+                        <img src="images/coffee/coffee26.jpg" alt="img">
+                    </div>
+                    <div class="content">
+                        <div class="rating-cf">
+                            <a class="item-rate">
+                                <i class="icon icon-rate"></i> 
+                                4.7
+                            </a>
+                            <span class="flex-grow-1 text-sm-start fw-bold">(1.2k Rating)</span>
+                            <span class="press-toggle default-press">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 20" fill="none">
+                                  <path d="M14.9948 2.76814C15.9115 2.8748 16.584 3.66564 16.584 4.58897V17.4998L10.334 14.3748L4.08398 17.4998V4.58897C4.08398 3.66564 4.75565 2.8748 5.67315 2.76814C8.76998 2.40867 11.898 2.40867 14.9948 2.76814Z" stroke="#D3D5DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <h5 class="mt-6 title"><a href="coffee-details.html" class="fw-bold">Cophehangen Coffee Lab</a></h5>
+                        <ul class="bottom mt-16">
+                            <li class="timeline-cf"><i class="icon icon-location"></i>0.6 miles - 1501 S Mullen St...</li>
+                            <li class="mt-4 timeline-cf"><i class="icon icon-oclock"></i> <span class="open">Opened</span><span class="dot-icon secondary"></span>Close at 22:00 PM </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="mt-20 wd-list-cf">
+                    <div class="tf-img-box">
+                        <img src="images/coffee/coffee25.jpg" alt="img">
+                    </div>
+                    <div class="content">
+                        <div class="rating-cf">
+                            <a class="item-rate">
+                                <i class="icon icon-rate"></i> 
+                                4.7
+                            </a>
+                            <span class="flex-grow-1 text-sm-start fw-bold">(1.2k Rating)</span>
+                            <span class="press-toggle default-press">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 21 20" fill="none">
+                                  <path d="M14.9948 2.76814C15.9115 2.8748 16.584 3.66564 16.584 4.58897V17.4998L10.334 14.3748L4.08398 17.4998V4.58897C4.08398 3.66564 4.75565 2.8748 5.67315 2.76814C8.76998 2.40867 11.898 2.40867 14.9948 2.76814Z" stroke="#D3D5DA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <h5 class="mt-6 title"><a href="coffee-details.html" class="fw-bold">Cophehangen Coffee Lab</a></h5>
+                        <ul class="bottom mt-16">
+                            <li class="timeline-cf"><i class="icon icon-location"></i>0.6 miles - 1501 S Mullen St...</li>
+                            <li class="mt-4 timeline-cf"><i class="icon icon-oclock"></i> <span class="open">Opened</span><span class="dot-icon secondary"></span>Close at 22:00 PM </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>        
         </div>
-
-           
-    </div>
-
+    
     <div class="menubar-footer footer-fixed">
         <ul class="inner-bar">
             <li>
@@ -158,10 +233,9 @@
                     </svg>
                 </a>
             </li>
-        </ul>
-           
+        </ul>       
     </div>
-
+    <!-- color -->
     <div class="modal fade action-sheet full" id="color">
         <div class="modal-dialog" role="document">
             <ul class="modal-content modal-themes-color">
@@ -232,13 +306,9 @@
             
         </div>
     </div>
-
     <!-- sidebar -->
-
     <div class="modal fade modalLeft" id="sidebar">
         <div class="modal-dialog position-relative" role="document">
-            <!-- <span class="icon-close" data-bs-dismiss="modal"></span> -->
-
             <div class="modal-content modal-sidebar">
                 <div class="sidebar-header" style="background-image: url('images/background/line-logo.png')">
                     <a href="index.html" class="sidebar-logo">
@@ -259,22 +329,16 @@
                     <ul class="pt-20 pb-20 line-bt">
                         <li class="text-sm-start text-uppercase fw-7 text-2">Main menu</li>
                         <li class="mt-18">
-                            <a href="index.html" class="nav-link-item">
+                            <a href="index.html" class="nav-link-item" >
                                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M7.62043 17.3185V14.7628C7.62042 14.1152 8.14704 13.589 8.79935 13.5849H11.1945C11.8497 13.5849 12.3809 14.1123 12.3809 14.7628V17.3111C12.3809 17.8728 12.8373 18.3293 13.4031 18.3334H15.0372C15.8003 18.3354 16.5329 18.0357 17.0733 17.5007C17.6136 16.9656 17.9173 16.239 17.9173 15.4813V8.22162C17.9173 7.60957 17.644 7.02901 17.1712 6.63633L11.6198 2.22864C10.6494 1.45768 9.26346 1.48259 8.32181 2.2879L2.88983 6.63633C2.3946 7.01743 2.09861 7.59972 2.08398 8.22162V15.4739C2.08398 17.0532 3.37347 18.3334 4.96413 18.3334H6.56089C6.83329 18.3354 7.09522 18.2293 7.28855 18.0388C7.48187 17.8482 7.59059 17.589 7.59058 17.3185H7.62043Z" fill="#D3D5DA"/>
                                 </svg>
                                 <span>Home</span>
                             </a>
+                           
+
                         </li>
-                        <li class="mt-16">
-                            <a href="#" class="nav-link-item">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path opacity="0.4" d="M14.0696 4.26245H11.6171C11.0061 4.26649 10.426 3.99471 10.0388 3.523L9.23118 2.40643C8.85049 1.93059 8.27043 1.65754 7.66036 1.66699H5.92652C2.81451 1.66699 1.66602 3.49343 1.66602 6.59911V9.95621C1.66215 10.3254 18.3291 10.3249 18.3301 9.95621V8.98014C18.3449 5.87445 17.2261 4.26245 14.0696 4.26245Z" fill="#D3D5DA"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.3595 5.45299C17.6261 5.76472 17.8321 6.12331 17.967 6.5104C18.2325 7.30597 18.3554 8.14201 18.3301 8.98016V13.3577C18.329 13.7264 18.3018 14.0946 18.2486 14.4595C18.1473 15.1034 17.9208 15.7214 17.5817 16.2785C17.4259 16.5476 17.2367 16.7961 17.0186 17.018C16.0313 17.9241 14.7201 18.3958 13.3805 18.3268H6.60819C5.26643 18.3953 3.95319 17.9238 2.96269 17.018C2.74718 16.7957 2.56049 16.5472 2.40697 16.2785C2.06997 15.7218 1.84826 15.1032 1.75493 14.4595C1.69559 14.0952 1.66585 13.7267 1.66602 13.3577V8.98016C1.66587 8.61456 1.68566 8.24923 1.72529 7.88577C1.73363 7.82201 1.74613 7.75928 1.7585 7.6972C1.77912 7.59371 1.79939 7.49203 1.79939 7.39034C1.8746 6.95174 2.01181 6.52601 2.20691 6.12589C2.78486 4.89101 3.97039 4.26247 5.91169 4.26247H14.0622C15.1495 4.17838 16.2288 4.50571 17.0853 5.17939C17.184 5.26304 17.2756 5.35454 17.3595 5.45299ZM5.80796 12.951H14.1956H14.2104C14.3944 12.959 14.574 12.8931 14.7091 12.7681C14.8441 12.643 14.9234 12.4692 14.9291 12.2855C14.9395 12.124 14.8864 11.9648 14.7809 11.8418C14.6597 11.6766 14.4675 11.5779 14.2623 11.5756H5.80796C5.42739 11.5756 5.11887 11.8835 5.11887 12.2633C5.11887 12.6431 5.42739 12.951 5.80796 12.951Z" fill="#D3D5DA"/>
-                                </svg>
-                                <span>Package</span>
-                            </a>
-                        </li>
+                   
                         <li class="mt-16">
                             <a href="ui-pages.html" class="nav-link-item">
                                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -349,99 +413,21 @@
         </div>
     </div>
 
-    <div class="modal fade modalRight" id="filter">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="header fixed-top bg-white">
-                  <div class="left" data-bs-dismiss="modal">
-                    <a href="javascript:void(0);" class="icon"><i class="icon-left-btn"></i></a>
-                  </div>
-                  <h3>Filter</h3>
-                </div> 
-                <div class="modal-filter app-content">
-                    <div class="tf-container">
-                        <h4 class="mt-20 fw-bold">Location:</h4>
-                        <ul class="d-flex gap-10 flex-wrap mt-16">
-                            <li>
-                                <a href="javascript:void(0);" class="categories-item active-suggest">Near by</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="categories-item active-suggest">Favorite places</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="categories-item active-suggest">Labeled</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="categories-item active-suggest">List of destinations</a>
-                            </li>
-                        </ul>
-                        <div class="mt-16 grid-2 gap-16">
-                            <select class="form-select">
-                              <option>City</option>
-                              <option>New York</option>
-                              <option>Tokyo</option>
-                              <option>Los Angeles</option>
-                            </select>
-                            <select class="form-select">
-                              <option>District</option>
-                              <option>Hawaii</option>
-                              <option>Texas</option>
-                              <option>Iowa</option>
-                          </select>
-                        </div>
-                        <h4 class="mt-24 fw-bold">Maximum distance</h4>
-                        <div class="mt-24">
-                          <div id="slider-distance"></div>
-                          <div class="mt-12 d-flex justify-content-between">
-                            <span id="distance-val"></span>
-                            <span>10km</span>
-                          </div>
-                        </div>
-                        <h4 class="mt-24 fw-bold">Price</h4>
-                        <div class="mt-24">
-                          <div id="slider-price"></div>
-                          <div class="mt-12 d-flex justify-content-between">
-                            <span id="price-val"></span>
-                            <span>$500</span>
-                          </div>
-                        </div>
-                        <h4 class="mt-24 fw-bold">Time</h4>
-                        <ul class="mt-16 pb-16 grid-2 gap-10">
-                          <li>
-                              <a href="javascript:void(0);" class="categories-item active-suggest2">Any</a>
-                          </li>
-                          <li>
-                              <a href="javascript:void(0);" class="categories-item active-suggest2">Open now</a>
-                          </li>
-                        </ul>
-                       
-                    </div>
-                </div>
-                <div class="menubar-footer footer-fixed">
-                    <div class="mw-wrapper">
-                        <a href="coffee-details.html" class="tf-btn primary btn-lg">Apply</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+
+
+
+
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/carousel.js"></script>
     <script type="text/javascript" src="js/nouislider.min.js"></script>
-    <script type="text/javascript" src="js/rangle-slider.js"></script>
-    <script type="text/javascript" src="js/mapbox.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
-
-    <!-- <script type="text/javascript" src="js/mapbox-plugin-directions.js"></script> -->
-    <!-- <script type="text/javascript" src="js/map-direction.js"></script> -->
-    <script type="text/javascript" src="js/init.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
-
-   
+    <script>
+    </script>
 
 </body>
 
