@@ -14,6 +14,8 @@
  * custom select
  * active Suggestions
  * preloader
+ * touchSpin
+ * theme setting color
  */
 (function ($) {
   "use strict";
@@ -252,7 +254,7 @@
     }, 500);
   };
 
-  /*
+  /* theme setting color
   ------------------------------------------------------------------------------------- */
   var themeSettingColor = function () {
     $('input[name="theme_color"]').on("click", function () {
@@ -260,7 +262,8 @@
       localStorage.setItem("themeColor", this.value);
     });
   };
-
+  /* toggle theme
+  ------------------------------------------------------------------------------------- */
   var toggleTheme = function () {
     $("body").toggleClass(localStorage.toggled);
     var toggle = $(".toggle-theme");
@@ -281,7 +284,8 @@
       }
     });
   };
-
+  /* set toggle theme
+  ------------------------------------------------------------------------------------- */
   var setToggleTheme = function () {
     var theme = localStorage.toggled;
     if (theme) {
@@ -292,7 +296,8 @@
       $(".theme-light-icon").show();
     }
   };
-
+  /* set color theme
+  ------------------------------------------------------------------------------------- */
   var setLocalColor = function () {
     var themeColor = localStorage.getItem("themeColor");
     if (themeColor) {
@@ -301,7 +306,8 @@
       $("body").attr("data-theme-color", "theme-primary");
     }
   };
-
+  /* tree view
+  ------------------------------------------------------------------------------------- */
   var treeView = function () {
     if ($("#treeview1").length > 0) {
       $("#treeview1").jstree({

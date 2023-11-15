@@ -18,6 +18,9 @@
         &:active{
             background-color: var(--white);
         }
+        &:hover{
+            background-color: transparent;
+        }
     }
 }
 

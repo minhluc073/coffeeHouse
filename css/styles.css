@@ -2023,6 +2023,9 @@ p,
 .dropdown-menu .dropdown-item:active {
   background-color: var(--white);
 }
+.dropdown-menu .dropdown-item:hover {
+  background-color: transparent;
+}
 
 .dropdown .dropdown-toggle:after {
   content: none;
