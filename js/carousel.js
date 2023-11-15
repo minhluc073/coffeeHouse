@@ -1,19 +1,3 @@
-if ($(".boarding-swiper").length > 0) {
-  var swiperBoarding = new Swiper(".boarding-swiper", {
-    speed: 1000,
-    parallax: true,
-    slidesPerView: "auto",
-    spaceBetween: 40,
-    // autoplay: true,
-    loop: false,
-    observer: true,
-    observeParents: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-}
 
 if ($(".tf-swiper").length > 0) {
   var spacing = $(".tf-swiper").data("space-between");

@@ -5402,7 +5402,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   stroke: var(--primary-btn);
 }
 .default-press.active i {
-  color: var(--primary);
+  color: var(--primary-btn);
 }
 
 .action-like {
