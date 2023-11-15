@@ -339,6 +339,6 @@
     themeSettingColor();
     toggleTheme();
     setToggleTheme();
-    btnmenu();
+   
   });
 })(jQuery);
