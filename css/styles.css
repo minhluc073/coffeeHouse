@@ -1,3 +1,57 @@
+/* ---------------------------------------------------------
+    * Name: CoffeeTime
+    * Version: 1.0.0
+    * Author: Themesflat
+    * Author URI: http://themesflat.com 
+
+	* Abstracts variable
+
+    * Reset css styles
+
+    * Settings
+        * theme color
+        * theme view
+        * theme settings
+
+    * Components
+        * alert
+        * avatar
+        * badge
+        * button group
+        * button
+        * card
+        * carousel
+        * chart
+        * divider
+        * dropdown
+        * form
+        * header
+        * image box
+        * menubar
+        * modal
+        * preloader
+        * progressbar
+        * radio button
+        * range slider
+        * spinner
+        * stepper
+        * switch
+        * tabs
+        * timeline
+        * toast
+        * treeview
+
+    * widget
+
+    * Pages
+        * account
+        * boarding
+        * chat
+        * home 
+        * profile
+
+ ------------------------------------------------------------------------------ */
+/*--------- Abstracts variable ---------- */
 :root {
   --surface: #e1e1e1;
   --white: #fff;
@@ -55,6 +109,7 @@
   --linner-1: linear-gradient(180deg, rgba(135, 59, 10, 0) 47.91%, #2e1200 100%);
 }
 
+/*---------- Reset css styles ----------- */
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -1056,6 +1111,8 @@ p,
   padding-top: 22rem;
 }
 
+/*------------ Settings ----------------- */
+/*------------ theme color ---------------- */
 [data-theme-color=theme-primary] {
   --primary: #873b0a;
   --primary-bold: #5b2400;
@@ -1139,6 +1196,7 @@ p,
   --shadow: 0px 15px 20px 0px rgba(3, 22, 53, 0.44);
 }
 
+/*------------ theme view ---------------- */
 .dark-theme {
   --white: #1b0a00;
   --black: #fff;
@@ -1158,6 +1216,7 @@ p,
   fill: #fff;
 }
 
+/*------------ theme settings -------------- */
 .modal-themes-color {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1332,6 +1391,8 @@ p,
   color: var(--text-4);
 }
 
+/*------------ Components ---------------- */
+/*------------ header ---------------- */
 .header {
   display: flex;
   align-items: center;
@@ -1487,6 +1548,7 @@ p,
   top: 80px;
 }
 
+/*------------ tabs ---------------- */
 .tab-content > .tab-pane {
   display: none;
 }
@@ -1548,6 +1610,7 @@ p,
   fill: var(--primary-btn);
 }
 
+/*------------ button ---------------- */
 .tf-btn {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -2001,6 +2064,7 @@ p,
   color: var(--text-4);
 }
 
+/*------------ dropdown ---------------- */
 .dropdown-menu {
   padding: 20px;
   background: var(--white);
@@ -2130,6 +2194,7 @@ p,
   min-width: auto;
 }
 
+/*------------ button group ---------------- */
 .btn-group > .tf-btn:not(:last-child):not(.btn-split) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -2185,6 +2250,7 @@ p,
   border-radius: 14px;
 }
 
+/*------------ range slider ---------------- */
 .noUi-horizontal {
   height: 5px;
 }
@@ -2232,6 +2298,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   right: -8px;
 }
 
+/*------------ form ---------------- */
 .form-control {
   font-family: "Nunito", sans-serif;
   color: var(--black);
@@ -2595,6 +2662,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-color: #fff;
 }
 
+/*------------ menubar ---------------- */
 .footer-fixed {
   position: fixed;
   bottom: 0;
@@ -2708,6 +2776,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-radius: 16px;
 }
 
+/*------------ carousel ---------------- */
 .dots-tes {
   position: unset;
 }
@@ -2746,6 +2815,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-right: 18px;
 }
 
+/*------------ alert ---------------- */
 .alert {
   color: #fff;
   margin-bottom: 0px;
@@ -2873,6 +2943,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-radius: 0;
 }
 
+/*------------ avatar ---------------- */
 .avatar img {
   width: 100%;
   min-width: 100%;
@@ -2943,6 +3014,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border: 1px solid #fff;
 }
 
+/*------------ switch ---------------- */
 .tf-switch-check {
   position: relative;
   width: 38px;
@@ -3069,6 +3141,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   opacity: 0.5;
 }
 
+/*------------ radio button ---------------- */
 .tf-radio {
   position: relative;
   border: 1px solid var(--line-2);
@@ -3177,6 +3250,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: #873b0a;
 }
 
+/*------------ card ---------------- */
 .card {
   padding: 16px;
   border-radius: 16px;
@@ -3204,6 +3278,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border: 1px solid var(--line);
 }
 
+/*------------ badge ---------------- */
 .badge {
   font-family: "Poppins", sans-serif;
   border-radius: 12px;
@@ -3340,6 +3415,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   justify-content: center;
 }
 
+/*------------ toast ---------------- */
 .toast {
   padding: 16px;
   border-radius: 16px;
@@ -3376,6 +3452,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-size: 20px;
 }
 
+/*------------ modal ---------------- */
 .modal .modal-dialog {
   max-width: 100%;
   margin: 20px;
@@ -3567,6 +3644,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: var(--white);
 }
 
+/*------------ timeline ---------------- */
 .tf-timeline {
   position: relative;
   padding-left: 26px;
@@ -3871,6 +3949,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-color: var(--primary);
 }
 
+/*------------ progressbar ---------------- */
 .progress {
   height: 12px;
   border-radius: 99px;
@@ -3930,6 +4009,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     width: 0;
   }
 }
+/*------------ stepper ---------------- */
 .tf-stepper {
   width: 164px;
   text-align: center;
@@ -3996,12 +4076,14 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: #fff;
 }
 
+/*------------ image box ---------------- */
 .lightgallery-box {
   border-radius: 10px;
   overflow: hidden;
   display: inline-block;
 }
 
+/*------------ treeview ---------------- */
 .jstree-default li,
 .jstree-default a {
   font-weight: 500;
@@ -4013,6 +4095,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background: none;
 }
 
+/*------------ spinner ---------------- */
 .spinner-circle {
   width: 40px;
   height: 40px;
@@ -4289,6 +4372,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: var(--disable);
 }
 
+/*------------ chart ---------------- */
 .apexcharts-legend {
   padding: 0 !important;
 }
@@ -4298,6 +4382,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   gap: 10px !important;
 }
 
+/*------------ divider ---------------- */
 .tf-divider {
   position: relative;
   width: 100%;
@@ -4424,6 +4509,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-style: dotted;
 }
 
+/*--------------- widget ---------------- */
 .list-view {
   display: flex;
   justify-content: space-between;
@@ -5097,6 +5183,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-radius: 20px;
 }
 
+/*-------------- Pages ----------------- */
+/*--------- boarding ---------- */
 .bg-boarding {
   background-size: cover;
   background-repeat: no-repeat;
@@ -5161,6 +5249,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: var(--primary);
 }
 
+/*--------- account ---------- */
 .signin-area .box-image {
   max-width: 300px;
   height: 300px;
@@ -5246,6 +5335,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   max-width: 244px;
 }
 
+/*--------- home ---------- */
 .banner-top {
   height: 320px;
   background-color: var(--primary-bold);
@@ -5516,6 +5606,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: var(--primary-btn);
 }
 
+/*--------- profile ---------- */
 .banner-wrapper {
   position: relative;
   z-index: -1;
@@ -5614,6 +5705,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   transform: translate(-50%, -50%);
 }
 
+/*--------- chat ---------- */
 .message-box {
   position: relative;
 }
