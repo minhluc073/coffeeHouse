@@ -1,6 +1,6 @@
 /* ---------------------------------------------------------
     * Name: CoffeeTime
-    * Version: 1.0
+    * Version: 1.0.0
     * Author: Themesflat
     * Author URI: http://themesflat.com 
 
@@ -1120,17 +1120,17 @@ p,
 }
 
 [data-theme-color=theme-green] {
-  --primary: #143d33;
-  --primary-bold: #143d33;
-  --primary-btn: #325e53;
-  --shadow: 0px 15px 20px 0px rgba(50, 94, 83, 0.44);
+  --primary: #378c4c;
+  --primary-bold: #378c4c;
+  --primary-btn: #378c4c;
+  --shadow: 0px 15px 20px 0px rgba(54, 140, 76, 0.44);
 }
 
 [data-theme-color=theme-green-2] {
-  --primary: #c7f464;
-  --primary-bold: #c7f464;
-  --primary-btn: #c7f464;
-  --shadow: 0px 15px 20px 0px rgba(198, 245, 97, 0.44);
+  --primary: #04d9b2;
+  --primary-bold: #04d9b2;
+  --primary-btn: #04d9b2;
+  --shadow: 0px 15px 20px 0px rgba(4, 215, 176, 0.44);
 }
 
 [data-theme-color=theme-orange] {
@@ -1148,10 +1148,10 @@ p,
 }
 
 [data-theme-color=theme-orange-3] {
-  --primary: #f9cdad;
-  --primary-bold: #f9cdad;
-  --primary-btn: #f9cdad;
-  --shadow: 0px 15px 20px 0px rgba(250, 205, 173, 0.44);
+  --primary: #f2949c;
+  --primary-bold: #f2949c;
+  --primary-btn: #f2949c;
+  --shadow: 0px 15px 20px 0px rgba(242, 146, 154, 0.44);
 }
 
 [data-theme-color=theme-pink] {
@@ -1162,10 +1162,10 @@ p,
 }
 
 [data-theme-color=theme-purple] {
-  --primary: #542437;
-  --primary-bold: #542437;
-  --primary-btn: #542437;
-  --shadow: 0px 15px 20px 0px rgba(86, 37, 55, 0.44);
+  --primary: #9b72f2;
+  --primary-bold: #9b72f2;
+  --primary-btn: #9b72f2;
+  --shadow: 0px 15px 20px 0px rgba(155, 115, 242, 0.44);
 }
 
 [data-theme-color=theme-blue] {
@@ -1183,17 +1183,17 @@ p,
 }
 
 [data-theme-color=theme-blue-3] {
-  --primary: #a7dbd8;
-  --primary-bold: #a7dbd8;
-  --primary-btn: #a7dbd8;
+  --primary: #4ecdc4;
+  --primary-bold: #4ecdc4;
+  --primary-btn: #4ecdc4;
   --shadow: 0px 15px 20px 0px rgba(106, 210, 231, 0.44);
 }
 
 [data-theme-color=theme-dark] {
-  --primary: #031634;
-  --primary-bold: #031634;
-  --primary-btn: #031634;
-  --shadow: 0px 15px 20px 0px rgba(3, 22, 53, 0.44);
+  --primary: #6f91a6;
+  --primary-bold: #6f91a6;
+  --primary-btn: #6f91a6;
+  --shadow: 0px 15px 20px 0px rgba(110, 144, 166, 0.44);
 }
 
 /*------------ theme view ---------------- */
@@ -1258,7 +1258,7 @@ p,
   background-color: #873b0a;
 }
 .modal-themes-color input[value=theme-green] + label {
-  background-color: #143d33;
+  background-color: #378C4C;
 }
 .modal-themes-color input[value=theme-orange] + label {
   background-color: #ff9c2e;
@@ -1276,19 +1276,19 @@ p,
   background-color: #fe4365;
 }
 .modal-themes-color input[value=theme-orange-3] + label {
-  background-color: #f9cdad;
+  background-color: #F2949C;
 }
 .modal-themes-color input[value=theme-purple] + label {
-  background-color: #542437;
+  background-color: #9B72F2;
 }
 .modal-themes-color input[value=theme-green-2] + label {
-  background-color: #c7f464;
+  background-color: #04D9B2;
 }
 .modal-themes-color input[value=theme-blue-3] + label {
   background-color: #4ecdc4;
 }
 .modal-themes-color input[value=theme-dark] + label {
-  background-color: #031634;
+  background-color: #6F91A6;
 }
 
 #sidebar .icon-close {
